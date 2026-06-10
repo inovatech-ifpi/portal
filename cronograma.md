@@ -4,30 +4,30 @@ title: "Cronograma e Marcos"
 permalink: /cronograma/
 ---
 
+Ciclo de 13 semanas — **11/05 a 07/08/2026**.
+
 ## Marcos principais
 
 | Marco | Data | O que precisa estar pronto |
 |---|---|---|
-| **M0 — Kick-off** | sex 12/06 | Squads formados, demanda escolhida por squad |
-| **M1 — Aprovação** | sex 03/07 | Projeto definido, documentado, POC/protótipo apresentado e aprovado |
-| **Gate técnico** | sex 17/07 | Arquitetura, backlog priorizado, repositório, ambiente e plano de testes |
-| **M2 — Beta funcional** | sex 14/08 | Versão beta funcionando, feedback inicial de usuários |
-| **M3 — Entrega final** | sex 04/09 | Solução entregue/validada, documentação completa, apresentação final |
+| **M0 — Equipes e demandas** | 10/06 ✅ | Equipes formadas, demanda definida por equipe |
+| **M1 — Aprovação** | sex 26/06 | Projeto definido, documentado, protótipo/POC apresentado e aprovado |
+| **Gate técnico** | sex 03/07 | Arquitetura, backlog priorizado, repositório, ambiente e plano de testes |
+| **M2 — Beta funcional** | sex 24/07 | Versão beta funcionando, feedback inicial de usuários |
+| **M3 — Entrega final** | sex 07/08 | Solução entregue/validada, documentação completa, apresentação final |
 
 ## Semana a semana
 
-| Semana | Período | Fase | Foco |
-|---|---|---|---|
-| 1 | 08–12/06 | 0 | Onboarding, diagnóstico, formação dos squads |
-| 2 | 15–19/06 | 1 | Imersão: entrevistas com setores, levantamento de dores |
-| 3 | 22–26/06 | 1 | Definição de problema: visão, escopo, personas |
-| 4 | 29/06–03/07 | 1 | POC/protótipo e aprovação (M1) |
-| 5 | 06–10/07 | 2 | Arquitetura, modelo de dados, repositório |
-| 6 | 13–17/07 | 2 | Protótipo validado, plano de testes, Sprint 1 (Gate) |
-| 7 | 20–24/07 | 3 | Sprint 1 — núcleo da solução |
-| 8 | 27–31/07 | 3 | Sprint 2 — expansão + deploy de teste |
-| 9 | 03–07/08 | 3 | Sprint 3 — integrações, UX, versão alpha |
-| 10 | 10–14/08 | 3 | Consolidação do beta (M2) |
-| 11 | 17–21/08 | 4 | Validação com usuários reais |
-| 12 | 24–28/08 | 4 | Documentação e preparação de implantação |
-| 13 | 31/08–04/09 | 4 | Demo Day final, relatório, encerramento (M3) |
+| Semana | Período | Foco |
+|---|---|---|
+| 1–5 ✅ | 11/05–12/06 | Onboarding, diagnóstico, capacitação, descoberta de demandas e formação das equipes |
+| 6 | 15–19/06 | Inception: entrevistas com os setores, visão do produto, escopo |
+| 7 | 22–26/06 | Fechamento da definição: backlog, protótipo, aprovação (**M1**) |
+| 8 | 29/06–03/07 | Arquitetura, modelo de dados, repositório, ambiente, Sprint 1 (**Gate**) |
+| 9 | 06–10/07 | Sprint 1 — núcleo da solução |
+| 10 | 13–17/07 | Sprint 2 — expansão + deploy de teste |
+| 11 | 20–24/07 | Sprint 3 — consolidação do beta (**M2**) |
+| 12 | 27–31/07 | Validação com usuários reais, correções, documentação |
+| 13 | 03–07/08 | Demo Day final, relatório, encerramento (**M3**) |
+
+> O ritmo é apertado de propósito: o recorte de escopo (MVP) que cada equipe fizer até o M1 é o que torna a entrega possível.

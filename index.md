@@ -5,15 +5,24 @@ title: "Início"
 
 ## 📍 Onde estamos
 
-**Semana 1 (08–12/06) — Fase 0: Diagnóstico e formação dos squads**
+**Semana 5 (08–12/06) — Equipes e demandas definidas! (M0 ✅)**
+
+Na reunião de 10/06, com a coordenação técnica, as equipes foram organizadas em torno de demandas reais:
+
+| Equipe | Projeto |
+|---|---|
+| **Assistência Estudantil** (5) | Sistema de seleção de bolsas — Diretoria de Extensão |
+| **"Flix"** (3) | Repositório de conteúdo institucional do IFPI |
+| **Equipes 3 e 4** (7) | Demandas do ecossistema PiauíGovTec em formalização — anúncio em breve |
 
 ## 🎯 Próximo marco
 
-**M0 — Kick-off: sexta-feira, 12/06/2026.** Anúncio dos squads e escolha das demandas. Presença obrigatória.
+**M1 — Projetos definidos e aprovados: sexta, 26/06.** Até lá: entrevistas com os setores, visão do produto, escopo e protótipo.
 
 ## ⏰ Prazo mais próximo
 
-- Kick-off sexta 12/06 — venha com o formulário diagnóstico respondido (quem ainda não respondeu)
+- **Sexta 12/06** — reunião de repasse das demandas para as equipes 3 e 4
+- **Semana de 15/06** — entrevistas das equipes 1 e 2 com os setores demandantes
 
 ## 📢 Últimos avisos
 
