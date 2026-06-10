@@ -1,0 +1,11 @@
+title: "INOVATECH — Residência Técnica"
+description: "Portal oficial dos residentes · IFPI Campus Teresina Central"
+lang: pt-BR
+theme: minima
+baseurl: "/portal"
+header_pages:
+  - cronograma.md
+  - metodologia.md
+  - materiais.md
+  - templates-entregas.md
+  - links.md
