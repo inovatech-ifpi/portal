@@ -17,7 +17,7 @@ Na reunião de 10/06, com a coordenação técnica, as equipes foram organizadas
 
 ## 🎯 Próximo marco
 
-**M1 — Projetos definidos e aprovados: sexta, 26/06.** Até lá: entrevistas com os setores, visão do produto, escopo e protótipo.
+**M1 — Projetos definidos e aprovados:** Equipes 1 e 2 em **26/06**; Equipes 3 e 4 em **03/07** (começam uma semana depois, pelo repasse de 12/06). Entrega final igual para todos: **07/08**.
 
 ## ⏰ Prazo mais próximo
 

@@ -6,12 +6,12 @@ permalink: /templates-entregas/
 
 ## O que entregar em cada marco
 
-| Marco | Entregas da equipe |
-|---|---|
-| M1 (26/06) | Documento de definição do projeto + visão do produto + backlog inicial + POC/protótipo apresentado |
-| Gate (03/07) | Arquitetura + MER + repositório organizado + ambiente + critérios de aceite + plano de testes |
-| M2 (24/07) | Beta funcional demonstrável + documentação parcial |
-| M3 (07/08) | Solução validada + README e manual + relatório final + apresentação |
+| Marco | Trilha A (Eq. 1 e 2) | Trilha B (Eq. 3 e 4) | Entregas da equipe |
+|---|---|---|---|
+| M1 | 26/06 | 03/07 | Documento de definição + visão do produto + backlog inicial + POC/protótipo |
+| Gate | 03/07 | 10/07 | Arquitetura + MER + repositório + ambiente + critérios de aceite + plano de testes |
+| M2 | 24/07 | 31/07 | Beta funcional demonstrável + documentação parcial |
+| M3 | **07/08** | **07/08** | Solução validada + README e manual + relatório final + apresentação |
 
 ## Entregas semanais (toda sexta)
 
