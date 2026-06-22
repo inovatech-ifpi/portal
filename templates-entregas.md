@@ -6,12 +6,14 @@ permalink: /templates-entregas/
 
 ## O que entregar em cada marco
 
-| Marco | Trilha A (Eq. 1 e 2) | Trilha B (Eq. 3 e 4) | Entregas da equipe |
-|---|---|---|---|
-| M1 | 26/06 | 03/07 | Visão do produto + personas + jornada do usuário + backlog inicial + POC/protótipo |
-| Gate | 03/07 | 10/07 | Arquitetura + MER + repositório + ambiente + critérios de aceite + plano de testes |
-| M2 | 24/07 | 31/07 | Beta funcional demonstrável + documentação parcial |
-| M3 | **07/08** | **07/08** | Solução validada + README e manual + relatório final + apresentação |
+Todas as equipes seguem o mesmo calendário.
+
+| Marco | Data | Entregas da equipe |
+|---|---|---|
+| M1 | sex 26/06 | Visão do produto + personas + jornada do usuário + backlog inicial + POC/protótipo |
+| Gate | sex 03/07 | Arquitetura + MER + repositório + ambiente + critérios de aceite + plano de testes |
+| M2 | sex 24/07 | Beta funcional demonstrável + documentação parcial |
+| M3 | **sex 07/08** | Solução validada + README e manual + relatório final + apresentação |
 
 ## Entregas semanais (toda sexta)
 
