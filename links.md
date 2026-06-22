@@ -4,14 +4,16 @@ title: "Links Oficiais"
 permalink: /links/
 ---
 
-## Repositórios das equipes (a partir do gate técnico)
+## Repositórios das equipes
+
+Disponíveis após o aceite do convite na org `inovatech-ifpi`. Se ainda não aceitou, verifique o e-mail cadastrado no GitHub.
 
 | Equipe | Projeto | Repositório |
 |---|---|---|
-| Assistência Estudantil | Sistema de seleção de bolsas | _(a criar)_ |
-| "Flix" | Repositório de conteúdo do IFPI | _(a criar)_ |
-| Equipe 3 | _(em definição)_ | _(a criar)_ |
-| Equipe 4 | _(em definição)_ | _(a criar)_ |
+| Eq. 1 — Assistência Estudantil | Sistema de seleção de bolsas permanentes e eventuais | [equipe-assistencia-bolsas](https://github.com/inovatech-ifpi/equipe-assistencia-bolsas) |
+| Eq. 2 — "Flix" | Repositório de conteúdo institucional do IFPI | [equipe-flix-conteudo](https://github.com/inovatech-ifpi/equipe-flix-conteudo) |
+| D07 — Segurança Campus | Segurança e controle de acesso — Campus Teresina Central | [equipe-seguranca-campus](https://github.com/inovatech-ifpi/equipe-seguranca-campus) |
+| D08 — SPIA Maestro | Projeto em infraestrutura da SSP-PI | _(sem repo na org)_ |
 
 ## Formulários
 
