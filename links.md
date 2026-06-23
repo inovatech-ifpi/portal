@@ -13,7 +13,7 @@ Disponíveis após o aceite do convite na org `inovatech-ifpi`. Se ainda não ac
 | Eq. 1 — Assistência Estudantil | Sistema de seleção de bolsas permanentes e eventuais | [equipe-assistencia-bolsas](https://github.com/inovatech-ifpi/equipe-assistencia-bolsas) |
 | Eq. 2 — "Flix" | Repositório de conteúdo institucional do IFPI | [equipe-flix-conteudo](https://github.com/inovatech-ifpi/equipe-flix-conteudo) |
 | D07 — Segurança Campus | Segurança e controle de acesso — Campus Teresina Central | [equipe-seguranca-campus](https://github.com/inovatech-ifpi/equipe-seguranca-campus) |
-| D08 — SPIA Maestro | Parceria SSP / SPIA · Confidencial | _(sem repo na org)_ |
+| D08 — SPIA / INOVATEC | Parceria SSP / SPIA · Confidencial | _(sem repo na org)_ |
 
 ## Formulários
 
