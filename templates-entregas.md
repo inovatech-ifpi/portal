@@ -10,7 +10,7 @@ Todas as equipes seguem o mesmo calendário.
 
 | Marco | Data | Entregas da equipe |
 |---|---|---|
-| M1 | sex 26/06 | Visão do produto + personas + jornada do usuário + backlog inicial + POC/protótipo |
+| M1 | sex 26/06 | Visão do produto + personas + jornada do usuário + backlog inicial (na pasta `docs/`) |
 | Gate | sex 03/07 | Arquitetura + MER + repositório + ambiente + critérios de aceite + plano de testes |
 | M2 | sex 24/07 | Beta funcional demonstrável + documentação parcial |
 | M3 | **sex 07/08** | Solução validada + README e manual + relatório final + apresentação |
