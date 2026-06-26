@@ -24,7 +24,7 @@ Todas as equipes seguem o mesmo calendário de entregas.
 |---|---|---|
 | 1–5 ✅ | 11/05–12/06 | Onboarding, diagnóstico, capacitação, descoberta de demandas e formação das equipes |
 | 6 ✅ | 15–19/06 | Inception: entrevistas com parceiros, organização e estudo das demandas |
-| 7 | 22–26/06 | Fechamento da Inception — **M1 todas as equipes (26/06)** |
+| 7 ✅ | 22–26/06 | Fechamento da Inception — **prazo do M1 (26/06)** |
 | 8 | 29/06–03/07 | Arquitetura, backlog e ambiente — **Gate técnico (03/07)** |
 | 9 | 06–10/07 | Sprint 1 |
 | 10 | 13–17/07 | Sprint 2 |
