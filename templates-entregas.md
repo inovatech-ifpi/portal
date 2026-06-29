@@ -31,6 +31,14 @@ Todas as equipes seguem o mesmo calendário.
 - [Item de backlog (história + critérios de aceite)]({{ '/templates/item-backlog/' | relative_url }})
 - [README padrão do projeto]({{ '/templates/readme-squad/' | relative_url }})
 
+**Gate técnico (semana atual — prazo 03/07)**
+
+- [Arquitetura mínima]({{ '/templates/arquitetura/' | relative_url }})
+- [Modelo de dados]({{ '/templates/modelo-dados/' | relative_url }})
+- [Plano de testes]({{ '/templates/plano-testes/' | relative_url }})
+
+> Os critérios de aceite (BDD) ficam dentro do template de **Item de backlog** — revise os itens prioritários do Sprint 1.
+
 **Sprints / contínuo**
 
 - [Registro semanal da equipe]({{ '/templates/registro-semanal-squad/' | relative_url }})

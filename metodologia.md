@@ -13,8 +13,8 @@ O processo não começa pelo código. Começa pelo problema, pelo usuário e pel
 ## Como o ciclo funciona
 
 1. **Diagnóstico e equipes (concluído).** Vocês responderam o diagnóstico e as equipes foram organizadas em torno de demandas reais, dimensionadas pelo tamanho de cada problema.
-2. **Inception (agora → 26/06).** Cada equipe entrevista o setor demandante, define o problema, usuários, escopo mínimo e protótipo de papel. Termina com o projeto **aprovado** (M1).
-3. **Projeto e prototipação (→ 03/07).** Arquitetura, modelo de dados, repositório, ambiente e plano de testes. Termina no **gate técnico**.
+2. **Inception (concluído — M1 26/06 ✅).** Cada equipe entrevistou o setor demandante, definiu o problema, usuários, escopo mínimo e backlog inicial. Artefatos entregues na pasta `docs/` de cada repositório.
+3. **Projeto e prototipação (agora → 03/07).** Arquitetura, modelo de dados, repositório, ambiente e plano de testes. Termina no **gate técnico**.
 4. **Implementação (→ 24/07).** Sprints curtos com review demonstrável. Termina com o **beta funcional** (M2).
 5. **Validação e entrega (→ 07/08).** Testes com usuários reais, documentação completa, Demo Day e relatório final (M3).
 

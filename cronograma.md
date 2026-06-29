@@ -13,8 +13,8 @@ Todas as equipes seguem o mesmo calendário de entregas.
 | Marco | Data | O que precisa estar pronto |
 |---|---|---|
 | **M0 — Demanda em mãos** | jun/2026 ✅ | Equipe formada, demanda definida |
-| **M1 — Inception** | sex 26/06 | Projeto definido, documentado, artefatos de descoberta entregues |
-| **Gate técnico** | sex 03/07 | Arquitetura, backlog, repositório, ambiente, plano de testes |
+| **M1 — Inception** | sex 26/06 ✅ | Projeto definido, documentado, artefatos de descoberta entregues |
+| **Gate técnico** | sex 03/07 ← semana atual | Arquitetura, backlog, repositório, ambiente, plano de testes |
 | **M2 — Beta funcional** | sex 24/07 | Beta funcionando, feedback inicial de usuários |
 | **M3 — Entrega final** | **sex 07/08** | Solução entregue/validada, documentação completa, apresentação |
 
@@ -25,7 +25,7 @@ Todas as equipes seguem o mesmo calendário de entregas.
 | 1–5 ✅ | 11/05–12/06 | Onboarding, diagnóstico, capacitação, descoberta de demandas e formação das equipes |
 | 6 ✅ | 15–19/06 | Inception: entrevistas com parceiros, organização e estudo das demandas |
 | 7 ✅ | 22–26/06 | Fechamento da Inception — **prazo do M1 (26/06)** |
-| 8 | 29/06–03/07 | Arquitetura, backlog e ambiente — **Gate técnico (03/07)** |
+| **8 ← agora** | 29/06–03/07 | Arquitetura, backlog e ambiente — **Gate técnico (03/07)** |
 | 9 | 06–10/07 | Sprint 1 |
 | 10 | 13–17/07 | Sprint 2 |
 | 11 | 20–24/07 | Sprint 3 e beta — **M2 (24/07)** |
