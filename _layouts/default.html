@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'pt-BR' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0e3d22">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/portal.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="shell">
+      <aside class="sidebar">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Página inicial">
+          <span class="brand-mark mono">&gt;_</span>
+          <span>
+            <span class="brand-name">{{ site.data.portal.brand }}</span>
+            <span class="brand-sub mono">{{ site.data.portal.brand_subtitle }}</span>
+          </span>
+        </a>
+
+        <nav aria-label="Navegação principal">
+          <a class="nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">
+            <span class="nav-ico mono">~</span> Início
+          </a>
+          {% for path in site.header_pages %}
+            {% assign nav_page = site.pages | where: "path", path | first %}
+            {% if nav_page %}
+              <a class="nav-item{% if page.url == nav_page.url %} active{% endif %}" href="{{ nav_page.url | relative_url }}">
+                <span class="nav-ico mono">{{ nav_page.nav_icon | default: '›' }}</span>
+                {{ nav_page.nav_title | default: nav_page.title }}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </nav>
+
+        <div class="sidebar-foot mono">
+          <div>{{ site.data.portal.cycle.label }} · {{ site.data.portal.cycle.current_phase }}</div>
+          <div class="dim">{{ site.data.portal.cycle.start }} → {{ site.data.portal.cycle.end }}</div>
+        </div>
+      </aside>
+
+      <main id="conteudo">
+        {{ content }}
+        <footer class="page-foot mono dim">
+          inovatech@ifpi:~$ portal oficial da residência — o que vale é o que está aqui_
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

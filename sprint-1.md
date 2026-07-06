@@ -2,6 +2,9 @@
 layout: page
 title: "Sprint 1 — guia de planejamento"
 permalink: /sprint-1/
+kicker: "// semana 09 · 06 a 10/07/2026"
+nav_icon: "▶"
+nav_title: "Sprint 1"
 ---
 
 Semana 09 — **06 a 10/07/2026**
@@ -97,12 +100,14 @@ diferentes, dividam-na.
 
 Confirmem:
 
-- [ ] o objetivo da semana está escrito;
-- [ ] todas as issues escolhidas ajudam diretamente no objetivo;
-- [ ] critérios de aceite podem ser demonstrados;
-- [ ] responsáveis e dependências estão visíveis;
-- [ ] revisão, teste e integração foram considerados;
-- [ ] a demonstração de sexta-feira está combinada.
+<ul class="checklist">
+  <li>o objetivo da semana está escrito;</li>
+  <li>todas as issues escolhidas ajudam diretamente no objetivo;</li>
+  <li>critérios de aceite podem ser demonstrados;</li>
+  <li>responsáveis e dependências estão visíveis;</li>
+  <li>revisão, teste e integração foram considerados;</li>
+  <li>a demonstração de sexta-feira está combinada.</li>
+</ul>
 
 ## Critério de conclusão
 

@@ -9,7 +9,7 @@ permalink: /templates/registro-semanal-squad/
 
 # Registro Semanal — Squad [X] — Semana [N]
 
-> Template da metodologia (seção 15.1). Preenchido pelo squad, revisado no checkpoint técnico.
+> Preenchido pelo squad e revisado no checkpoint técnico.
 
 | Campo | Conteúdo |
 |---|---|

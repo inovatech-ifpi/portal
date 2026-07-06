@@ -2,18 +2,32 @@
 layout: page
 title: "Templates e Entregas"
 permalink: /templates-entregas/
+kicker: "// o que entregar e quando"
+nav_icon: "⎘"
+nav_title: "Templates e entregas"
 ---
 
 ## O que entregar em cada marco
 
-Todas as equipes seguem o mesmo calendário.
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Marco</th><th>Data</th><th>Entregas da equipe</th></tr></thead>
+    <tbody>
+      {% for milestone in site.data.portal.milestones %}
+        {% unless milestone.code == "M0" %}
+          <tr>
+            <td><strong>{{ milestone.code }}</strong></td>
+            <td class="mono">{{ milestone.date }}</td>
+            <td>{{ milestone.deliverable }}</td>
+          </tr>
+        {% endunless %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
-| Marco | Data | Entregas da equipe |
-|---|---|---|
-| M1 | sex 26/06 | Visão do produto + personas + jornada do usuário + backlog inicial (na pasta `docs/`) |
-| Gate | sex 03/07 | Arquitetura + MER + repositório + ambiente + critérios de aceite + plano de testes |
-| M2 | sex 24/07 | Beta funcional demonstrável + documentação parcial |
-| M3 | **sex 07/08** | Solução validada + README e manual + relatório final + apresentação |
+> O M1 não exige POC ou protótipo. A entrega formal é composta pelos artefatos
+> de descoberta descritos acima.
 
 ## Entregas semanais (toda sexta)
 
@@ -31,7 +45,7 @@ Todas as equipes seguem o mesmo calendário.
 - [Item de backlog (história + critérios de aceite)]({{ '/templates/item-backlog/' | relative_url }})
 - [README padrão do projeto]({{ '/templates/readme-squad/' | relative_url }})
 
-**Gate técnico (semana atual — prazo 03/07)**
+**Gate técnico (prazo encerrado em 03/07)**
 
 - [Arquitetura mínima]({{ '/templates/arquitetura/' | relative_url }})
 - [Modelo de dados]({{ '/templates/modelo-dados/' | relative_url }})
@@ -41,6 +55,7 @@ Todas as equipes seguem o mesmo calendário.
 
 **Sprints / contínuo**
 
+- [Guia de planejamento da Sprint 1]({{ '/sprint-1/' | relative_url }})
 - [Registro semanal da equipe]({{ '/templates/registro-semanal-squad/' | relative_url }})
 - [Retrospectiva de sprint]({{ '/templates/retrospectiva/' | relative_url }})
 

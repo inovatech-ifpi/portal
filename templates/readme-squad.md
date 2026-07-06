@@ -44,6 +44,6 @@ permalink: /templates/readme-squad/
 
 ## Documentação
 
-- [Visão do produto](docs/visao-produto.md)
-- [Arquitetura](docs/arquitetura.md)
-- [Plano de testes](docs/plano-de-testes.md)
+- Visão do produto: `docs/visao-produto.md`
+- Arquitetura: `docs/arquitetura.md`
+- Plano de testes: `docs/plano-testes.md`

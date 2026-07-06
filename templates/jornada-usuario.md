@@ -9,7 +9,10 @@ permalink: /templates/jornada-usuario/
 
 # Jornada do Usuário — [Projeto] — Squad [X]
 
-> Artefato da Inception (Fase 1), pré-requisito do M1. Mapeia o caminho que a [persona](persona.md) percorre para realizar uma tarefa — **como é hoje** (estado atual) e, opcionalmente, **como será** com a solução. Foque na tarefa mais importante do escopo mínimo.
+> Artefato da Inception, pré-requisito do M1. Mapeia o caminho que a persona
+> registrada em `persona.md` percorre para realizar uma tarefa — **como é hoje**
+> (estado atual) e, opcionalmente, **como será** com a solução. Foque na tarefa
+> mais importante do escopo mínimo.
 
 - **Persona:** [nome fictício da persona principal]
 - **Cenário / tarefa:** [ex.: "solicitar uma bolsa eventual"]
@@ -31,6 +34,6 @@ permalink: /templates/jornada-usuario/
 
 ## Critério de pronto
 
-- [ ] A jornada cobre uma tarefa real do **Escopo mínimo** da [Visão do Produto](visao-produto.md).
-- [ ] Cada dor relevante aqui vira (ou justifica) um item no [backlog](item-backlog.md).
+- [ ] A jornada cobre uma tarefa real do **Escopo mínimo** registrado em `visao-produto.md`.
+- [ ] Cada dor relevante aqui vira (ou justifica) um item em `item-backlog.md`.
 - [ ] As etapas foram validadas com o setor demandante, não só supostas pela equipe.

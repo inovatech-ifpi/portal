@@ -9,7 +9,7 @@ permalink: /templates/relatorio-final/
 
 # Relatório Final — [Projeto] — Squad [X]
 
-> Template da metodologia (seção 15.4). Parte do pacote de entrega do M3.
+> Parte do pacote de entrega do M3.
 
 1. **Identificação do projeto e integrantes**
 2. **Contexto e problema institucional**

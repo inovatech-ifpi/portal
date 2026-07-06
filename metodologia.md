@@ -2,6 +2,8 @@
 layout: page
 title: "Metodologia"
 permalink: /metodologia/
+kicker: "// como a gente trabalha"
+nav_icon: "⟳"
 ---
 
 ## A fórmula
@@ -13,8 +15,8 @@ O processo não começa pelo código. Começa pelo problema, pelo usuário e pel
 ## Como o ciclo funciona
 
 1. **Diagnóstico e equipes (concluído).** Vocês responderam o diagnóstico e as equipes foram organizadas em torno de demandas reais, dimensionadas pelo tamanho de cada problema.
-2. **Inception (concluído — M1 26/06 ✅).** Cada equipe entrevistou o setor demandante, definiu o problema, usuários, escopo mínimo e backlog inicial. Artefatos entregues na pasta `docs/` de cada repositório.
-3. **Projeto e prototipação (etapa encerrada — Gate 03/07).** Arquitetura, modelo de dados, repositório, ambiente e plano de testes.
+2. **Inception (prazo encerrado — M1 26/06).** Cada equipe entrevistou o setor demandante, definiu o problema, usuários, escopo mínimo e backlog inicial.
+3. **Projeto e prototipação (prazo encerrado — Gate 03/07).** Arquitetura, modelo de dados, repositório, ambiente e plano de testes.
 4. **Implementação (agora → 24/07).** Sprints curtos com review demonstrável. Começa com o [planejamento da Sprint 1]({{ '/sprint-1/' | relative_url }}) e termina com o **beta funcional** (M2).
 5. **Validação e entrega (→ 07/08).** Testes com usuários reais, documentação completa, Demo Day e relatório final (M3).
 
@@ -36,7 +38,7 @@ O processo não começa pelo código. Começa pelo problema, pelo usuário e pel
 
 | Ritual | Quando | Duração |
 |---|---|---|
-| Daily da equipe | diária ou 3x/semana | 10 min |
+| Daily da equipe | diária ou 3×/semana | 10 min |
 | Checkpoint técnico com instrutores | semanal | 30–45 min |
 | Sprint planning / review / retro | por sprint | 45–60 / 30–60 / 20–30 min |
 | Reunião com o usuário do setor | semanal ou quinzenal | 30 min |

@@ -2,21 +2,32 @@
 layout: page
 title: "Materiais"
 permalink: /materiais/
+kicker: "// conteúdo das sessões e da semana atual"
+nav_icon: "▤"
 ---
 
 _Os materiais de cada etapa são publicados aqui após as sessões._
 
-## Capacitação — Metodologia da Fase 1 (21/05)
+## Semana 09 — Sprint 1
 
-- Apresentação da metodologia (semanas de Inception) — _(link)_
+- [Guia de planejamento da Sprint 1]({{ '/sprint-1/' | relative_url }})
+- [Item de backlog com critérios de aceite]({{ '/templates/item-backlog/' | relative_url }})
+- [Registro semanal da equipe]({{ '/templates/registro-semanal-squad/' | relative_url }})
+- [Retrospectiva de sprint]({{ '/templates/retrospectiva/' | relative_url }})
 
-## Sessão de demandas (10/06)
+## Gate técnico
 
-- Roteiro de escuta inicial com setores: problema relatado, setor/pessoa de referência, usuários afetados, processo atual, limitações, dados disponíveis, urgência, dependências e riscos
+- [Arquitetura mínima]({{ '/templates/arquitetura/' | relative_url }})
+- [Modelo de dados]({{ '/templates/modelo-dados/' | relative_url }})
+- [Plano de testes]({{ '/templates/plano-testes/' | relative_url }})
 
-## Templates de Inception
+## Inception e descoberta
 
-- Visão do produto, persona, jornada do usuário e item de backlog — disponíveis na aba [Templates e Entregas]({{ '/templates-entregas/' | relative_url }})
+- [Visão do produto]({{ '/templates/visao-produto/' | relative_url }})
+- [Persona]({{ '/templates/persona/' | relative_url }})
+- [Jornada do usuário]({{ '/templates/jornada-usuario/' | relative_url }})
+- Roteiro de escuta inicial: problema, usuários, processo atual, limitações,
+  dados disponíveis, urgência, dependências e riscos.
 
 ---
-_Sentiu falta de algo? Peça no grupo — mas o material oficial estará sempre nesta página._
+_Sentiu falta de algo? Avise no grupo. A versão oficial será publicada nesta página._

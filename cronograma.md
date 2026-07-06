@@ -2,34 +2,46 @@
 layout: page
 title: "Cronograma e Marcos"
 permalink: /cronograma/
+kicker: "// 13 semanas · 11/05 → 07/08/2026"
+nav_icon: "◷"
+nav_title: "Cronograma"
 ---
-
-Ciclo de 13 semanas — **11/05 a 07/08/2026**.
 
 ## Marcos principais
 
 Todas as equipes seguem o mesmo calendário de entregas.
 
-| Marco | Data | O que precisa estar pronto |
-|---|---|---|
-| **M0 — Demanda em mãos** | jun/2026 ✅ | Equipe formada, demanda definida |
-| **M1 — Inception** | sex 26/06 ✅ | Projeto definido, documentado, artefatos de descoberta entregues |
-| **Gate técnico** | sex 03/07 — prazo encerrado | Arquitetura, backlog, repositório, ambiente, plano de testes |
-| **M2 — Beta funcional** | sex 24/07 | Beta funcionando, feedback inicial de usuários |
-| **M3 — Entrega final** | **sex 07/08** | Solução entregue/validada, documentação completa, apresentação |
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Marco</th><th>Data</th><th>Situação</th><th>O que precisa estar pronto</th></tr>
+    </thead>
+    <tbody>
+      {% for milestone in site.data.portal.milestones %}
+        <tr>
+          <td><strong>{{ milestone.code }} — {{ milestone.name }}</strong></td>
+          <td class="mono">{{ milestone.date }}</td>
+          <td>{{ milestone.status }}</td>
+          <td>{{ milestone.deliverable }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
 ## Semana a semana
 
-| Semana | Período | Foco |
-|---|---|---|
-| 1–5 ✅ | 11/05–12/06 | Onboarding, diagnóstico, capacitação, descoberta de demandas e formação das equipes |
-| 6 ✅ | 15–19/06 | Inception: entrevistas com parceiros, organização e estudo das demandas |
-| 7 ✅ | 22–26/06 | Fechamento da Inception — **prazo do M1 (26/06)** |
-| 8 — encerrada | 29/06–03/07 | Arquitetura, backlog e ambiente — **Gate técnico (03/07)** |
-| **9 ← agora** | 06–10/07 | [Sprint 1 — planejamento, implementação e Review 1]({{ '/sprint-1/' | relative_url }}) |
-| 10 | 13–17/07 | Sprint 2 |
-| 11 | 20–24/07 | Sprint 3 e beta — **M2 (24/07)** |
-| 12 | 27–31/07 | Validação com usuários |
-| 13 | 03–07/08 | Demo Day final, relatório, encerramento — **M3 (07/08)** |
+<ol class="week-list">
+  {% for week in site.data.portal.weeks %}
+    <li class="{{ week.state }}">
+      <span class="week-number mono">{% if week.state == 'done' %}✓ {% endif %}S{{ week.number }}</span>
+      <span class="mono dim">{{ week.period }}</span>
+      <span class="week-focus">
+        {% if week.link %}<a href="{{ week.link | relative_url }}"><strong>{{ week.focus }}</strong></a>{% else %}{{ week.focus }}{% endif %}
+      </span>
+    </li>
+  {% endfor %}
+</ol>
 
-> O recorte de escopo (MVP) que cada equipe fizer até o M1 é o que torna a entrega possível.
+> O M2 é o próximo marco formal. As Sprints 1, 2 e 3 são ciclos semanais de
+> implementação dentro desse marco.
