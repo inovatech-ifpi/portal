@@ -1,8 +1,10 @@
 title: "INOVATECH — Residência Técnica"
 description: "Portal oficial dos residentes · IFPI Campus Teresina Central"
 lang: pt-BR
-theme: minima
+url: "https://inovatech-ifpi.github.io"
 baseurl: "/portal"
+markdown: kramdown
+permalink: pretty
 header_pages:
   - cronograma.md
   - sprint-1.md
@@ -10,3 +12,6 @@ header_pages:
   - materiais.md
   - templates-entregas.md
   - links.md
+exclude:
+  - README.md
+  - scripts

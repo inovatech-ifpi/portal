@@ -25,5 +25,5 @@ permalink: /templates/persona/
 ## Critério de pronto
 
 - [ ] Cada persona vem de um setor/usuário realmente entrevistado, não inventado do zero.
-- [ ] As dores listadas conversam com o **Problema** da [Visão do Produto](visao-produto.md).
+- [ ] As dores listadas conversam com o **Problema** registrado em `visao-produto.md`.
 - [ ] A persona principal coincide com o **Usuário principal** da visão.

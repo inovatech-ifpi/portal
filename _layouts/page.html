@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="page">
+  {% unless page.path contains "templates/" %}
+    <header class="section-head">
+      {% if page.kicker %}<p class="kicker">{{ page.kicker }}</p>{% endif %}
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="page-description">{{ page.description }}</p>{% endif %}
+    </header>
+  {% endunless %}
+  <div class="page-content">
+    {{ content }}
+  </div>
+</article>
