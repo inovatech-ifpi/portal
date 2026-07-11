@@ -2,6 +2,8 @@
 
 require "yaml"
 
+Encoding.default_external = Encoding::UTF_8
+
 ROOT = File.expand_path("..", __dir__)
 PUBLIC_FILES = Dir[File.join(ROOT, "*.md"), File.join(ROOT, "templates", "*.md")].reject do |path|
   File.basename(path) == "README.md"

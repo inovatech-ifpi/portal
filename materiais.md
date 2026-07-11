@@ -8,6 +8,12 @@ nav_icon: "▤"
 
 _Os materiais de cada etapa são publicados aqui após as sessões._
 
+## Semana 10 — Sprint 2
+
+- [Guia de planejamento da Sprint 2]({{ '/sprint-2/' | relative_url }})
+- [Registro semanal da equipe]({{ '/templates/registro-semanal-squad/' | relative_url }})
+- [Retrospectiva de sprint]({{ '/templates/retrospectiva/' | relative_url }})
+
 ## Semana 09 — Sprint 1
 
 - [Guia de planejamento da Sprint 1]({{ '/sprint-1/' | relative_url }})

@@ -51,10 +51,11 @@ nav_title: "Templates e entregas"
 - [Modelo de dados]({{ '/templates/modelo-dados/' | relative_url }})
 - [Plano de testes]({{ '/templates/plano-testes/' | relative_url }})
 
-> Os critérios de aceite (BDD) ficam dentro do template de **Item de backlog** — revise os itens prioritários do Sprint 1.
+> Os critérios de aceite (BDD) ficam dentro do template de **Item de backlog** — revise os itens prioritários da sprint em curso.
 
 **Sprints / contínuo**
 
+- [Guia de planejamento da Sprint 2]({{ '/sprint-2/' | relative_url }})
 - [Guia de planejamento da Sprint 1]({{ '/sprint-1/' | relative_url }})
 - [Registro semanal da equipe]({{ '/templates/registro-semanal-squad/' | relative_url }})
 - [Retrospectiva de sprint]({{ '/templates/retrospectiva/' | relative_url }})
