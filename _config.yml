@@ -7,7 +7,7 @@ markdown: kramdown
 permalink: pretty
 header_pages:
   - cronograma.md
-  - sprint-1.md
+  - sprint-3.md
   - metodologia.md
   - materiais.md
   - templates-entregas.md

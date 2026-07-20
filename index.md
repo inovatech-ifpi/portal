@@ -3,7 +3,7 @@ layout: page
 title: "Onde estamos"
 permalink: /
 kicker: "// status da residência"
-description: "Semana 10 — Sprint 2 / Review 2 · 13 a 17 de julho de 2026"
+description: "Semana 11 — Sprint 3 / M2 · 20 a 24 de julho de 2026"
 ---
 
 <div class="progress-block" aria-label="Progresso do ciclo">
@@ -26,11 +26,11 @@ description: "Semana 10 — Sprint 2 / Review 2 · 13 a 17 de julho de 2026"
 <div class="alert">
   <span class="alert-tag mono">AGORA</span>
   <p>
-    <strong>Sprint 2 em curso.</strong>
-    Cada squad resolve o carry-over da Sprint 1, define o objetivo demonstrável
-    da semana e registra responsáveis e bloqueios. Consulte o
-    <a href="{{ '/sprint-2/' | relative_url }}">guia de planejamento</a>.
-    Review 2: sexta, 17/07.
+    <strong>Sprint 3 e consolidação do beta.</strong>
+    Cada squad fecha o recorte demonstrável do M2, prioriza integrações e UX
+    essenciais e registra evidências, pendências e bloqueios. Consulte o
+    <a href="{{ '/sprint-3/' | relative_url }}">guia da semana</a>.
+    M2: sexta, 24/07.
   </p>
 </div>
 
