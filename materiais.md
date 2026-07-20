@@ -8,6 +8,13 @@ nav_icon: "▤"
 
 _Os materiais de cada etapa são publicados aqui após as sessões._
 
+## Semana 11 — Sprint 3 e M2
+
+- [Guia da Sprint 3 e checklist do M2]({{ '/sprint-3/' | relative_url }})
+- [Registro semanal da equipe]({{ '/templates/registro-semanal-squad/' | relative_url }})
+- [Plano de testes]({{ '/templates/plano-testes/' | relative_url }})
+- [Retrospectiva de sprint]({{ '/templates/retrospectiva/' | relative_url }})
+
 ## Semana 10 — Sprint 2
 
 - [Guia de planejamento da Sprint 2]({{ '/sprint-2/' | relative_url }})

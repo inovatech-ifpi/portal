@@ -55,6 +55,7 @@ nav_title: "Templates e entregas"
 
 **Sprints / contínuo**
 
+- [Guia da Sprint 3 e checklist do M2]({{ '/sprint-3/' | relative_url }})
 - [Guia de planejamento da Sprint 2]({{ '/sprint-2/' | relative_url }})
 - [Guia de planejamento da Sprint 1]({{ '/sprint-1/' | relative_url }})
 - [Registro semanal da equipe]({{ '/templates/registro-semanal-squad/' | relative_url }})
