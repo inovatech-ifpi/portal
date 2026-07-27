@@ -3,7 +3,7 @@ layout: page
 title: "Onde estamos"
 permalink: /
 kicker: "// status da residência"
-description: "Semana 11 — Sprint 3 / M2 · 20 a 24 de julho de 2026"
+description: "Semana 12 — validação e reta final do M3 · 27 a 31 de julho de 2026"
 ---
 
 <div class="progress-block" aria-label="Progresso do ciclo">
@@ -26,11 +26,12 @@ description: "Semana 11 — Sprint 3 / M2 · 20 a 24 de julho de 2026"
 <div class="alert">
   <span class="alert-tag mono">AGORA</span>
   <p>
-    <strong>Sprint 3 e consolidação do beta.</strong>
-    Cada squad fecha o recorte demonstrável do M2, prioriza integrações e UX
-    essenciais e registra evidências, pendências e bloqueios. Consulte o
-    <a href="{{ '/sprint-3/' | relative_url }}">guia da semana</a>.
-    M2: sexta, 24/07.
+    <strong>Validação com usuários e reta final.</strong>
+    O M2 encerrou. Começa a validação do que foi construído com quem vai usar,
+    e cada squad precisa planejar o M3 no próprio board — issues abertas, com
+    responsável, e o que ficou do M2 resolvido. Consulte o
+    <a href="{{ '/reta-final/' | relative_url }}">guia da reta final</a>.
+    M3: sexta, 07/08.
   </p>
 </div>
 

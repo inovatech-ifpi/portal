@@ -8,6 +8,13 @@ nav_icon: "▤"
 
 _Os materiais de cada etapa são publicados aqui após as sessões._
 
+## Semana 12 — Validação e reta final
+
+- [Guia da reta final e checklist do M3]({{ '/reta-final/' | relative_url }})
+- [Estrutura do relatório final]({{ '/templates/relatorio-final/' | relative_url }})
+- [Plano de testes]({{ '/templates/plano-testes/' | relative_url }})
+- [Registro semanal da equipe]({{ '/templates/registro-semanal-squad/' | relative_url }})
+
 ## Semana 11 — Sprint 3 e M2
 
 - [Guia da Sprint 3 e checklist do M2]({{ '/sprint-3/' | relative_url }})

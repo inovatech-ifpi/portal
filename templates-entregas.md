@@ -63,4 +63,5 @@ nav_title: "Templates e entregas"
 
 **Entrega final / M3**
 
+- [Guia da reta final e checklist do M3]({{ '/reta-final/' | relative_url }})
 - [Estrutura do relatório final]({{ '/templates/relatorio-final/' | relative_url }})

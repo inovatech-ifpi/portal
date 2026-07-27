@@ -43,5 +43,6 @@ Todas as equipes seguem o mesmo calendário de entregas.
   {% endfor %}
 </ol>
 
-> O M2 é o próximo marco formal. As Sprints 1, 2 e 3 são ciclos semanais de
-> implementação dentro desse marco.
+> O M3 é o próximo e último marco formal. As Sprints 1, 2 e 3 foram os ciclos
+> semanais de implementação até o M2; as semanas 12 e 13 são de
+> [validação e entrega]({{ '/reta-final/' | relative_url }}).
