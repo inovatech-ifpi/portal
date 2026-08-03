@@ -6,10 +6,10 @@ cycle:
   start: "11/05/2026"
   end: "07/08/2026"
   total_weeks: 13
-  current_week: 12
-  current_period: "27–31/07"
-  current_phase: "Validação"
-  current_focus: "Validação com usuários · reta final do M3"
+  current_week: 13
+  current_period: "03–07/08"
+  current_phase: "Entrega final"
+  current_focus: "Congelamento de escopo, ensaio da apresentação e M3 na sexta (07/08)"
 
 projects:
   - code: "EQ.1"
@@ -108,18 +108,15 @@ weeks:
   - number: "12"
     period: "27–31/07"
     focus: "Validação com usuários e preparação da entrega final"
-    state: "current"
+    state: "done"
     link: "/reta-final/"
   - number: "13"
     period: "03–07/08"
     focus: "Demo Day, relatório, encerramento e M3"
-    state: "future"
+    state: "current"
+    link: "/reta-final/"
 
 deadlines:
-  - date: "31/07"
-    title: "Validação"
-    detail: "testes com usuários reais, correções e documentação"
-    link: "/reta-final/"
   - date: "07/08"
     title: "M3"
     detail: "entrega final, documentação, relatório e apresentação"

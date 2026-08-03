@@ -8,6 +8,13 @@ nav_icon: "▤"
 
 _Os materiais de cada etapa são publicados aqui após as sessões._
 
+## Semana 13 — Entrega final e M3
+
+- [Guia da reta final e checklist do M3]({{ '/reta-final/' | relative_url }})
+- [Estrutura do relatório final]({{ '/templates/relatorio-final/' | relative_url }})
+- [README da equipe]({{ '/templates/readme-squad/' | relative_url }})
+- [Retrospectiva de sprint]({{ '/templates/retrospectiva/' | relative_url }})
+
 ## Semana 12 — Validação e reta final
 
 - [Guia da reta final e checklist do M3]({{ '/reta-final/' | relative_url }})

@@ -3,7 +3,7 @@ layout: page
 title: "Onde estamos"
 permalink: /
 kicker: "// status da residência"
-description: "Semana 12 — validação e reta final do M3 · 27 a 31 de julho de 2026"
+description: "Semana 13 — entrega final e M3 · 3 a 7 de agosto de 2026"
 ---
 
 <div class="progress-block" aria-label="Progresso do ciclo">
@@ -26,10 +26,10 @@ description: "Semana 12 — validação e reta final do M3 · 27 a 31 de julho d
 <div class="alert">
   <span class="alert-tag mono">AGORA</span>
   <p>
-    <strong>Validação com usuários e reta final.</strong>
-    O M2 encerrou. Começa a validação do que foi construído com quem vai usar,
-    e cada squad precisa planejar o M3 no próprio board — issues abertas, com
-    responsável, e o que ficou do M2 resolvido. Consulte o
+    <strong>Última semana do ciclo. Escopo congelado.</strong>
+    Daqui até sexta não entra funcionalidade nova: só correção do que a validação
+    apontou, documentação, evidências e ensaio da apresentação. O que não estiver
+    pronto em 07/08 entra no relatório final como limitação conhecida. Consulte o
     <a href="{{ '/reta-final/' | relative_url }}">guia da reta final</a>.
     M3: sexta, 07/08.
   </p>
