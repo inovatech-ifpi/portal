@@ -2,7 +2,7 @@
 layout: page
 title: "Cronograma e Marcos"
 permalink: /cronograma/
-kicker: "// 13 semanas · 11/05 → 07/08/2026"
+kicker: "// 14 semanas · 11/05 → 14/08/2026"
 nav_icon: "◷"
 nav_title: "Cronograma"
 ---
@@ -43,6 +43,8 @@ Todas as equipes seguem o mesmo calendário de entregas.
   {% endfor %}
 </ol>
 
-> O M3 é o próximo e último marco formal. As Sprints 1, 2 e 3 foram os ciclos
-> semanais de implementação até o M2; as semanas 12 e 13 são de
-> [validação e entrega]({{ '/reta-final/' | relative_url }}).
+> As Sprints 1, 2 e 3 foram os ciclos semanais de implementação até o M2; as
+> semanas 12 e 13 foram de [validação e entrega]({{ '/reta-final/' | relative_url }}),
+> encerradas no M3. A semana 14 é de
+> [homologação]({{ '/homologacao/' | relative_url }}): colocar no ar, no ambiente
+> do IFPI, o que foi entregue no M3.

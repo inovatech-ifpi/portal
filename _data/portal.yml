@@ -4,33 +4,33 @@ brand_subtitle: "residência técnica · IFPI THE Central"
 cycle:
   label: "ciclo 2026.1"
   start: "11/05/2026"
-  end: "07/08/2026"
-  total_weeks: 13
-  current_week: 13
-  current_period: "03–07/08"
-  current_phase: "Entrega final"
-  current_focus: "Congelamento de escopo, ensaio da apresentação e M3 na sexta (07/08)"
+  end: "14/08/2026"
+  total_weeks: 14
+  current_week: 14
+  current_period: "10–14/08"
+  current_phase: "Homologação"
+  current_focus: "Implantação no ambiente do IFPI e validação com o demandante"
 
 projects:
   - code: "EQ.1"
     name: "Assistência Estudantil"
     description: "Sistema de seleção de bolsas permanentes e eventuais"
     residents: 4
-    status: "Reta final"
+    status: "Homologação"
     tone: "active"
     repository: "equipe-assistencia-bolsas"
   - code: "EQ.2"
     name: "Flix"
     description: "Repositório de conteúdo institucional do IFPI"
     residents: 3
-    status: "Reta final"
+    status: "Homologação"
     tone: "active"
     repository: "equipe-flix-conteudo"
   - code: "D07"
     name: "Segurança Campus"
     description: "Segurança e controle de acesso — Campus Teresina Central"
     residents: 4
-    status: "Reta final"
+    status: "Homologação"
     tone: "active"
     repository: "equipe-seguranca-campus"
   - code: "D08"
@@ -69,9 +69,15 @@ milestones:
   - code: "M3"
     name: "Entrega final"
     date: "07/08"
+    status: "prazo encerrado"
+    tone: "closed"
+    deliverable: "Solução validada, documentação, relatório e apresentação"
+  - code: "H"
+    name: "Homologação"
+    date: "14/08"
     status: "próximo marco"
     tone: "current"
-    deliverable: "Solução validada, documentação, relatório e apresentação"
+    deliverable: "Sistemas implantados e rodando no ambiente do IFPI"
 
 weeks:
   - number: "1–5"
@@ -113,14 +119,19 @@ weeks:
   - number: "13"
     period: "03–07/08"
     focus: "Demo Day, relatório, encerramento e M3"
-    state: "current"
+    state: "done"
     link: "/reta-final/"
+  - number: "14"
+    period: "10–14/08"
+    focus: "Homologação: implantação no ambiente do IFPI e validação com o demandante"
+    state: "current"
+    link: "/homologacao/"
 
 deadlines:
-  - date: "07/08"
-    title: "M3"
-    detail: "entrega final, documentação, relatório e apresentação"
-    link: "/cronograma/"
+  - date: "14/08"
+    title: "Homologação"
+    detail: "sistema rodando no ambiente do IFPI, acessível e estável"
+    link: "/homologacao/"
 
 contacts:
   - name: "Prof. Aislan"

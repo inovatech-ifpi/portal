@@ -58,7 +58,7 @@ end
 
 portal_data = YAML.safe_load(File.read(File.join(ROOT, "_data", "portal.yml")))
 current_week = portal_data.dig("cycle", "current_week")
-unless current_week.is_a?(Integer) && current_week.between?(1, 13)
+unless current_week.is_a?(Integer) && current_week.between?(1, 14)
   errors << "_data/portal.yml: current_week inválida"
 end
 

@@ -3,7 +3,7 @@ layout: page
 title: "Onde estamos"
 permalink: /
 kicker: "// status da residência"
-description: "Semana 13 — entrega final e M3 · 3 a 7 de agosto de 2026"
+description: "Semana 14 — homologação no ambiente do IFPI · 10 a 14 de agosto de 2026"
 ---
 
 <div class="progress-block" aria-label="Progresso do ciclo">
@@ -12,7 +12,7 @@ description: "Semana 13 — entrega final e M3 · 3 a 7 de agosto de 2026"
     <span>{{ site.data.portal.cycle.current_period }} · {{ site.data.portal.cycle.current_focus }}</span>
   </div>
   <div class="progress-track" aria-hidden="true">
-    {% for number in (1..13) %}
+    {% for number in (1..site.data.portal.cycle.total_weeks) %}
       <span class="progress-cell{% if number < site.data.portal.cycle.current_week %} done{% elsif number == site.data.portal.cycle.current_week %} current{% endif %}"></span>
     {% endfor %}
   </div>
@@ -26,12 +26,12 @@ description: "Semana 13 — entrega final e M3 · 3 a 7 de agosto de 2026"
 <div class="alert">
   <span class="alert-tag mono">AGORA</span>
   <p>
-    <strong>Última semana do ciclo. Escopo congelado.</strong>
-    Daqui até sexta não entra funcionalidade nova: só correção do que a validação
-    apontou, documentação, evidências e ensaio da apresentação. O que não estiver
-    pronto em 07/08 entra no relatório final como limitação conhecida. Consulte o
-    <a href="{{ '/reta-final/' | relative_url }}">guia da reta final</a>.
-    M3: sexta, 07/08.
+    <strong>Semana de homologação. Escopo segue congelado.</strong>
+    O M3 fechou em 07/08 com o código pronto, mas os acessos de infraestrutura da
+    DTI chegaram na própria sexta. Esta semana é para colocar o que já existe
+    rodando no ambiente do IFPI. Nada de funcionalidade nova. Consulte o
+    <a href="{{ '/homologacao/' | relative_url }}">guia da homologação</a>.
+    Prazo: sexta, 14/08.
   </p>
 </div>
 

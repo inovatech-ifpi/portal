@@ -8,6 +8,12 @@ nav_icon: "▤"
 
 _Os materiais de cada etapa são publicados aqui após as sessões._
 
+## Semana 14 — Homologação
+
+- [Guia da homologação e checklist de implantação]({{ '/homologacao/' | relative_url }})
+- [Estrutura do relatório final]({{ '/templates/relatorio-final/' | relative_url }})
+- [README da equipe]({{ '/templates/readme-squad/' | relative_url }})
+
 ## Semana 13 — Entrega final e M3
 
 - [Guia da reta final e checklist do M3]({{ '/reta-final/' | relative_url }})
