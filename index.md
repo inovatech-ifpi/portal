@@ -17,8 +17,8 @@ description: "Semana 16 — fase 2: transferência dos sistemas e frentes do Gov
     {% endfor %}
   </div>
   <p class="progress-caption">
-    Ciclo de {{ site.data.portal.cycle.total_weeks }} semanas ·
-    {{ site.data.portal.cycle.start }} → {{ site.data.portal.cycle.end }} ·
+    Residência de doze meses, iniciada em {{ site.data.portal.cycle.start }} ·
+    esta fase vai até o marco de {{ site.data.portal.cycle.end }} ·
     <strong>{{ site.data.portal.cycle.current_phase }}</strong>
   </p>
 </div>
