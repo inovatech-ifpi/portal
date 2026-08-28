@@ -2,7 +2,7 @@
 layout: page
 title: "Cronograma e Marcos"
 permalink: /cronograma/
-kicker: "// 14 semanas · 11/05 → 14/08/2026"
+kicker: "// residência de 12 meses · fase 1 encerrada no M3, 07/08"
 nav_icon: "◷"
 nav_title: "Cronograma"
 ---
@@ -45,6 +45,9 @@ Todas as equipes seguem o mesmo calendário de entregas.
 
 > As Sprints 1, 2 e 3 foram os ciclos semanais de implementação até o M2; as
 > semanas 12 e 13 foram de [validação e entrega]({{ '/reta-final/' | relative_url }}),
-> encerradas no M3. A semana 14 é de
-> [homologação]({{ '/homologacao/' | relative_url }}): colocar no ar, no ambiente
-> do IFPI, o que foi entregue no M3.
+> encerradas no M3, e a semana 14 foi a
+> [homologação]({{ '/homologacao/' | relative_url }}) no ambiente do IFPI.
+>
+> **O M3 encerrou a fase no IFPI, não a residência**, que é de doze meses. A fase 2
+> começa pela transferência dos sistemas aos setores demandantes, com marco em
+> 11/09, e segue com as frentes do Governo do Estado.

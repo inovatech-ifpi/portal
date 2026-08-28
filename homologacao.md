@@ -2,7 +2,7 @@
 layout: page
 title: "Homologação — colocar no ar no ambiente do IFPI"
 permalink: /homologacao/
-kicker: "// semana 14 · 10 a 14/08/2026"
+kicker: "// fase 1 · semana 14 · encerrada em 14/08/2026"
 nav_icon: "▲"
 nav_title: "Homologação"
 ---

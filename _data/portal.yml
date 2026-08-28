@@ -2,35 +2,35 @@ brand: "INOVATECH"
 brand_subtitle: "residência técnica · IFPI THE Central"
 
 cycle:
-  label: "ciclo 2026.1"
+  label: "residência 2026 · fase 2"
   start: "11/05/2026"
-  end: "14/08/2026"
-  total_weeks: 14
-  current_week: 14
-  current_period: "10–14/08"
-  current_phase: "Homologação"
-  current_focus: "Implantação no ambiente do IFPI e validação com o demandante"
+  end: "11/09/2026"
+  total_weeks: 18
+  current_week: 16
+  current_period: "24–28/08"
+  current_phase: "Transferência"
+  current_focus: "Passar os sistemas aos setores demandantes e abrir as frentes do Governo do Estado"
 
 projects:
   - code: "EQ.1"
     name: "Assistência Estudantil"
     description: "Sistema de seleção de bolsas permanentes e eventuais"
     residents: 4
-    status: "Homologação"
+    status: "Transferência"
     tone: "active"
     repository: "equipe-assistencia-bolsas"
   - code: "EQ.2"
     name: "Flix"
     description: "Repositório de conteúdo institucional do IFPI"
     residents: 3
-    status: "Homologação"
+    status: "Transferência"
     tone: "active"
     repository: "equipe-flix-conteudo"
   - code: "D07"
     name: "Segurança Campus"
     description: "Segurança e controle de acesso — Campus Teresina Central"
     residents: 4
-    status: "Homologação"
+    status: "Transferência"
     tone: "active"
     repository: "equipe-seguranca-campus"
   - code: "D08"
@@ -75,9 +75,15 @@ milestones:
   - code: "H"
     name: "Homologação"
     date: "14/08"
+    status: "prazo encerrado"
+    tone: "closed"
+    deliverable: "Sistemas implantados e rodando no ambiente do IFPI"
+  - code: "T"
+    name: "Transferência"
+    date: "11/09"
     status: "próximo marco"
     tone: "current"
-    deliverable: "Sistemas implantados e rodando no ambiente do IFPI"
+    deliverable: "Responsável pela manutenção nomeado, runbook, rollback testado e termo assinado"
 
 weeks:
   - number: "1–5"
@@ -124,14 +130,29 @@ weeks:
   - number: "14"
     period: "10–14/08"
     focus: "Homologação: implantação no ambiente do IFPI e validação com o demandante"
-    state: "current"
+    state: "done"
     link: "/homologacao/"
+  - number: "15"
+    period: "17–21/08"
+    focus: "Acompanhamento da homologação e articulação das frentes do Governo do Estado"
+    state: "done"
+  - number: "16"
+    period: "24–28/08"
+    focus: "Abertura da fase 2: transferência dos sistemas e frentes do Governo do Estado"
+    state: "current"
+  - number: "17"
+    period: "31/08–04/09"
+    focus: "Pacote de transferência: runbook, rollback testado e roteiro de homologação"
+    state: "upcoming"
+  - number: "18"
+    period: "07–11/09"
+    focus: "Marco Transferência: responsável de manutenção nomeado e termo assinado"
+    state: "upcoming"
 
 deadlines:
-  - date: "14/08"
-    title: "Homologação"
-    detail: "sistema rodando no ambiente do IFPI, acessível e estável"
-    link: "/homologacao/"
+  - date: "11/09"
+    title: "Transferência"
+    detail: "responsável pela manutenção nomeado, runbook, rollback testado e termo assinado pelo setor"
 
 contacts:
   - name: "Prof. Aislan"

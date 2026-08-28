@@ -58,13 +58,23 @@ end
 
 portal_data = YAML.safe_load(File.read(File.join(ROOT, "_data", "portal.yml")))
 current_week = portal_data.dig("cycle", "current_week")
-unless current_week.is_a?(Integer) && current_week.between?(1, 14)
+total_weeks = portal_data.dig("cycle", "total_weeks")
+unless total_weeks.is_a?(Integer) && total_weeks.positive?
+  errors << "_data/portal.yml: total_weeks inválido"
+end
+unless current_week.is_a?(Integer) && total_weeks.is_a?(Integer) && current_week.between?(1, total_weeks)
   errors << "_data/portal.yml: current_week inválida"
 end
 
 today = Date.today
 cycle_start = Date.strptime(portal_data.dig("cycle", "start"), "%d/%m/%Y")
 cycle_end = Date.strptime(portal_data.dig("cycle", "end"), "%d/%m/%Y")
+
+# Sem isto, todas as checagens abaixo se desligam sozinhas quando o ciclo termina — foi assim
+# que o portal envelheceu duas semanas em agosto/2026 sem o validador acusar nada.
+if today > cycle_end
+  errors << "_data/portal.yml: ciclo encerrado em #{cycle_end.strftime('%d/%m/%Y')} e ainda não foi feito o rebaseline (cycle.end, total_weeks, current_week, weeks)"
+end
 
 if today.between?(cycle_start, cycle_end)
   expected_week = ((today - cycle_start).to_i / 7) + 1

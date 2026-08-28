@@ -3,7 +3,7 @@ layout: page
 title: "Onde estamos"
 permalink: /
 kicker: "// status da residência"
-description: "Semana 14 — homologação no ambiente do IFPI · 10 a 14 de agosto de 2026"
+description: "Semana 16 — fase 2: transferência dos sistemas e frentes do Governo do Estado"
 ---
 
 <div class="progress-block" aria-label="Progresso do ciclo">
@@ -26,12 +26,13 @@ description: "Semana 14 — homologação no ambiente do IFPI · 10 a 14 de agos
 <div class="alert">
   <span class="alert-tag mono">AGORA</span>
   <p>
-    <strong>Semana de homologação. Escopo segue congelado.</strong>
-    O M3 fechou em 07/08 com o código pronto, mas os acessos de infraestrutura da
-    DTI chegaram na própria sexta. Esta semana é para colocar o que já existe
-    rodando no ambiente do IFPI. Nada de funcionalidade nova. Consulte o
-    <a href="{{ '/homologacao/' | relative_url }}">guia da homologação</a>.
-    Prazo: sexta, 14/08.
+    <strong>Começou a fase 2. Escopo segue congelado.</strong>
+    A fase no IFPI encerrou no M3, em 07/08, e os três sistemas estão implantados
+    e em uso. A residência é de doze meses e segue: o passo agora é transferir
+    cada sistema ao setor que o pediu, com responsável pela manutenção nomeado,
+    runbook e termo assinado. Nada de funcionalidade nova. Em paralelo, o programa
+    negocia as frentes do Governo do Estado.
+    Prazo do marco Transferência: sexta, 11/09.
   </p>
 </div>
 
