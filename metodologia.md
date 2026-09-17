@@ -20,7 +20,8 @@ O processo não começa pelo código. Começa pelo problema, pelo usuário e pel
 4. **Implementação (prazo encerrado — M2 24/07).** Sprints curtos com review demonstrável, do [planejamento da Sprint 1]({{ '/sprint-1/' | relative_url }}) até o **beta funcional**.
 5. **Validação e entrega (prazo encerrado — M3 07/08).** Testes com usuários reais, documentação completa, Demo Day e relatório final.
 6. **Homologação (prazo encerrado — 14/08).** Implantação no ambiente do IFPI e validação com o demandante. Ver o [guia da homologação]({{ '/homologacao/' | relative_url }}).
-7. **Transferência (agora → 11/09).** Cada sistema passa ao setor que o pediu, com responsável pela manutenção nomeado, runbook de operação, procedimento de rollback testado e termo assinado. Escopo congelado: nenhuma funcionalidade nova.
+7. **Transferência (prazo encerrado — 11/09).** Cada sistema passa ao setor que o pediu, com responsável pela manutenção nomeado, runbook de operação, procedimento de rollback testado e termo assinado.
+8. **Evolução em sprints (agora).** Sprints de duas semanas sobre os sistemas entregues, com backlog priorizado pelo setor demandante. Toda sprint termina em produção, com documentação atualizada e pendências registradas, pronta para outra equipe assumir. Sprint E1: 21/09 a 02/10.
 
 ## Papéis nas equipes
 

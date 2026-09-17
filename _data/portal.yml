@@ -4,40 +4,40 @@ brand_subtitle: "residência técnica · IFPI THE Central"
 cycle:
   label: "residência 2026 · fase 2"
   start: "11/05/2026"
-  end: "11/09/2026"
-  total_weeks: 18
-  current_week: 16
-  current_period: "24–28/08"
-  current_phase: "Transferência"
-  current_focus: "Passar os sistemas aos setores demandantes e abrir as frentes do Governo do Estado"
+  end: "30/10/2026"
+  total_weeks: 25
+  current_week: 19
+  current_period: "14–18/09"
+  current_phase: "Fase 2 — evolução em sprints"
+  current_focus: "Evoluir os sistemas entregues em sprints de duas semanas enquanto as frentes do Governo do Estado não abrem"
 
 projects:
   - code: "EQ.1"
     name: "Assistência Estudantil"
     description: "Sistema de seleção de bolsas permanentes e eventuais"
     residents: 4
-    status: "Transferência"
+    status: "Sprint E1"
     tone: "active"
     repository: "equipe-assistencia-bolsas"
   - code: "EQ.2"
     name: "Flix"
     description: "Repositório de conteúdo institucional do IFPI"
     residents: 3
-    status: "Transferência"
+    status: "Sprint E1"
     tone: "active"
     repository: "equipe-flix-conteudo"
   - code: "D07"
     name: "Segurança Campus"
     description: "Segurança e controle de acesso — Campus Teresina Central"
     residents: 4
-    status: "Transferência"
+    status: "Sprint E1"
     tone: "active"
     repository: "equipe-seguranca-campus"
   - code: "D08"
     name: "SPIA Maestro"
     description: "Parceria SSP-PI · conteúdo operacional restrito"
     residents: 4
-    status: "Estruturação"
+    status: "Em execução na SSP"
     tone: "external"
     repository:
 
@@ -81,9 +81,15 @@ milestones:
   - code: "T"
     name: "Transferência"
     date: "11/09"
+    status: "prazo encerrado"
+    tone: "closed"
+    deliverable: "Responsável pela manutenção nomeado, runbook, rollback testado e termo assinado"
+  - code: "E1"
+    name: "Sprint de evolução 1"
+    date: "02/10"
     status: "próximo marco"
     tone: "current"
-    deliverable: "Responsável pela manutenção nomeado, runbook, rollback testado e termo assinado"
+    deliverable: "Transferência 7/7 fechada e primeiros itens priorizados pelo setor demandante, em produção e documentados"
 
 weeks:
   - number: "1–5"
@@ -139,20 +145,35 @@ weeks:
   - number: "16"
     period: "24–28/08"
     focus: "Abertura da fase 2: transferência dos sistemas e frentes do Governo do Estado"
-    state: "current"
+    state: "done"
   - number: "17"
     period: "31/08–04/09"
     focus: "Pacote de transferência: runbook, rollback testado e roteiro de homologação"
-    state: "upcoming"
+    state: "done"
   - number: "18"
     period: "07–11/09"
     focus: "Marco Transferência: responsável de manutenção nomeado e termo assinado"
+    state: "done"
+  - number: "19"
+    period: "14–18/09"
+    focus: "Encontro INOVATECH e decisão do ciclo de evolução: sprints de duas semanas enquanto a fase 2 não abre"
+    state: "current"
+  - number: "20"
+    period: "21–25/09"
+    focus: "Sprint E1: fechar a transferência e iniciar o backlog priorizado pelo setor demandante"
+    state: "upcoming"
+  - number: "21"
+    period: "28/09–02/10"
+    focus: "Sprint E1: entrega em produção, documentação atualizada e review de sprint"
     state: "upcoming"
 
 deadlines:
-  - date: "11/09"
-    title: "Transferência"
-    detail: "responsável pela manutenção nomeado, runbook, rollback testado e termo assinado pelo setor"
+  - date: "21/09"
+    title: "Início da Sprint E1"
+    detail: "cada equipe declara o objetivo da sprint com 3 a 5 itens priorizados pelo setor demandante"
+  - date: "02/10"
+    title: "Review da Sprint E1"
+    detail: "o que foi feito em produção, README/runbook atualizados e transferência 7/7 fechada"
 
 contacts:
   - name: "Prof. Aislan"

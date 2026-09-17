@@ -49,5 +49,6 @@ Todas as equipes seguem o mesmo calendário de entregas.
 > [homologação]({{ '/homologacao/' | relative_url }}) no ambiente do IFPI.
 >
 > **O M3 encerrou a fase no IFPI, não a residência**, que é de doze meses. A fase 2
-> começa pela transferência dos sistemas aos setores demandantes, com marco em
-> 11/09, e segue com as frentes do Governo do Estado.
+> começou pela transferência dos sistemas aos setores demandantes (marco em 11/09)
+> e segue em sprints de evolução de duas semanas, cada uma terminando em produção
+> e documentada, até que as frentes do Governo do Estado chamem as equipes.

@@ -3,7 +3,7 @@ layout: page
 title: "Onde estamos"
 permalink: /
 kicker: "// status da residência"
-description: "Semana 16 — fase 2: transferência dos sistemas e frentes do Governo do Estado"
+description: "Semana 19 — fase 2: evolução dos sistemas em sprints enquanto as frentes do Governo do Estado não abrem"
 ---
 
 <div class="progress-block" aria-label="Progresso do ciclo">
@@ -26,13 +26,13 @@ description: "Semana 16 — fase 2: transferência dos sistemas e frentes do Gov
 <div class="alert">
   <span class="alert-tag mono">AGORA</span>
   <p>
-    <strong>Começou a fase 2. Escopo segue congelado.</strong>
+    <strong>Fase 2: os sistemas continuam evoluindo.</strong>
     A fase no IFPI encerrou no M3, em 07/08, e os três sistemas estão implantados
-    e em uso. A residência é de doze meses e segue: o passo agora é transferir
-    cada sistema ao setor que o pediu, com responsável pela manutenção nomeado,
-    runbook e termo assinado. Nada de funcionalidade nova. Em paralelo, o programa
-    negocia as frentes do Governo do Estado.
-    Prazo do marco Transferência: sexta, 11/09.
+    e em uso. Enquanto as frentes do Governo do Estado seguem em negociação, as
+    equipes trabalham em sprints de duas semanas sobre os sistemas entregues. O que
+    entra em cada sprint é o que o setor que usa o sistema prioriza, e toda sprint
+    termina em produção e documentada, pronta para outra equipe assumir.
+    Sprint E1: de 21/09 a 02/10.
   </p>
 </div>
 
