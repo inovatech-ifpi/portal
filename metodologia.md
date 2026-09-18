@@ -21,7 +21,7 @@ O processo não começa pelo código. Começa pelo problema, pelo usuário e pel
 5. **Validação e entrega (prazo encerrado — M3 07/08).** Testes com usuários reais, documentação completa, Demo Day e relatório final.
 6. **Homologação (prazo encerrado — 14/08).** Implantação no ambiente do IFPI e validação com o demandante. Ver o [guia da homologação]({{ '/homologacao/' | relative_url }}).
 7. **Transferência (prazo encerrado — 11/09).** Cada sistema passa ao setor que o pediu, com responsável pela manutenção nomeado, runbook de operação, procedimento de rollback testado e termo assinado.
-8. **Evolução em sprints (agora).** Sprints de duas semanas sobre os sistemas entregues, com backlog priorizado pelo setor demandante. Toda sprint termina em produção, com documentação atualizada e pendências registradas, pronta para outra equipe assumir. Sprint E1: 21/09 a 02/10.
+8. **Evolução em sprints (agora — fase 2).** Sprints de duas semanas sobre os sistemas entregues, com backlog priorizado pelo setor demandante. Toda sprint termina em produção, com documentação atualizada e pendências registradas, pronta para outra equipe assumir. Ver o [guia da Sprint E1]({{ '/sprint-e1/' | relative_url }}) (21/09 a 02/10).
 
 ## Papéis nas equipes
 
@@ -39,10 +39,16 @@ O processo não começa pelo código. Começa pelo problema, pelo usuário e pel
 
 ## Rituais
 
+**Ritmo da semana na fase 2:** na **segunda**, cada equipe declara no grupo o
+compromisso da semana — um objetivo verificável, com dono; na **sexta**, o
+resultado — o que entrou em produção, o que travou e em quem travou. Semana sem
+entrega não pula o relatório: registra o bloqueio.
+
 | Ritual | Quando | Duração |
 |---|---|---|
+| Compromisso da semana (grupo + issue) | segunda | assíncrono |
 | Daily da equipe | diária ou 3×/semana | 10 min |
 | Checkpoint técnico com instrutores | semanal | 30–45 min |
-| Sprint planning / review / retro | por sprint | 45–60 / 30–60 / 20–30 min |
 | Reunião com o usuário do setor | semanal ou quinzenal | 30 min |
-| Demo geral | mensal | 1–2 h |
+| Resultado da semana (grupo + portal) | sexta | assíncrono |
+| Sprint planning / review / retro | a cada duas semanas | 45–60 / 30–60 / 20–30 min |

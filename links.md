@@ -49,4 +49,4 @@ Disponíveis após o aceite do convite na org `inovatech-ifpi`. Se ainda não ac
 
 ## Este portal
 
-Canal oficial da residência. Atualizado toda segunda-feira.
+Canal oficial da residência. Atualizado toda sexta-feira, junto com o resultado da semana.

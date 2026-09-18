@@ -18,7 +18,7 @@ description: "Semana 19 — fase 2: evolução dos sistemas em sprints enquanto 
   </div>
   <p class="progress-caption">
     Residência de doze meses, iniciada em {{ site.data.portal.cycle.start }} ·
-    esta fase vai até o marco de {{ site.data.portal.cycle.end }} ·
+    ciclo de evolução planejado até {{ site.data.portal.cycle.end }} ·
     <strong>{{ site.data.portal.cycle.current_phase }}</strong>
   </p>
 </div>
@@ -27,12 +27,13 @@ description: "Semana 19 — fase 2: evolução dos sistemas em sprints enquanto 
   <span class="alert-tag mono">AGORA</span>
   <p>
     <strong>Fase 2: os sistemas continuam evoluindo.</strong>
-    A fase no IFPI encerrou no M3, em 07/08, e os três sistemas estão implantados
-    e em uso. Enquanto as frentes do Governo do Estado seguem em negociação, as
-    equipes trabalham em sprints de duas semanas sobre os sistemas entregues. O que
-    entra em cada sprint é o que o setor que usa o sistema prioriza, e toda sprint
-    termina em produção e documentada, pronta para outra equipe assumir.
-    Sprint E1: de 21/09 a 02/10.
+    A fase 1 encerrou em 11/09, no marco de Transferência e no Encontro INOVATECH,
+    com os três sistemas implantados no IFPI. Enquanto as frentes do Governo do
+    Estado seguem em negociação, as equipes trabalham em sprints de duas semanas
+    sobre os sistemas entregues. O que entra em cada sprint é o que o setor que usa
+    o sistema prioriza, e toda sprint termina em produção e documentada, pronta para
+    outra equipe assumir.
+    <a href="{{ '/sprint-e1/' | relative_url }}">Sprint E1: de 21/09 a 02/10</a>.
   </p>
 </div>
 
@@ -71,7 +72,7 @@ description: "Semana 19 — fase 2: evolução dos sistemas em sprints enquanto 
     <li>
       <span class="deadline-date mono">{{ deadline.date }}</span>
       <span>
-        <a href="{{ deadline.link | relative_url }}"><strong>{{ deadline.title }}</strong></a>
+        {% if deadline.link %}<a href="{{ deadline.link | relative_url }}"><strong>{{ deadline.title }}</strong></a>{% else %}<strong>{{ deadline.title }}</strong>{% endif %}
         — {{ deadline.detail }}
       </span>
     </li>

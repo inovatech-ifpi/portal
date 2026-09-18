@@ -2,13 +2,19 @@
 layout: page
 title: "Materiais"
 permalink: /materiais/
-kicker: "// conteúdo das sessões e da semana atual"
+kicker: "// conteúdo das sessões e guias de cada etapa"
 nav_icon: "▤"
 ---
 
 _Os materiais de cada etapa são publicados aqui após as sessões._
 
-## Fase 1 — Homologação (encerrada em 14/08)
+## Fase 2 — Sprints de evolução
+
+- [Guia da Sprint E1 (21/09 a 02/10)]({{ '/sprint-e1/' | relative_url }})
+- [README da equipe]({{ '/templates/readme-squad/' | relative_url }})
+- [Retrospectiva de sprint]({{ '/templates/retrospectiva/' | relative_url }})
+
+## Semana 14 — Homologação (encerrada em 14/08)
 
 - [Guia da homologação e checklist de implantação]({{ '/homologacao/' | relative_url }})
 - [Estrutura do relatório final]({{ '/templates/relatorio-final/' | relative_url }})

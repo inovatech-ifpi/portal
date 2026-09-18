@@ -65,3 +65,9 @@ nav_title: "Templates e entregas"
 
 - [Guia da reta final e checklist do M3]({{ '/reta-final/' | relative_url }})
 - [Estrutura do relatório final]({{ '/templates/relatorio-final/' | relative_url }})
+
+**Sprints de evolução (fase 2)**
+
+- [Guia da Sprint E1 e critério de fechamento]({{ '/sprint-e1/' | relative_url }})
+- Na review de cada sprint: itens em produção com evidência, README/runbook atualizados,
+  pendências abertas como issue e [retrospectiva]({{ '/templates/retrospectiva/' | relative_url }})

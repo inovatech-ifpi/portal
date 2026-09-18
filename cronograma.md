@@ -2,7 +2,7 @@
 layout: page
 title: "Cronograma e Marcos"
 permalink: /cronograma/
-kicker: "// residência de 12 meses · fase 1 encerrada no M3, 07/08"
+kicker: "// residência de 12 meses · fase 1 encerrada em 11/09, no marco de Transferência"
 nav_icon: "◷"
 nav_title: "Cronograma"
 ---
@@ -43,12 +43,14 @@ Todas as equipes seguem o mesmo calendário de entregas.
   {% endfor %}
 </ol>
 
-> As Sprints 1, 2 e 3 foram os ciclos semanais de implementação até o M2; as
-> semanas 12 e 13 foram de [validação e entrega]({{ '/reta-final/' | relative_url }}),
-> encerradas no M3, e a semana 14 foi a
-> [homologação]({{ '/homologacao/' | relative_url }}) no ambiente do IFPI.
+> **Fase 1 (11/05 a 11/09, 18 semanas):** as Sprints 1, 2 e 3 foram os ciclos
+> semanais de implementação até o M2; as semanas 12 e 13 foram de
+> [validação e entrega]({{ '/reta-final/' | relative_url }}), encerradas no M3;
+> a semana 14 foi a [homologação]({{ '/homologacao/' | relative_url }}) no
+> ambiente do IFPI; e a fase fechou na Transferência dos sistemas aos setores
+> demandantes, no Encontro INOVATECH de 11/09.
 >
-> **O M3 encerrou a fase no IFPI, não a residência**, que é de doze meses. A fase 2
-> começou pela transferência dos sistemas aos setores demandantes (marco em 11/09)
-> e segue em sprints de evolução de duas semanas, cada uma terminando em produção
-> e documentada, até que as frentes do Governo do Estado chamem as equipes.
+> **A Transferência encerrou a fase 1, não a residência**, que é de doze meses.
+> A fase 2 segue em [sprints de evolução]({{ '/sprint-e1/' | relative_url }}) de
+> duas semanas, cada uma terminando em produção e documentada, até que as frentes
+> do Governo do Estado chamem as equipes.
