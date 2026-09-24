@@ -4,6 +4,7 @@ title: "Onde estamos"
 permalink: /
 kicker: "// status da residência"
 description: "Semana 19 — fase 2: evolução dos sistemas em sprints enquanto as frentes do Governo do Estado não abrem"
+url_en: /en/
 ---
 
 <div class="progress-block" aria-label="Progresso do ciclo">

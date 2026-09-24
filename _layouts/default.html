@@ -23,20 +23,40 @@
           </span>
         </a>
 
-        <nav aria-label="Navegação principal">
-          <a class="nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">
-            <span class="nav-ico mono">~</span> Início
-          </a>
-          {% for path in site.header_pages %}
-            {% assign nav_page = site.pages | where: "path", path | first %}
-            {% if nav_page %}
-              <a class="nav-item{% if page.url == nav_page.url %} active{% endif %}" href="{{ nav_page.url | relative_url }}">
-                <span class="nav-ico mono">{{ nav_page.nav_icon | default: '›' }}</span>
-                {{ nav_page.nav_title | default: nav_page.title }}
-              </a>
-            {% endif %}
-          {% endfor %}
-        </nav>
+        <div class="lang-switch mono" aria-label="Language selection">
+          <a class="lang-opt{% unless page.lang == 'en' %} active{% endunless %}" href="{{ page.url_pt | default: '/portfolio/' | relative_url }}" title="Versão em Português">PT</a>
+          <span class="lang-sep">/</span>
+          <a class="lang-opt{% if page.lang == 'en' %} active{% endif %}" href="{{ page.url_en | default: '/en/portfolio/' | relative_url }}" title="English / Web Summit Edition">EN (Web Summit)</a>
+        </div>
+
+        {% if page.lang == 'en' %}
+          <nav aria-label="Main navigation">
+            <a class="nav-item{% if page.url == '/en/' %} active{% endif %}" href="{{ '/en/' | relative_url }}">
+              <span class="nav-ico mono">~</span> Overview
+            </a>
+            <a class="nav-item{% if page.url == '/en/portfolio/' %} active{% endif %}" href="{{ '/en/portfolio/' | relative_url }}">
+              <span class="nav-ico mono">▣</span> Web Summit Portfolio
+            </a>
+            <a class="nav-item" href="{{ '/portfolio/' | relative_url }}">
+              <span class="nav-ico mono">←</span> Portal em Português
+            </a>
+          </nav>
+        {% else %}
+          <nav aria-label="Navegação principal">
+            <a class="nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">
+              <span class="nav-ico mono">~</span> Início
+            </a>
+            {% for path in site.header_pages %}
+              {% assign nav_page = site.pages | where: "path", path | first %}
+              {% if nav_page %}
+                <a class="nav-item{% if page.url == nav_page.url %} active{% endif %}" href="{{ nav_page.url | relative_url }}">
+                  <span class="nav-ico mono">{{ nav_page.nav_icon | default: '›' }}</span>
+                  {{ nav_page.nav_title | default: nav_page.title }}
+                </a>
+              {% endif %}
+            {% endfor %}
+          </nav>
+        {% endif %}
 
         <div class="sidebar-foot mono">
           <div>{{ site.data.portal.cycle.label }} · {{ site.data.portal.cycle.current_phase }}</div>
@@ -47,7 +67,11 @@
       <main id="conteudo">
         {{ content }}
         <footer class="page-foot mono dim">
-          inovatech@ifpi:~$ portal oficial da residência — o que vale é o que está aqui_
+          {% if page.lang == 'en' %}
+            inovatech@ifpi:~$ official tech residency portal · sovereign govtech engineering_
+          {% else %}
+            inovatech@ifpi:~$ portal oficial da residência — o que vale é o que está aqui_
+          {% endif %}
         </footer>
       </main>
     </div>

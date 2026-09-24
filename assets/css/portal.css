@@ -127,6 +127,41 @@ a:hover {
   font-size: 10.5px;
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: -10px 24px 20px;
+  padding: 5px 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  width: fit-content;
+}
+
+.lang-opt {
+  color: #a4beab;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.lang-opt:hover {
+  color: #fff;
+}
+
+.lang-opt.active {
+  color: #9fe2b5;
+  font-weight: 700;
+}
+
+.lang-sep {
+  color: #5d7e67;
+  user-select: none;
+}
+
 .sidebar nav {
   display: flex;
   flex: 1;

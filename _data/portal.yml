@@ -6,10 +6,10 @@ cycle:
   start: "11/05/2026"
   end: "30/10/2026"
   total_weeks: 25
-  current_week: 19
-  current_period: "14–18/09"
+  current_week: 20
+  current_period: "21–25/09"
   current_phase: "Fase 2 — evolução em sprints"
-  current_focus: "Evoluir os sistemas entregues em sprints de duas semanas enquanto as frentes do Governo do Estado não abrem"
+  current_focus: "Sprint E1: fechar a transferência e evoluir os sistemas em produção com backlog priorizado pelo setor"
 
 projects:
   - code: "EQ.1"
@@ -157,11 +157,11 @@ weeks:
   - number: "19"
     period: "14–18/09"
     focus: "Abertura da fase 2: decisão do ciclo de evolução em sprints de duas semanas enquanto as frentes do Estado não abrem"
-    state: "current"
+    state: "done"
   - number: "20"
     period: "21–25/09"
     focus: "Sprint E1: fechar a transferência e iniciar o backlog priorizado pelo setor demandante"
-    state: "upcoming"
+    state: "current"
     link: "/sprint-e1/"
   - number: "21"
     period: "28/09–02/10"
@@ -170,10 +170,6 @@ weeks:
     link: "/sprint-e1/"
 
 deadlines:
-  - date: "21/09"
-    title: "Início da Sprint E1"
-    detail: "cada equipe declara o objetivo da sprint com 3 a 5 itens priorizados pelo setor demandante"
-    link: "/sprint-e1/"
   - date: "02/10"
     title: "Review da Sprint E1"
     detail: "o que foi feito em produção, README/runbook atualizados e transferência 7/7 fechada"
