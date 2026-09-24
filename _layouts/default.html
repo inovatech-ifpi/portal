@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/portal.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/portal.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -23,10 +23,16 @@
           </span>
         </a>
 
-        <div class="lang-switch mono" aria-label="Language selection">
-          <a class="lang-opt{% unless page.lang == 'en' %} active{% endunless %}" href="{{ page.url_pt | default: '/portfolio/' | relative_url }}" title="Versão em Português">PT</a>
-          <span class="lang-sep">/</span>
-          <a class="lang-opt{% if page.lang == 'en' %} active{% endif %}" href="{{ page.url_en | default: '/en/portfolio/' | relative_url }}" title="English / Web Summit Edition">EN (Web Summit)</a>
+        <div class="lang-switch-box">
+          <div class="lang-switch mono" aria-label="Language selection">
+            <a class="lang-opt{% unless page.lang == 'en' %} active{% endunless %}" href="{{ page.url_pt | default: '/portfolio/' | relative_url }}" title="Versão em Português">
+              <span>PT</span>
+            </a>
+            <span class="lang-divider"></span>
+            <a class="lang-opt{% if page.lang == 'en' %} active{% endif %}" href="{{ page.url_en | default: '/en/portfolio/' | relative_url }}" title="English / Web Summit Edition">
+              <span>EN</span> <span class="summit-tag">Web Summit</span>
+            </a>
+          </div>
         </div>
 
         {% if page.lang == 'en' %}

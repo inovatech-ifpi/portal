@@ -42,52 +42,44 @@ Fellows do not build toy prototypes or academic sandboxes: they ship production 
 ## The 4 Production Tracks
 
 <div class="teams">
-  <article class="team-card active">
+  <article class="team-card">
     <div class="team-head">
-      <div class="team-title-row">
-        <h3>SGAE — Student Welfare & Compliance Engine</h3>
-        <span class="team-status mono">GovTech · FinTech</span>
-      </div>
-      <p class="team-desc">
-        Automated eligibility, compliance, and payroll engine managing R$ 1.1M/year (~$220k USD) in educational welfare across 7 benefit categories for ~580 students. Deployed in live production.
-      </p>
+      <span class="team-code mono">TRACK 01</span>
+      <span class="badge">GovTech · FinTech</span>
     </div>
+    <h3>SGAE — Student Welfare & Compliance</h3>
+    <p>Automated eligibility, compliance, and payroll engine managing R$ 1.1M/year (~$220k USD) in educational welfare across 7 benefit categories for ~580 students.</p>
+    <footer class="mono">Deployed in Production · 4 Fellows</footer>
   </article>
 
-  <article class="team-card active">
+  <article class="team-card">
     <div class="team-head">
-      <div class="team-title-row">
-        <h3>IFPI Flix — Institutional EduStream Platform</h3>
-        <span class="team-status mono">EdTech · Media</span>
-      </div>
-      <p class="team-desc">
-        A decentralized streaming-style repository organizing pedagogical and institutional video assets across the federal campus network, with zero-code administrative CMS. Deployed in live production.
-      </p>
+      <span class="team-code mono">TRACK 02</span>
+      <span class="badge">EdTech · Media</span>
     </div>
+    <h3>IFPI Flix — Institutional EduStream</h3>
+    <p>A decentralized streaming repository organizing pedagogical and institutional video assets across the federal network, with zero-code administrative CMS.</p>
+    <footer class="mono">Deployed in Production · 3 Fellows</footer>
   </article>
 
-  <article class="team-card active">
+  <article class="team-card">
     <div class="team-head">
-      <div class="team-title-row">
-        <h3>Conecta & Catraka — Smart Campus Access & Safety</h3>
-        <span class="team-status mono">Smart Campus · IoT</span>
-      </div>
-      <p class="team-desc">
-        Unified IoT turnstile access control coupled with a real-time mobile application keeping guardians informed and engaged under the GOV.BR Design System. Permanent maintenance accepted by IT Directorate.
-      </p>
+      <span class="team-code mono">TRACK 03</span>
+      <span class="badge">Smart Campus · IoT</span>
     </div>
+    <h3>Conecta & Catraka — Smart Campus Access</h3>
+    <p>Unified turnstile access control coupled with a real-time mobile application keeping guardians informed and engaged under the GOV.BR Design System.</p>
+    <footer class="mono">Permanent IT Maintenance · 4 Fellows</footer>
   </article>
 
   <article class="team-card external">
     <div class="team-head">
-      <div class="team-title-row">
-        <h3>SPIA Maestro — Public Safety Video Intelligence</h3>
-        <span class="team-status mono">Public Safety · AI</span>
-      </div>
-      <p class="team-desc">
-        Automated vehicle target validation, dispatch, and resolution engine integrated into the State Department of Public Safety (SSP-PI). Operational on live police surveillance infrastructure.
-      </p>
+      <span class="team-code mono">TRACK 04</span>
+      <span class="badge">Public Safety · AI</span>
     </div>
+    <h3>SPIA Maestro — Video Intelligence</h3>
+    <p>Automated vehicle target validation, dispatch, and resolution engine integrated into the State Department of Public Safety (SSP-PI) monitoring network.</p>
+    <footer class="mono">Live Police Infrastructure · 4 Fellows</footer>
   </article>
 </div>
 
