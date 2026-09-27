@@ -9,7 +9,7 @@ permalink: /templates/item-backlog/
 
 # Item de Backlog
 
-> Template para registrar uma unidade de trabalho verificável no backlog.
+> Template da metodologia (seção 15.3).
 
 | Campo | Preenchimento | Exemplo |
 |---|---|---|
