@@ -6,10 +6,10 @@ cycle:
   start: "11/05/2026"
   end: "30/10/2026"
   total_weeks: 25
-  current_week: 20
-  current_period: "21–25/09"
+  current_week: 21
+  current_period: "28–02/10"
   current_phase: "Fase 2 — evolução em sprints"
-  current_focus: "Sprint E1: fechar a transferência e evoluir os sistemas em produção com backlog priorizado pelo setor"
+  current_focus: "Sprint E1: entrega em produção, documentação atualizada e review de sprint"
 
 projects:
   - code: "EQ.1"
@@ -161,12 +161,12 @@ weeks:
   - number: "20"
     period: "21–25/09"
     focus: "Sprint E1: fechar a transferência e iniciar o backlog priorizado pelo setor demandante"
-    state: "current"
+    state: "done"
     link: "/sprint-e1/"
   - number: "21"
     period: "28/09–02/10"
     focus: "Sprint E1: entrega em produção, documentação atualizada e review de sprint"
-    state: "upcoming"
+    state: "current"
     link: "/sprint-e1/"
 
 deadlines:

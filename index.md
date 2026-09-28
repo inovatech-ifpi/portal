@@ -3,7 +3,7 @@ layout: page
 title: "Onde estamos"
 permalink: /
 kicker: "// status da residência"
-description: "Semana 19 — fase 2: evolução dos sistemas em sprints enquanto as frentes do Governo do Estado não abrem"
+description: "Semana 21 — fase 2: evolução dos sistemas em sprints enquanto as frentes do Governo do Estado não abrem"
 url_en: /en/
 ---
 
