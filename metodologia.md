@@ -39,16 +39,18 @@ O processo não começa pelo código. Começa pelo problema, pelo usuário e pel
 
 ## Rituais
 
-**Ritmo da semana na fase 2:** na **segunda**, cada equipe declara no grupo o
+**Ritmo da semana na fase 2:** na **segunda**, cada equipe registra no GitHub o
 compromisso da semana — um objetivo verificável, com dono; na **sexta**, o
 resultado — o que entrou em produção, o que travou e em quem travou. Semana sem
-entrega não pula o relatório: registra o bloqueio.
+entrega não pula o relatório: registra o bloqueio. Objetivos, resultados,
+evidências e impedimentos ficam nas issues e no quadro da equipe; o grupo é
+usado para avisos e o portal reúne as orientações e o calendário público.
 
 | Ritual | Quando | Duração |
 |---|---|---|
-| Compromisso da semana (grupo + issue) | segunda | assíncrono |
+| Compromisso da semana (GitHub: issues + milestone) | segunda | assíncrono |
 | Daily da equipe | diária ou 3×/semana | 10 min |
 | Checkpoint técnico com instrutores | semanal | 30–45 min |
 | Reunião com o usuário do setor | semanal ou quinzenal | 30 min |
-| Resultado da semana (grupo + portal) | sexta | assíncrono |
+| Resultado da semana (GitHub: issues + evidências) | sexta | assíncrono |
 | Sprint planning / review / retro | a cada duas semanas | 45–60 / 30–60 / 20–30 min |

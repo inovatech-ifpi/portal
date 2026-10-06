@@ -36,8 +36,9 @@ Cada equipe organiza no próprio repositório o milestone **Sprint E2**:
    resultado esperado, como verificar a conclusão e quem conduz a revisão.
 4. **Planejar validação e implantação.** Integrar um PR não comprova que a
    alteração já está disponível no ambiente do IFPI; registrar essa evidência.
-5. **Publicar o compromisso da semana no grupo.** Informar objetivo, responsáveis
-   e links das issues, além dos impedimentos que precisam de apoio do instrutor.
+5. **Registrar o compromisso da semana no GitHub.** Manter objetivo, responsáveis
+   e critérios de aceite nas issues vinculadas ao milestone E2, além dos
+   impedimentos que precisam de apoio do instrutor. O grupo é usado para avisos.
 
 Se o compromisso ainda não foi registrado na segunda-feira, regularize no
 próximo dia útil. O início e o fechamento da sprint seguem o calendário.
