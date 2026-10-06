@@ -19,7 +19,7 @@ quem vai usar o sistema.
   <table>
     <tbody>
       <tr><td><strong>15</strong> residentes em <strong>4</strong> frentes com demandante real</td><td><strong>208</strong> itens de trabalho concluídos e <strong>148</strong> PRs integrados</td></tr>
-      <tr><td><strong>4 de 4</strong> marcos formais cumpridos no prazo pelas equipes do IFPI</td><td><strong>3</strong> frentes com soluções implantadas no IFPI (em evolução na Sprint E1)</td></tr>
+      <tr><td><strong>4 de 4</strong> marcos formais cumpridos no prazo pelas equipes do IFPI</td><td><strong>3</strong> frentes com soluções implantadas no IFPI (em evolução na Sprint E2)</td></tr>
       <tr><td><strong>1</strong> frente em operação com o Governo do Estado (SSP-PI)</td><td>Frentes em diálogo aberto com Governo e Justiça (DPE-PI, MPPI, ETIPI)</td></tr>
     </tbody>
   </table>
@@ -35,7 +35,7 @@ só é considerado entregue quando o setor nomeou quem mantém, recebeu o runboo
 
 ## SGAE — Sistema de Gestão da Assistência Estudantil
 
-<p class="mono dim">Demandante: Diretoria de Extensão / Assistência Estudantil · estado: implantado no IFPI, em evolução contínua em produção (Sprint E1) e transferência formal em andamento</p>
+<p class="mono dim">Demandante: Diretoria de Extensão / Assistência Estudantil · estado: implantado no IFPI, em evolução contínua em produção (Sprint E2) e transferência formal em andamento</p>
 
 **O problema.** A assistência estudantil do campus administra sete tipos de auxílio, cada um com
 regra própria de elegibilidade e acúmulo definida na POLAE (Resolução 35/2021), para cerca de 580
@@ -56,7 +56,7 @@ reescrever o sistema.
 
 ## Projeto Flix — repositório de conteúdo institucional
 
-<p class="mono dim">Demandante: Reitoria do IFPI · estado: implantado, escopo validado com a Reitoria, em evolução em produção (Sprint E1) e preparação para transferência</p>
+<p class="mono dim">Demandante: Reitoria do IFPI · estado: implantado, escopo validado com a Reitoria, em evolução em produção (Sprint E2) e preparação para transferência</p>
 
 ![Catálogo do Repositório IFPI, com projeto em destaque]({{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }})
 
@@ -77,7 +77,7 @@ cursos e projetos. Acesso à informação é acesso à educação.
 
 ## Conecta CATCE e Catraka CATCE — segurança e controle de acesso
 
-<p class="mono dim">Demandante: Direção-Geral do Campus Teresina Central · estado: implantados no IFPI, mantenedor confirmado pela DTI, em evolução (Sprint E1); integração com portaria pendente</p>
+<p class="mono dim">Demandante: Direção-Geral do Campus Teresina Central · estado: implantados no IFPI, mantenedor confirmado pela DTI, em evolução (Sprint E2); integração com portaria pendente</p>
 
 ![As quatro telas do aplicativo Conecta CATCE]({{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }})
 

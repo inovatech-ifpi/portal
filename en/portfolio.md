@@ -23,7 +23,7 @@ Fifteen selected engineering fellows, funded with 20-hour weekly stipends, work 
       </tr>
       <tr>
         <td><strong>4 of 4</strong> formal milestone gates delivered on schedule</td>
-        <td><strong>3</strong> production-deployed systems in IFPI (continuous evolution in Sprint E1)</td>
+        <td><strong>3</strong> production-deployed systems in IFPI (continuous evolution in Sprint E2)</td>
       </tr>
       <tr>
         <td><strong>1</strong> mission-critical track with State Government (SSP-PI)</td>
@@ -41,7 +41,7 @@ What sets the model apart: fellows do not build toy exercises, they ship product
 
 ## SGAE — Student Welfare & Benefit Compliance Engine
 
-<p class="mono dim">Institutional Stakeholder: Directorate of Community Outreach & Student Welfare · Status: Deployed in production (Aug 14); Sprint E1 active; formal transfer in progress</p>
+<p class="mono dim">Institutional Stakeholder: Directorate of Community Outreach & Student Welfare · Status: Deployed in production (Aug 14); Sprint E2 active; formal transfer in progress</p>
 
 ![SGAE Payments Module]({{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }})
 
@@ -55,7 +55,7 @@ What sets the model apart: fellows do not build toy exercises, they ship product
 
 ## IFPI Flix — Institutional Educational Streaming Platform
 
-<p class="mono dim">Institutional Stakeholder: Office of the President (Reitoria), IFPI · Status: Live in production (Aug 14); scope validated by University President (Aug 28); Sprint E1 active</p>
+<p class="mono dim">Institutional Stakeholder: Office of the President (Reitoria), IFPI · Status: Live in production (Aug 14); scope validated by University President (Aug 28); Sprint E2 active</p>
 
 ![IFPI Flix Public Catalog]({{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }})
 
@@ -69,7 +69,7 @@ What sets the model apart: fellows do not build toy exercises, they ship product
 
 ## Conecta CATCE & Catraka — Smart Campus Access & Safety
 
-<p class="mono dim">Institutional Stakeholder: General Campus Directorate · Status: Deployed in production (Aug 14); DTI permanent maintainer confirmed; Sprint E1 active; turnstile integration in progress</p>
+<p class="mono dim">Institutional Stakeholder: General Campus Directorate · Status: Deployed in production (Aug 14); DTI permanent maintainer confirmed; Sprint E2 active; turnstile integration in progress</p>
 
 ![Conecta CATCE Mobile Application]({{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }})
 

@@ -21,7 +21,7 @@ Fifteen selected engineering fellows, funded with 20-hour weekly stipends, work 
       </tr>
       <tr>
         <td><strong>4 of 4</strong> formal milestone gates delivered on schedule</td>
-        <td><strong>3</strong> production-deployed systems in IFPI (continuous evolution in Sprint E1)</td>
+        <td><strong>3</strong> production-deployed systems in IFPI (continuous evolution in Sprint E2)</td>
       </tr>
       <tr>
         <td><strong>1</strong> mission-critical track with State Government (SSP-PI)</td>
