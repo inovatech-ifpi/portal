@@ -3,7 +3,7 @@ layout: page
 title: "Onde estamos"
 permalink: /
 kicker: "// status da residência"
-description: "Semana 21 — fase 2: evolução dos sistemas em sprints enquanto as frentes do Governo do Estado não abrem"
+description: "Fase 2: calendário e orientações para a evolução dos sistemas em sprints"
 url_en: /en/
 ---
 
@@ -34,7 +34,7 @@ url_en: /en/
     sobre os sistemas entregues. O que entra em cada sprint é o que o setor que usa
     o sistema prioriza, e toda sprint termina em produção e documentada, pronta para
     outra equipe assumir.
-    <a href="{{ '/sprint-e1/' | relative_url }}">Sprint E1: de 21/09 a 02/10</a>.
+    <a href="{{ site.data.portal.cycle.current_sprint_link | relative_url }}">Guia da {{ site.data.portal.cycle.current_sprint_label }}</a>.
   </p>
 </div>
 

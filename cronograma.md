@@ -51,6 +51,6 @@ Todas as equipes seguem o mesmo calendário de entregas.
 > demandantes, no Encontro INOVATECH de 11/09.
 >
 > **A Transferência encerrou a fase 1, não a residência**, que é de doze meses.
-> A fase 2 segue em [sprints de evolução]({{ '/sprint-e1/' | relative_url }}) de
+> A fase 2 segue em [sprints de evolução]({{ site.data.portal.cycle.current_sprint_link | relative_url }}) de
 > duas semanas, cada uma terminando em produção e documentada, até que as frentes
 > do Governo do Estado chamem as equipes.
