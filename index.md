@@ -80,5 +80,7 @@ url_en: /en/
   {% endfor %}
 </ul>
 
-> Este portal é a referência oficial para cronograma, metodologia, materiais e
-> entregas. O grupo de mensagens é usado para avisos rápidos.
+> Este portal reúne o cronograma, a metodologia, os materiais e as orientações.
+> O planejamento, os resultados, as evidências das entregas e os impedimentos
+> são registrados no GitHub de cada equipe. O grupo de mensagens é usado para
+> avisos rápidos.

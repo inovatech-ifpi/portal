@@ -203,12 +203,12 @@ weeks:
 
 deadlines:
   - date: "09/10"
-    title: "Resultado da primeira semana da Sprint E2"
-    detail: "evidências do avanço, pendências de revisão ou implantação e bloqueios com responsável e próximo passo"
+    title: "Registro no GitHub — primeira semana da Sprint E2"
+    detail: "atualizar as issues com resultados, evidências, pendências de revisão ou implantação e bloqueios com responsável e próximo passo"
     link: "/sprint-e2/"
   - date: "16/10"
     title: "Review da Sprint E2"
-    detail: "demonstração em produção, README/runbook atualizados, retrospectiva e pendências registradas"
+    detail: "demonstração em produção, README/runbook atualizados e registro da retrospectiva, evidências e pendências no GitHub"
     link: "/sprint-e2/"
 
 contacts:
