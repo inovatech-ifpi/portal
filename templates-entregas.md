@@ -35,7 +35,11 @@ nav_title: "Templates e entregas"
 
 ## Templates para baixar/copiar
 
-> Abra o template, copie para o `docs/` do repositório da sua equipe e preencha. Cada página tem o link para copiar o markdown cru no GitHub.
+> Abra o template e copie o markdown cru pelo link na página. O README para começar vai na raiz do repositório; os demais modelos podem ficar em `docs/`.
+
+**Para começar um projeto**
+
+- [README.md padrão INOVATECH — para estudantes e laboratórios]({{ '/templates/readme-projeto/' | relative_url }}) — copie para a raiz do repositório, identifique o demandante e combine o critério de pronto.
 
 **Inception / M1**
 
