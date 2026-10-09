@@ -13,38 +13,40 @@ url_en: /en/
     <div class="hub-hero-overlay"></div>
   </div>
 
-  <div class="hub-container hub-hero-content">
-    <div class="hub-hero-badge">
-      <span class="hub-badge-dot" aria-hidden="true"></span>
-      <span>RESIDÊNCIA INOVATECH · IFPI & PIAUÍ GOV TECH</span>
-    </div>
+  <div class="hub-container">
+    <div class="hub-hero-content">
+      <div class="hub-hero-badge">
+        <span class="hub-badge-dot" aria-hidden="true"></span>
+        <span>RESIDÊNCIA INOVATECH · IFPI & PIAUÍ GOV TECH</span>
+      </div>
 
-    <h1 id="hero-title" class="hub-hero-title">
-      Software público desenvolvido e <span class="text-gradient">implantado em produção</span>.
-    </h1>
+      <h1 id="hero-title" class="hub-hero-title">
+        Software público desenvolvido e <span class="text-gradient">implantado em produção</span>.
+      </h1>
 
-    <p class="hub-hero-sub">
-      Um ecossistema de inovação, formação intensiva de talentos e engenharia de software aplicada.
-      Conectamos o Instituto Federal do Piauí e instituições públicas para projetar,
-      validar e transferir soluções tecnológicas que funcionam.
-    </p>
+      <p class="hub-hero-sub">
+        Um ecossistema de inovação, formação intensiva de talentos e engenharia de software aplicada.
+        Conectamos o Instituto Federal do Piauí e instituições públicas para projetar,
+        validar e transferir soluções tecnológicas que funcionam.
+      </p>
 
-    <div class="hub-hero-proof mono">
-      <span>3 sistemas em produção no IFPI</span>
-      <span class="proof-sep" aria-hidden="true">·</span>
-      <span>208 entregas registradas no GitHub</span>
-      <span class="proof-sep" aria-hidden="true">·</span>
-      <span>Transferência formal em 11/09/2026</span>
-    </div>
+      <div class="hub-hero-proof mono">
+        <span>3 sistemas em produção no IFPI</span>
+        <span class="proof-sep" aria-hidden="true">·</span>
+        <span>208 entregas registradas no GitHub</span>
+        <span class="proof-sep" aria-hidden="true">·</span>
+        <span>Transferência formal em 11/09/2026</span>
+      </div>
 
-    <div class="hub-hero-ctas">
-      <a href="#solucoes" class="hub-btn hub-btn-primary">
-        <span>Conhecer Soluções em Produção</span>
-        <span class="btn-arrow" aria-hidden="true">↓</span>
-      </a>
-      <a href="#fabrica" class="hub-btn hub-btn-outline">
-        <span>Como Funciona a Fábrica</span>
-      </a>
+      <div class="hub-hero-ctas">
+        <a href="#solucoes" class="hub-btn hub-btn-primary">
+          <span>Conhecer Soluções em Produção</span>
+          <span class="btn-arrow" aria-hidden="true">↓</span>
+        </a>
+        <a href="#fabrica" class="hub-btn hub-btn-outline">
+          <span>Como Funciona a Fábrica</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>

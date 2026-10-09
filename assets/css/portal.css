@@ -243,7 +243,8 @@ img {
   color: #7c947f;
 }
 
-main {
+.shell main,
+main:not(.hub-main) {
   width: min(100%, 1040px);
   padding: 48px 56px 32px;
 }
@@ -698,7 +699,8 @@ tr:last-child td {
     display: none;
   }
 
-  main {
+  .shell main,
+  main:not(.hub-main) {
     width: 100%;
     padding: 28px 18px;
   }
@@ -768,6 +770,14 @@ tr:last-child td {
   font-family: var(--corpo-sans);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+main.hub-main {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
 }
 
 .hub-container {

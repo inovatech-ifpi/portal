@@ -14,43 +14,45 @@ url_pt: /
     <div class="hub-hero-overlay"></div>
   </div>
 
-  <div class="hub-container hub-hero-content">
-    <div class="hub-hero-badge mono">
-      <span class="hub-badge-dot" aria-hidden="true"></span>
-      <span>INOVATECH TECH RESIDENCY · IFPI & PIAUÍ GOV TECH</span>
-    </div>
-
-    <h1 id="en-hero-title" class="hub-hero-title">
-      Engineering applied public software to solve <span class="text-gradient">real institutional challenges</span>.
-    </h1>
-
-    <p class="hub-hero-sub">
-      An advanced public software accelerator connecting federal academic talent, state government agencies, and real operational bottlenecks to design, validate, and deploy production-grade software solutions.
-    </p>
-
-    <div class="hub-hero-ctas">
-      <a href="{{ '/en/portfolio/' | relative_url }}" class="hub-btn hub-btn-primary">
-        <span>Explore Showcase Portfolio</span>
-        <span class="btn-arrow" aria-hidden="true">→</span>
-      </a>
-      <a href="#model" class="hub-btn hub-btn-outline">
-        <span>How the Software Factory Works</span>
-      </a>
-      <a href="#partnerships" class="hub-btn hub-btn-ghost mono">
-        <span>Web Summit & Global Partnerships</span>
-      </a>
-    </div>
-
-    <!-- Progress Ribbon -->
-    <div class="hub-hero-progress-banner">
-      <div class="hub-progress-header mono">
-        <span><strong>Phase 2</strong> · Continuous Evolution in Fortnightly Sprints</span>
-        <span class="dim">Week {{ site.data.portal.cycle.current_week }} of {{ site.data.portal.cycle.total_weeks }}</span>
+  <div class="hub-container">
+    <div class="hub-hero-content">
+      <div class="hub-hero-badge mono">
+        <span class="hub-badge-dot" aria-hidden="true"></span>
+        <span>INOVATECH TECH RESIDENCY · IFPI & PIAUÍ GOV TECH</span>
       </div>
-      <div class="hub-progress-bar" aria-label="Cycle progress bar">
-        {% for number in (1..site.data.portal.cycle.total_weeks) %}
-          <span class="hub-progress-pip{% if number < site.data.portal.cycle.current_week %} done{% elsif number == site.data.portal.cycle.current_week %} current{% endif %}"></span>
-        {% endfor %}
+
+      <h1 id="en-hero-title" class="hub-hero-title">
+        Engineering applied public software to solve <span class="text-gradient">real institutional challenges</span>.
+      </h1>
+
+      <p class="hub-hero-sub">
+        An advanced public software accelerator connecting federal academic talent, state government agencies, and real operational bottlenecks to design, validate, and deploy production-grade software solutions.
+      </p>
+
+      <div class="hub-hero-ctas">
+        <a href="{{ '/en/portfolio/' | relative_url }}" class="hub-btn hub-btn-primary">
+          <span>Explore Showcase Portfolio</span>
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#model" class="hub-btn hub-btn-outline">
+          <span>How the Software Factory Works</span>
+        </a>
+        <a href="#partnerships" class="hub-btn hub-btn-ghost mono">
+          <span>Web Summit & Global Partnerships</span>
+        </a>
+      </div>
+
+      <!-- Progress Ribbon -->
+      <div class="hub-hero-progress-banner">
+        <div class="hub-progress-header mono">
+          <span><strong>Phase 2</strong> · Continuous Evolution in Fortnightly Sprints</span>
+          <span class="dim">Week {{ site.data.portal.cycle.current_week }} of {{ site.data.portal.cycle.total_weeks }}</span>
+        </div>
+        <div class="hub-progress-bar" aria-label="Cycle progress bar">
+          {% for number in (1..site.data.portal.cycle.total_weeks) %}
+            <span class="hub-progress-pip{% if number < site.data.portal.cycle.current_week %} done{% elsif number == site.data.portal.cycle.current_week %} current{% endif %}"></span>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
