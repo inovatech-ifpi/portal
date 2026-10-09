@@ -8,7 +8,7 @@ url_pt: /portfolio/
 ---
 
 <div class="hub-page-hero">
-  <div class="hub-container">
+  <div class="hub-container hub-container--showroom">
     <div class="hub-hero-badge">
       <span class="hub-badge-dot" aria-hidden="true"></span>
       <span>WEB SUMMIT LISBON 2026 EDITION · IFPI & PIAUÍ GOV TECH</span>
@@ -43,7 +43,7 @@ url_pt: /portfolio/
   </div>
 </div>
 
-<div class="hub-container hub-showroom-body">
+<div class="hub-container hub-container--showroom hub-showroom-body">
   <nav class="hub-showroom-nav mono" aria-label="Quick track navigation">
     <span>JUMP TO:</span>
     <a href="#sgae">01. SGAE (FinTech)</a>
@@ -65,6 +65,25 @@ url_pt: /portfolio/
         <strong>Institutional Stakeholder:</strong> Directorate of Student Welfare · Federal Institute of Piauí (IFPI)
       </p>
     </header>
+
+    <div class="hub-product-metrics">
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">R$ 1.1M/yr</span>
+        <span class="hub-metric-lbl">Welfare Budget</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">~580</span>
+        <span class="hub-metric-lbl">Active Beneficiaries</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">7 Grants</span>
+        <span class="hub-metric-lbl">POLAE Categories</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">100%</span>
+        <span class="hub-metric-lbl">Audited Compliance</span>
+      </div>
+    </div>
 
     <div class="hub-case-grid">
       <div class="hub-case-text">
@@ -96,15 +115,67 @@ url_pt: /portfolio/
             POLAE is the unified student assistance policy for the <strong>entire IFPI federal network</strong> (20+ campuses, 30,000+ students). SGAE was architected from inception on this universal regulatory baseline, enabling seamless multi-tenant expansion across other federal institutes without core rewrites.
           </p>
         </div>
+
+        <div class="hub-rule-pills">
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> POLAE Resolution 35/2021</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Auditable State Machine</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Automated Anti-Conflict Engine</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> LGPD Data Protection</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Multi-Campus Federation</span>
+        </div>
+
+        <div class="hub-tech-specs">
+          <div class="hub-tech-specs-title mono">Technical Specifications & Architecture</div>
+          <div class="hub-tech-specs-grid">
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Stakeholder</span>
+              <span class="hub-spec-value">Student Welfare Directorate · IFPI</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Status</span>
+              <span class="hub-spec-value">Live in Production · IFPI Central</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Core Stack</span>
+              <span class="hub-spec-value">Django / Python · PostgreSQL · REST</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Governance</span>
+              <span class="hub-spec-value">Institutional Decree 783/2026-GAB</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="hub-case-media">
-        <figure class="hub-case-figure">
-          <img src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" alt="SGAE Payments Module" class="hub-case-img">
-          <figcaption class="mono dim">
-            SGAE Automated Payroll Module with real-time POLAE compliance cross-checks.
-          </figcaption>
-        </figure>
+        <div class="hub-browser-frame">
+          <div class="hub-browser-bar">
+            <div class="hub-browser-dots" aria-hidden="true">
+              <span class="hub-browser-dot dot--red"></span>
+              <span class="hub-browser-dot dot--yellow"></span>
+              <span class="hub-browser-dot dot--green"></span>
+            </div>
+            <div class="hub-browser-url mono">
+              <span class="url-lock" aria-hidden="true">🔒</span>
+              <span>sgae.ifpi.edu.br/payroll-compliance</span>
+            </div>
+            <div class="hub-browser-actions" aria-hidden="true">
+              <span>⟳</span>
+            </div>
+          </div>
+          <div class="hub-browser-screen">
+            <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" data-lightbox-caption="SGAE Automated Payroll Module with real-time POLAE compliance cross-checks." aria-label="Expand SGAE screenshot">
+              <img src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" alt="SGAE Payments Module" class="hub-case-img" loading="lazy">
+              <span class="hub-lightbox-zoom-hint mono">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Expand</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <figcaption class="mono dim" style="padding: 0 4px; font-size: 11.5px; line-height: 1.45;">
+          SGAE Automated Payroll Module with real-time POLAE compliance cross-checks.
+        </figcaption>
         <div class="hub-case-card-stats mono">
           <div><span>Budget:</span> R$ 1.1M/year</div>
           <div><span>Beneficiaries:</span> ~580 students</div>
@@ -113,10 +184,20 @@ url_pt: /portfolio/
         </div>
       </div>
     </div>
+
+    <!-- Contextual Action Bar -->
+    <div class="hub-case-actions">
+      <a href="mailto:eric@ifpi.edu.br,aislan@ifpi.edu.br?subject=[SGAE]%20Multi-Campus%20Rollout%20Inquiry" class="hub-case-action-btn primary mono">
+        <span>Request Multi-Campus Rollout →</span>
+      </a>
+      <a href="#engagement" class="hub-case-action-btn secondary mono">
+        <span>POLAE Regulatory Specs & Governance</span>
+      </a>
+    </div>
   </article>
 
   <!-- TRACK 02: FLIX -->
-  <article class="hub-case-card" id="flix">
+  <article class="hub-case-card hub-case-card--streaming" id="flix">
     <header class="hub-case-card-head">
       <div class="hub-case-badge-row mono">
         <span class="badge-code">TRACK 02 · EDTECH & MEDIA</span>
@@ -127,6 +208,25 @@ url_pt: /portfolio/
         <strong>Institutional Stakeholder:</strong> Office of the University President (Reitoria), IFPI
       </p>
     </header>
+
+    <div class="hub-product-metrics">
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">Multi-Campus</span>
+        <span class="hub-metric-lbl">Federal Network Scope</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">Zero-IT CMS</span>
+        <span class="hub-metric-lbl">Direct Faculty Curation</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">Low-Bandwidth</span>
+        <span class="hub-metric-lbl">Optimized for Mobile</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">3 Fellows</span>
+        <span class="hub-metric-lbl">Specialized Squad</span>
+      </div>
+    </div>
 
     <div class="hub-case-grid">
       <div class="hub-case-text">
@@ -158,15 +258,67 @@ url_pt: /portfolio/
             By design, the catalog supports multi-campus federation across the federal education network. Each campus becomes an autonomous channel within a unified national showcase.
           </p>
         </div>
+
+        <div class="hub-rule-pills">
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> On-Demand Educational Streaming</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Zero-Code CMS for Faculty</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Curated Series & Micro-Courses</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Low-Bandwidth Encoding</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Federated Repository</span>
+        </div>
+
+        <div class="hub-tech-specs">
+          <div class="hub-tech-specs-title mono">Technical Specifications & Architecture</div>
+          <div class="hub-tech-specs-grid">
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Stakeholder</span>
+              <span class="hub-spec-value">President's Office & Media · IFPI</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Status</span>
+              <span class="hub-spec-value">Live in Production · Scope Validated</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Core Stack</span>
+              <span class="hub-spec-value">Nuxt / Vue · Node.js API · CDN</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Audience</span>
+              <span class="hub-spec-value">Academic Community & Society</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="hub-case-media">
-        <figure class="hub-case-figure">
-          <img src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" alt="IFPI Flix Streaming Catalog" class="hub-case-img">
-          <figcaption class="mono dim">
-            IFPI Flix public homepage featuring thematic educational rows and campus filters.
-          </figcaption>
-        </figure>
+        <div class="hub-browser-frame">
+          <div class="hub-browser-bar">
+            <div class="hub-browser-dots" aria-hidden="true">
+              <span class="hub-browser-dot dot--red"></span>
+              <span class="hub-browser-dot dot--yellow"></span>
+              <span class="hub-browser-dot dot--green"></span>
+            </div>
+            <div class="hub-browser-url mono">
+              <span class="url-lock" aria-hidden="true">🔒</span>
+              <span>flix.ifpi.edu.br/series/tech-education</span>
+            </div>
+            <div class="hub-browser-actions" aria-hidden="true">
+              <span>⟳</span>
+            </div>
+          </div>
+          <div class="hub-browser-screen">
+            <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" data-lightbox-caption="IFPI Flix public homepage featuring thematic educational rows and campus filters." aria-label="Expand IFPI Flix screenshot">
+              <img src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" alt="IFPI Flix Streaming Catalog" class="hub-case-img" loading="lazy">
+              <span class="hub-lightbox-zoom-hint mono">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Expand</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <figcaption class="mono dim" style="padding: 0 4px; font-size: 11.5px; line-height: 1.45;">
+          IFPI Flix public homepage featuring thematic educational rows and campus filters.
+        </figcaption>
         <div class="hub-case-card-stats mono">
           <div><span>Audience:</span> Public & Academic</div>
           <div><span>Scope:</span> Federal Network-wide</div>
@@ -174,6 +326,16 @@ url_pt: /portfolio/
           <div><span>Fellow Squad:</span> 3 engineering fellows</div>
         </div>
       </div>
+    </div>
+
+    <!-- Contextual Action Bar -->
+    <div class="hub-case-actions">
+      <a href="mailto:eric@ifpi.edu.br,aislan@ifpi.edu.br?subject=[IFPI%20Flix]%20Catalog%20Demo%20Inquiry" class="hub-case-action-btn primary mono">
+        <span>Explore Platform Showcase →</span>
+      </a>
+      <a href="#engagement" class="hub-case-action-btn secondary mono">
+        <span>Multi-Campus Federation Guide</span>
+      </a>
     </div>
   </article>
 
@@ -189,6 +351,25 @@ url_pt: /portfolio/
         <strong>Institutional Stakeholder:</strong> General Campus Directorate · IFPI Central Campus
       </p>
     </header>
+
+    <div class="hub-product-metrics">
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">Thousands/day</span>
+        <span class="hub-metric-lbl">Monitored Turnstile Gates</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">Real-Time</span>
+        <span class="hub-metric-lbl">Direct Guardian Alerts</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">GOV.BR</span>
+        <span class="hub-metric-lbl">Official Federal Standard</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">4 Fellows</span>
+        <span class="hub-metric-lbl">Engineering Squad</span>
+      </div>
+    </div>
 
     <div class="hub-case-grid">
       <div class="hub-case-text">
@@ -220,15 +401,62 @@ url_pt: /portfolio/
             Physical security and guardian engagement represent standard challenges across the 600+ federal technical campuses in Brazil.
           </p>
         </div>
+
+        <div class="hub-rule-pills">
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Official GOV.BR Design System</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Turnstile IoT Integration</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Real-Time Attendance Push</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Secure SUAP Federation</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Tamper-Proof Access Trail</span>
+        </div>
+
+        <div class="hub-tech-specs">
+          <div class="hub-tech-specs-title mono">Technical Specifications & Architecture</div>
+          <div class="hub-tech-specs-grid">
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Stakeholder</span>
+              <span class="hub-spec-value">General Campus Directorate · IFPI</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Status</span>
+              <span class="hub-spec-value">Deployed · Formal DTI Handover</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Core Stack</span>
+              <span class="hub-spec-value">Flutter / Dart · FastAPI · IoT Gateways</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Visual Standard</span>
+              <span class="hub-spec-value">Federal Design System (GOV.BR)</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="hub-case-media">
-        <figure class="hub-case-figure">
-          <img src="{{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }}" alt="Conecta CATCE Mobile Application" class="hub-case-img">
-          <figcaption class="mono dim">
-            Conecta CATCE mobile screens: authentication, attendance log, alerts, and service.
-          </figcaption>
-        </figure>
+        <div class="hub-mobile-suite-frame-wrapper">
+          <div class="hub-mobile-suite-frame">
+            <div class="hub-mobile-suite-bar mono">
+              <div class="hub-mobile-suite-badge">
+                <span class="hub-badge-dot" aria-hidden="true"></span>
+                <span>INTEGRATED MOBILE SUITE · 4 SCREENS</span>
+              </div>
+              <span style="color: #94a3b8; font-size: 10px;">GOV.BR STANDARD</span>
+            </div>
+            <div class="hub-mobile-suite-screen">
+              <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }}" data-lightbox-caption="Integrated 4-module view of the Conecta CATCE mobile suite. Click to expand and inspect each screen in high definition." aria-label="Expand Conecta CATCE mobile screens suite">
+                <img src="{{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }}" alt="Integrated 4-screen view of Conecta CATCE mobile suite" class="hub-case-img" loading="lazy">
+                <span class="hub-lightbox-zoom-hint mono">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  <span>Expand</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <figcaption class="mono dim" style="padding: 0 4px; font-size: 11.5px; line-height: 1.45; text-align: center;">
+          Integrated 4-module view of the Conecta CATCE mobile suite. Click to expand and inspect each screen in high definition.
+        </figcaption>
         <div class="hub-case-card-stats mono">
           <div><span>Design Standard:</span> GOV.BR Design System</div>
           <div><span>Audience:</span> Parents & Students</div>
@@ -237,10 +465,26 @@ url_pt: /portfolio/
         </div>
       </div>
     </div>
+
+    <!-- Contextual Action Bar -->
+    <div class="hub-case-actions">
+      <a href="mailto:eric@ifpi.edu.br,aislan@ifpi.edu.br?subject=[Conecta%20CATCE]%20Campus%20Deployment%20Inquiry" class="hub-case-action-btn primary mono">
+        <span>Deploy at Your Institution →</span>
+      </a>
+      <a href="#engagement" class="hub-case-action-btn secondary mono">
+        <span>IoT & SUAP Architecture</span>
+      </a>
+    </div>
   </article>
 
   <!-- TRACK 04: SPIA MAESTRO -->
-  <article class="hub-case-card hub-case-card-restricted" id="spia">
+  <article class="hub-case-card hub-case-card--assurance hub-case-card-restricted" id="spia">
+    <div class="hub-assurance-seal mono">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+      <span>STATE POLICE CLASSIFICATION · BRAZILIAN DATA PROTECTION LAW (LGPD)</span>
+      <span class="seal-verified"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Active Protocol</span>
+    </div>
+
     <header class="hub-case-card-head">
       <div class="hub-case-badge-row mono">
         <span class="badge-code">TRACK 04 · PUBLIC SAFETY & AI</span>
@@ -251,6 +495,25 @@ url_pt: /portfolio/
         <strong>Institutional Stakeholder:</strong> State Department of Public Safety (SSP-PI) · via Piauí Gov Tech
       </p>
     </header>
+
+    <div class="hub-product-metrics">
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">24/7 Uptime</span>
+        <span class="hub-metric-lbl">High-Availability SLA</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">100% Audited</span>
+        <span class="hub-metric-lbl">Cryptographic LGPD Trail</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">State Clearance</span>
+        <span class="hub-metric-lbl">Public Safety Secrecy</span>
+      </div>
+      <div class="hub-metric-tile">
+        <span class="hub-metric-val">4 Fellows</span>
+        <span class="hub-metric-lbl">Mission-Critical Squad</span>
+      </div>
+    </div>
 
     <div class="hub-case-grid">
       <div class="hub-case-text">
@@ -279,15 +542,63 @@ url_pt: /portfolio/
             Fellows experience software engineering under mission-critical conditions where data accuracy is paramount. Due to state legal and strategic security mandates, internal architectures, servers, and personnel rosters remain strictly classified.
           </p>
         </div>
+
+        <div class="hub-rule-pills">
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> State Public Safety Network</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Automated Computer Vision Intel</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Immutable Audit Trail</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Strict Role-Based Security & LGPD</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> High-Throughput Microservices</span>
+        </div>
+
+        <div class="hub-tech-specs">
+          <div class="hub-tech-specs-title mono">Technical Specifications & Architecture</div>
+          <div class="hub-tech-specs-grid">
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Stakeholder</span>
+              <span class="hub-spec-value">State Department of Public Safety (SSP-PI)</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Status</span>
+              <span class="hub-spec-value">Assisted Operation in Police Cloud</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Architecture</span>
+              <span class="hub-spec-value">Mission-Critical Microservices · Event-Driven</span>
+            </div>
+            <div class="hub-spec-item">
+              <span class="hub-spec-label">Standard</span>
+              <span class="hub-spec-value">Legal Classification & LGPD Privacy Standard</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="hub-case-media">
-        <figure class="hub-case-figure">
-          <img src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" alt="SPIA Maestro Squad presenting at INOVATECH Showcase" class="hub-case-img">
-          <figcaption class="mono dim">
-            SPIA Maestro fellow squad presenting at the INOVATECH Public Showcase in Piauí Gov Tech.
-          </figcaption>
-        </figure>
+        <div class="hub-assurance-photo-frame">
+          <div class="hub-assurance-photo-header mono">
+            <div class="hub-assurance-photo-header-left">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>AUTHORIZED INSTITUTIONAL RECORD · SSP-PI</span>
+            </div>
+            <div class="hub-assurance-photo-header-right">
+              <span>● AUDITED</span>
+            </div>
+          </div>
+          <div class="hub-assurance-photo-screen">
+            <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" data-lightbox-caption="Official authorized presentation of the SPIA Maestro Squad at the INOVATECH Public Showcase in Piauí Gov Tech." aria-label="Expand official SPIA Maestro squad photo">
+              <img src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" alt="SPIA Maestro Squad presenting at INOVATECH Showcase" class="hub-case-img" loading="lazy">
+              <span class="hub-lightbox-zoom-hint mono">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>Expand</span>
+              </span>
+            </button>
+          </div>
+          <div class="hub-assurance-photo-footer mono">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Official Authorized Record · Presentation at PiauíGovTec Hub</span>
+          </div>
+        </div>
         <div class="hub-case-card-stats mono">
           <div><span>Environment:</span> State Police Infrastructure</div>
           <div><span>Policy:</span> State Confidentiality Statute</div>
@@ -295,6 +606,16 @@ url_pt: /portfolio/
           <div><span>Fellow Squad:</span> 4 engineering fellows</div>
         </div>
       </div>
+    </div>
+
+    <!-- Contextual Action Bar -->
+    <div class="hub-case-actions">
+      <a href="mailto:adm@piauigovtech.org,eric@ifpi.edu.br?subject=[SPIA%20Maestro]%20GovTech%20Cooperation%20Inquiry" class="hub-case-action-btn primary mono">
+        <span>Institutional GovTech Partnership →</span>
+      </a>
+      <a href="#engagement" class="hub-case-action-btn secondary mono">
+        <span>Governance & Security Protocols</span>
+      </a>
     </div>
   </article>
 
