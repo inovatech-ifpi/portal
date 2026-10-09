@@ -161,8 +161,23 @@
       </div>
     </footer>
 
+    <!-- Lightbox Modal Global do Showroom (Acessível, Vanilla JS) -->
+    <div id="hubLightbox" class="hub-lightbox" role="dialog" aria-modal="true" aria-label="{% if page.lang == 'en' %}Image Preview Modal{% else %}Visualização Ampliada do Produto{% endif %}" hidden>
+      <div class="hub-lightbox-backdrop" data-lightbox-close></div>
+      <div class="hub-lightbox-dialog">
+        <button type="button" class="hub-lightbox-close" data-lightbox-close aria-label="{% if page.lang == 'en' %}Close preview (Esc){% else %}Fechar visualização (Esc){% endif %}">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <figure class="hub-lightbox-figure">
+          <img id="hubLightboxImg" class="hub-lightbox-img" src="" alt="">
+          <figcaption id="hubLightboxCaption" class="hub-lightbox-caption mono"></figcaption>
+        </figure>
+      </div>
+    </div>
+
     <script>
       (function() {
+        // Menu Mobile Toggle
         var toggle = document.getElementById('hubMenuToggle');
         var nav = document.getElementById('hubNavMenu');
         if (toggle && nav) {
@@ -172,6 +187,94 @@
             nav.classList.toggle('is-open');
           });
         }
+
+        // Showroom Lightbox Modal Controller (Vanilla JS, Zero Dependencies, WCAG Accessible)
+        var lightbox = document.getElementById('hubLightbox');
+        var lightboxImg = document.getElementById('hubLightboxImg');
+        var lightboxCaption = document.getElementById('hubLightboxCaption');
+        var lastFocusedEl = null;
+
+        if (!lightbox || !lightboxImg || !lightboxCaption) return;
+
+        function openLightbox(trigger) {
+          lastFocusedEl = trigger;
+          var img = trigger.querySelector('img');
+          var src = trigger.getAttribute('data-lightbox-src') || (img ? img.getAttribute('src') : '');
+          var alt = trigger.getAttribute('data-lightbox-alt') || (img ? img.getAttribute('alt') : '');
+          var caption = trigger.getAttribute('data-lightbox-caption') || alt;
+
+          if (!src) return;
+
+          lightboxImg.setAttribute('src', src);
+          lightboxImg.setAttribute('alt', alt);
+          lightboxCaption.textContent = caption;
+
+          lightbox.removeAttribute('hidden');
+          // Força reflow para transição suave de opacidade e escala
+          void lightbox.offsetWidth;
+          lightbox.classList.add('is-open');
+          document.body.classList.add('has-lightbox-open');
+
+          var closeBtn = lightbox.querySelector('.hub-lightbox-close');
+          if (closeBtn) closeBtn.focus();
+        }
+
+        function closeLightbox() {
+          if (lightbox.hasAttribute('hidden')) return;
+          lightbox.classList.remove('is-open');
+          document.body.classList.remove('has-lightbox-open');
+
+          setTimeout(function() {
+            lightbox.setAttribute('hidden', '');
+            lightboxImg.setAttribute('src', '');
+            if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
+              lastFocusedEl.focus();
+            }
+          }, 200);
+        }
+
+        // Event delegation para triggers e botões de fechamento
+        document.addEventListener('click', function(e) {
+          var trigger = e.target.closest('.hub-lightbox-trigger');
+          if (trigger) {
+            e.preventDefault();
+            openLightbox(trigger);
+            return;
+          }
+
+          if (e.target.closest('[data-lightbox-close]')) {
+            e.preventDefault();
+            closeLightbox();
+            return;
+          }
+        });
+
+        // Controle por Teclado: Tecla Esc e Focus Trap
+        document.addEventListener('keydown', function(e) {
+          if (lightbox.hasAttribute('hidden')) return;
+
+          if (e.key === 'Escape' || e.key === 'Esc') {
+            e.preventDefault();
+            closeLightbox();
+            return;
+          }
+
+          if (e.key === 'Tab') {
+            var focusable = lightbox.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+            var focusableArr = Array.prototype.slice.call(focusable);
+            if (focusableArr.length === 0) return;
+            var first = focusableArr[0];
+            var last = focusableArr[focusableArr.length - 1];
+
+            if (e.shiftKey && document.activeElement === first) {
+              e.preventDefault();
+              last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+              e.preventDefault();
+              first.focus();
+            }
+          }
+        });
       })();
     </script>
   </body>
