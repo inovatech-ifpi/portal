@@ -2052,17 +2052,17 @@ main.hub-main {
   flex-direction: column;
   gap: 8px;
   font-size: 13px;
-  color: #dbe7fc;
+  color: var(--ink-soft);
   line-height: 1.5;
 }
 
 .hub-contacts-list strong {
-  color: #ffffff;
+  color: var(--grafite);
   font-weight: 600;
 }
 
 .hub-contacts-list a {
-  color: var(--menta);
+  color: var(--azul-govtech);
   text-decoration: underline;
   text-underline-offset: 3px;
   font-weight: 500;
@@ -2070,7 +2070,19 @@ main.hub-main {
 }
 
 .hub-contacts-list a:hover {
-  color: #cbf9d9;
+  color: var(--azul-dark);
+}
+
+.hub-section-dark .hub-contacts-list,
+.hub-footer .hub-contacts-list {
+  color: #dae2f5;
+}
+
+.hub-section-dark .hub-contacts-list strong,
+.hub-section-dark .hub-contacts-list a,
+.hub-footer .hub-contacts-list strong,
+.hub-footer .hub-contacts-list a {
+  color: #ffffff;
 }
 
 /* ==========================================================================
