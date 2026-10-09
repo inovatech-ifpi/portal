@@ -1046,6 +1046,18 @@ main.hub-main {
   overflow: hidden;
 }
 
+.hub-hero h1,
+.hub-hero h2,
+.hub-hero h3,
+.hub-hero h4,
+.hub-hero strong {
+  color: #ffffff;
+}
+
+.hub-hero .dim {
+  color: #b9d8c4;
+}
+
 .hub-hero-bg {
   position: absolute;
   inset: 0;
@@ -1249,6 +1261,18 @@ main.hub-main {
 .hub-section-dark {
   background: linear-gradient(135deg, var(--azul-govtech) 0%, var(--azul-dark) 100%);
   color: #ffffff;
+}
+
+.hub-section-dark h1,
+.hub-section-dark h2,
+.hub-section-dark h3,
+.hub-section-dark h4,
+.hub-section-dark strong {
+  color: #ffffff;
+}
+
+.hub-section-dark .dim {
+  color: #c4d7f8;
 }
 
 .hub-section-head {
@@ -1995,10 +2019,11 @@ main.hub-main {
 }
 
 .hub-contact-direct-box {
-  background: rgba(14, 25, 61, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(14, 25, 61, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 10px;
   padding: 24px 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
 }
 
 .hub-contact-direct-inner {
@@ -2019,18 +2044,33 @@ main.hub-main {
 .hub-contact-direct-inner p {
   margin: 0;
   font-size: 12.5px;
+  color: #c4d7f8;
 }
 
 .hub-contacts-list {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  font-size: 12.5px;
-  color: #d1dcfa;
+  gap: 8px;
+  font-size: 13px;
+  color: #dbe7fc;
+  line-height: 1.5;
+}
+
+.hub-contacts-list strong {
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .hub-contacts-list a {
   color: var(--menta);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.hub-contacts-list a:hover {
+  color: #cbf9d9;
 }
 
 /* ==========================================================================
@@ -2042,6 +2082,14 @@ main.hub-main {
   color: #c9ded0;
   padding: 72px 0 32px;
   border-top: 1px solid rgba(159, 226, 181, 0.2);
+}
+
+.hub-footer strong {
+  color: #ffffff;
+}
+
+.hub-footer .dim {
+  color: #a6c0af;
 }
 
 .hub-footer-top {
@@ -2068,7 +2116,7 @@ main.hub-main {
 .hub-footer-desc {
   font-size: 13.5px;
   line-height: 1.6;
-  color: #9cb5a4;
+  color: #b0cbb8;
   margin: 0 0 20px;
 }
 
@@ -2116,7 +2164,7 @@ main.hub-main {
   gap: 12px;
   font-size: 12.5px;
   line-height: 1.45;
-  color: #9cb5a4;
+  color: #b2ccba;
 }
 
 .hub-footer-contact strong {
@@ -2152,7 +2200,7 @@ main.hub-main {
 }
 
 .hub-footer-copy {
-  color: #8da494;
+  color: #a3baa9;
   font-size: 11.5px;
 }
 
