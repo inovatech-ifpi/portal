@@ -16,7 +16,10 @@ def front_matter(path)
   parts = text.split(/^---\s*$\n?/, 3)
   return nil unless parts.length == 3
 
-  YAML.safe_load(parts[1])
+  metadata = YAML.safe_load(parts[1])
+  metadata.is_a?(Hash) ? metadata : nil
+rescue Psych::Exception
+  nil
 end
 
 unless File.exist?(File.join(ROOT, "index.md"))
@@ -27,7 +30,7 @@ if File.exist?(File.join(ROOT, "index.html"))
   errors << "index.html compilado não deve coexistir com index.md"
 end
 
-%w[_layouts/default.html _layouts/page.html assets/css/portal.css _data/portal.yml].each do |relative|
+%w[_layouts/default.html _layouts/page.html _layouts/hub.html _includes/head.html assets/css/portal.css _data/portal.yml _data/idiomas.yml].each do |relative|
   errors << "#{relative} ausente" unless File.exist?(File.join(ROOT, relative))
 end
 
@@ -57,6 +60,43 @@ top_level_text = Dir[File.join(ROOT, "*.md")].map { |path| File.read(path) }.joi
 end
 
 portal_data = YAML.safe_load(File.read(File.join(ROOT, "_data", "portal.yml")))
+facts = portal_data.fetch("facts")
+projects = portal_data.fetch("projects")
+errors << "contagem de residentes diverge dos projetos" unless projects.sum { |project| project.fetch("residents") } == facts.fetch("residents")
+errors << "contagem de frentes diverge dos projetos" unless projects.length == facts.fetch("tracks")
+slugs = projects.map { |project| project.fetch("slug") }
+errors << "slugs duplicados nos projetos" unless slugs.uniq.length == slugs.length
+portal_data.fetch("indicators").each do |indicator|
+  errors << "indicador sem fato canônico: #{indicator['fact']}" unless facts.key?(indicator.fetch("fact"))
+  %w[pt en].each do |lang|
+    %w[label detail source].each do |field|
+      errors << "indicador sem #{lang}.#{field}" if indicator.dig(lang, field).to_s.empty?
+    end
+  end
+end
+translations = YAML.safe_load(File.read(File.join(ROOT, "_data", "idiomas.yml")))
+errors << "campos da interface PT/EN divergentes" unless translations.fetch("pt").keys.sort == translations.fetch("en").keys.sort
+routes = PUBLIC_FILES.map { |path| front_matter(path)&.fetch("permalink", nil) }.compact
+PUBLIC_FILES.each do |path|
+  metadata = front_matter(path)
+  next unless metadata
+  %w[url_pt url_en].each do |field|
+    target = metadata[field]
+    next unless target
+    errors << "#{path}: destino de idioma inexistente: #{target}" unless routes.include?(target)
+    counterpart = PUBLIC_FILES.find { |candidate| front_matter(candidate)&.fetch("permalink", nil) == target }
+    reverse = field == "url_en" ? "url_pt" : "url_en"
+    if counterpart && metadata["layout"] == "hub" && front_matter(counterpart)[reverse] != metadata["permalink"]
+      errors << "#{path}: alternância de idioma não recíproca"
+    end
+  end
+end
+components = Dir[File.join(ROOT, "_includes", "*.html"), File.join(ROOT, "_layouts", "*.html")]
+components.each do |path|
+  if File.read(path).match?(/(?:href=["']|\{\{\s*["'])\/?sprint-e\d/)
+    errors << "#{path}: link de sprint fixo em componente compartilhado"
+  end
+end
 current_week = portal_data.dig("cycle", "current_week")
 total_weeks = portal_data.dig("cycle", "total_weeks")
 unless total_weeks.is_a?(Integer) && total_weeks.positive?
@@ -64,6 +104,9 @@ unless total_weeks.is_a?(Integer) && total_weeks.positive?
 end
 unless current_week.is_a?(Integer) && total_weeks.is_a?(Integer) && current_week.between?(1, total_weeks)
   errors << "_data/portal.yml: current_week inválida"
+end
+unless routes.include?(portal_data.dig("cycle", "current_sprint_link"))
+  errors << "_data/portal.yml: destino da sprint atual inexistente"
 end
 
 today = Date.today
@@ -104,7 +147,7 @@ if today.between?(cycle_start, cycle_end)
 end
 
 if errors.empty?
-  puts "OK: estrutura, front matter, links relativos e referências temporais"
+  puts "OK: estrutura, dados canônicos, idiomas, links e referências temporais"
   exit 0
 end
 

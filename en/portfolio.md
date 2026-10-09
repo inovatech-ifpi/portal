@@ -2,10 +2,19 @@
 layout: hub
 title: "Web Summit Showcase & Tech Portfolio"
 permalink: /en/portfolio/
-description: "Four production-grade GovTech products engineered by 15 fellows for Brazil's federal education network and state public safety."
+description: "Three systems deployed at IFPI and the state public safety track SPIA Maestro, combining applied learning and institutional cooperation."
 lang: en
 url_pt: /portfolio/
 ---
+
+{% assign facts = site.data.portal.facts %}
+{% assign sgae = site.data.portal.projects | where: "slug", "sgae" | first %}
+{% assign flix = site.data.portal.projects | where: "slug", "flix" | first %}
+{% assign conecta = site.data.portal.projects | where: "slug", "conecta" | first %}
+{% assign spia = site.data.portal.projects | where: "slug", "spia" | first %}
+{% assign coordination = site.data.portal.public_contacts | where: "id", "coordination" | first %}
+{% assign technical = site.data.portal.public_contacts | where: "id", "technical" | first %}
+{% assign state_contact = site.data.portal.public_contacts | where: "id", "state" | first %}
 
 <div class="hub-page-hero">
   <div class="hub-container hub-container--showroom">
@@ -15,31 +24,11 @@ url_pt: /portfolio/
     </div>
     <h1 class="hub-page-title">Sovereign GovTech Solutions Engineered for Real Impact</h1>
     <p class="hub-page-lead">
-      At the INOVATECH Tech Residency, fellows build software products. Every solution addresses an authentic public bottleneck, operates under real regulations, and concludes with a formal 4-Pillar Handover Protocol.
+      At the INOVATECH Tech Residency, fellows build software products. Every solution addresses an authentic public bottleneck, operates under real regulations, and combines institutional deployment, continuous development and documentary handover.
     </p>
 
-    <div class="hub-stats-ribbon">
-      <div class="ribbon-item">
-        <span class="ribbon-num mono">15</span>
-        <span class="ribbon-label">Engineering Fellows (20 h/wk)</span>
-      </div>
-      <div class="ribbon-item">
-        <span class="ribbon-num mono">4</span>
-        <span class="ribbon-label">Mission-Critical Tracks</span>
-      </div>
-      <div class="ribbon-item">
-        <span class="ribbon-num mono">3</span>
-        <span class="ribbon-label">Systems Live in IFPI Production</span>
-      </div>
-      <div class="ribbon-item">
-        <span class="ribbon-num mono">208</span>
-        <span class="ribbon-label">Audited Technical Deliveries</span>
-      </div>
-      <div class="ribbon-item">
-        <span class="ribbon-num mono">100%</span>
-        <span class="ribbon-label">On-Schedule Milestone Gates</span>
-      </div>
-    </div>
+    {% include portfolio-ribbon.html %}
+
   </div>
 </div>
 
@@ -47,7 +36,7 @@ url_pt: /portfolio/
   <nav class="hub-showroom-nav mono" aria-label="Quick track navigation">
     <span>JUMP TO:</span>
     <a href="#sgae">01. SGAE (FinTech)</a>
-    <a href="#flix">02. IFPI Flix (EdTech)</a>
+    <a href="#flix">02. Projeto Flix (EdTech)</a>
     <a href="#conecta">03. Conecta CATCE (IoT)</a>
     <a href="#spia">04. SPIA Maestro (Public Safety)</a>
     <a href="#engagement">05. Web Summit Collaboration</a>
@@ -64,23 +53,24 @@ url_pt: /portfolio/
       <p class="hub-case-demandante mono">
         <strong>Institutional Stakeholder:</strong> Directorate of Student Welfare · Federal Institute of Piauí (IFPI)
       </p>
+    <p class="dim">{{ sgae.handover.en }} · {{ facts.checked_at }}</p>
     </header>
 
     <div class="hub-product-metrics">
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">R$ 1.1M/yr</span>
+        <span class="hub-metric-val">{{ facts.budget_en }}</span>
         <span class="hub-metric-lbl">Welfare Budget</span>
       </div>
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">~580</span>
+        <span class="hub-metric-val">~{{ facts.students }}</span>
         <span class="hub-metric-lbl">Active Beneficiaries</span>
       </div>
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">7 Grants</span>
+        <span class="hub-metric-val">{{ facts.aid_types }} Grants</span>
         <span class="hub-metric-lbl">POLAE Categories</span>
       </div>
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">100%</span>
+        <span class="hub-metric-val">History</span>
         <span class="hub-metric-lbl">Audited Compliance</span>
       </div>
     </div>
@@ -90,7 +80,7 @@ url_pt: /portfolio/
         <div class="hub-case-block">
           <h3>The Public Sector Bottleneck</h3>
           <p>
-            The campus student welfare department administers <strong>7 distinct categories of financial aid</strong> (housing, food, transportation, medical, and academic grants) under the POLAE regulatory policy (Resolution 35/2021). The program distributes <strong>R$ 1.1 million annually</strong> across approximately <strong>580 vulnerable student beneficiaries</strong>.
+            The campus student welfare department administers <strong>{{ facts.aid_types }} categories of financial aid</strong> under the POLAE regulatory policy (Resolution 35/2021). The program distributes <strong>{{ facts.budget_en | remove: "/year" }} annually</strong> across approximately <strong>{{ facts.students }} student beneficiaries</strong>.
           </p>
           <p>
             Previously, administration was conducted via unversioned, shared spreadsheets across staff members. This created operational fragility: zero auditability, cumbersome manual cross-checks to detect prohibited benefit accumulation, and payment rejections caused by manual banking data typos.
@@ -112,7 +102,7 @@ url_pt: /portfolio/
         <div class="hub-case-block">
           <h3>Scalability Beyond Campus</h3>
           <p>
-            POLAE is the unified student assistance policy for the <strong>entire IFPI federal network</strong> (20+ campuses, 30,000+ students). SGAE was architected from inception on this universal regulatory baseline, enabling seamless multi-tenant expansion across other federal institutes without core rewrites.
+            POLAE is the student welfare policy across IFPI. Replication in other IFPI campuses requires assessment of local needs, institutional governance, infrastructure and potential integrations.
           </p>
         </div>
 
@@ -137,7 +127,7 @@ url_pt: /portfolio/
             </div>
             <div class="hub-spec-item">
               <span class="hub-spec-label">Core Stack</span>
-              <span class="hub-spec-value">Django / Python · PostgreSQL · REST</span>
+              <span class="hub-spec-value">{{ sgae.stack }}</span>
             </div>
             <div class="hub-spec-item">
               <span class="hub-spec-label">Governance</span>
@@ -164,8 +154,8 @@ url_pt: /portfolio/
             </div>
           </div>
           <div class="hub-browser-screen">
-            <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" data-lightbox-caption="SGAE Automated Payroll Module with real-time POLAE compliance cross-checks." aria-label="Expand SGAE screenshot">
-              <img src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" alt="SGAE Payments Module" class="hub-case-img" loading="lazy">
+            <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" data-lightbox-caption="SGAE payroll module with POLAE rule checks. Demonstration screenshot with SEED identifiers." aria-label="Expand SGAE screenshot">
+              <img width="1671" height="853" src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" alt="SGAE Payments Module" class="hub-case-img" loading="lazy">
               <span class="hub-lightbox-zoom-hint mono">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                 <span>Expand</span>
@@ -174,12 +164,12 @@ url_pt: /portfolio/
           </div>
         </div>
         <figcaption class="mono dim" style="padding: 0 4px; font-size: 11.5px; line-height: 1.45;">
-          SGAE Automated Payroll Module with real-time POLAE compliance cross-checks.
+          SGAE payroll module with POLAE rule checks. Demonstration screenshot with SEED identifiers.
         </figcaption>
         <div class="hub-case-card-stats mono">
-          <div><span>Budget:</span> R$ 1.1M/year</div>
-          <div><span>Beneficiaries:</span> ~580 students</div>
-          <div><span>Grants:</span> 7 POLAE categories</div>
+          <div><span>Budget:</span> {{ facts.budget_en }}</div>
+          <div><span>Beneficiaries:</span> ~{{ facts.students }} students</div>
+          <div><span>Grants:</span> {{ facts.aid_types }} POLAE categories</div>
           <div><span>Fellow Squad:</span> 4 engineering fellows</div>
         </div>
       </div>
@@ -187,7 +177,7 @@ url_pt: /portfolio/
 
     <!-- Contextual Action Bar -->
     <div class="hub-case-actions">
-      <a href="mailto:eric@ifpi.edu.br,aislan@ifpi.edu.br?subject=[SGAE]%20Multi-Campus%20Rollout%20Inquiry" class="hub-case-action-btn primary mono">
+      <a href="mailto:{{ coordination.email }},{{ technical.email }}?subject=[SGAE]%20Multi-Campus%20Rollout%20Inquiry" class="hub-case-action-btn primary mono">
         <span>Request Multi-Campus Rollout →</span>
       </a>
       <a href="#engagement" class="hub-case-action-btn secondary mono">
@@ -203,10 +193,11 @@ url_pt: /portfolio/
         <span class="badge-code">TRACK 02 · EDTECH & MEDIA</span>
         <span class="badge-status">LIVE IN PRODUCTION · SCOPE VALIDATED</span>
       </div>
-      <h2>IFPI Flix — Institutional Educational Streaming Platform</h2>
+      <h2>Projeto Flix — Institutional Educational Streaming Platform</h2>
       <p class="hub-case-demandante mono">
         <strong>Institutional Stakeholder:</strong> Office of the University President (Reitoria), IFPI
       </p>
+    <p class="dim">{{ flix.handover.en }} · {{ facts.checked_at }}</p>
     </header>
 
     <div class="hub-product-metrics">
@@ -215,7 +206,7 @@ url_pt: /portfolio/
         <span class="hub-metric-lbl">Federal Network Scope</span>
       </div>
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">Zero-IT CMS</span>
+        <span class="hub-metric-val">Self-Service CMS</span>
         <span class="hub-metric-lbl">Direct Faculty Curation</span>
       </div>
       <div class="hub-metric-tile">
@@ -223,7 +214,7 @@ url_pt: /portfolio/
         <span class="hub-metric-lbl">Optimized for Mobile</span>
       </div>
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">3 Fellows</span>
+        <span class="hub-metric-val">{{ flix.residents }} Fellows</span>
         <span class="hub-metric-lbl">Specialized Squad</span>
       </div>
     </div>
@@ -247,7 +238,7 @@ url_pt: /portfolio/
           </p>
           <ul>
             <li><strong>Fluid Discovery Catalog:</strong> users navigate across campuses, academic departments, and research projects with featured trailers, thematic rows, and unified search.</li>
-            <li><strong>Zero-Code Administrative CMS:</strong> enables department managers to curate playlists, tag video assets, and configure public visibility without filing IT support tickets.</li>
+            <li><strong>Content Management:</strong> enables department managers to curate playlists, tag video assets, and configure public visibility with autonomy in content registration.</li>
             <li><strong>Low-Bandwidth Optimization:</strong> responsive streaming performance tailored for rural and low-connectivity mobile networks.</li>
           </ul>
         </div>
@@ -255,13 +246,13 @@ url_pt: /portfolio/
         <div class="hub-case-block">
           <h3>Scalability Beyond Campus</h3>
           <p>
-            By design, the catalog supports multi-campus federation across the federal education network. Each campus becomes an autonomous channel within a unified national showcase.
+            The catalog was designed for IFPI’s network. Expansion requires editorial governance, infrastructure and alignment with existing platforms.
           </p>
         </div>
 
         <div class="hub-rule-pills">
           <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> On-Demand Educational Streaming</span>
-          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Zero-Code CMS for Faculty</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Content Management for Staff</span>
           <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Curated Series & Micro-Courses</span>
           <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Low-Bandwidth Encoding</span>
           <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Federated Repository</span>
@@ -280,7 +271,7 @@ url_pt: /portfolio/
             </div>
             <div class="hub-spec-item">
               <span class="hub-spec-label">Core Stack</span>
-              <span class="hub-spec-value">Nuxt / Vue · Node.js API · CDN</span>
+              <span class="hub-spec-value">{{ flix.stack }}</span>
             </div>
             <div class="hub-spec-item">
               <span class="hub-spec-label">Audience</span>
@@ -307,8 +298,8 @@ url_pt: /portfolio/
             </div>
           </div>
           <div class="hub-browser-screen">
-            <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" data-lightbox-caption="IFPI Flix public homepage featuring thematic educational rows and campus filters." aria-label="Expand IFPI Flix screenshot">
-              <img src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" alt="IFPI Flix Streaming Catalog" class="hub-case-img" loading="lazy">
+            <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" data-lightbox-caption="Projeto Flix public homepage featuring thematic educational rows and campus filters." aria-label="Expand Projeto Flix screenshot">
+              <img width="1804" height="693" src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" alt="Projeto Flix Streaming Catalog" class="hub-case-img" loading="lazy">
               <span class="hub-lightbox-zoom-hint mono">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                 <span>Expand</span>
@@ -317,7 +308,7 @@ url_pt: /portfolio/
           </div>
         </div>
         <figcaption class="mono dim" style="padding: 0 4px; font-size: 11.5px; line-height: 1.45;">
-          IFPI Flix public homepage featuring thematic educational rows and campus filters.
+          Projeto Flix public homepage featuring thematic educational rows and campus filters.
         </figcaption>
         <div class="hub-case-card-stats mono">
           <div><span>Audience:</span> Public & Academic</div>
@@ -330,11 +321,11 @@ url_pt: /portfolio/
 
     <!-- Contextual Action Bar -->
     <div class="hub-case-actions">
-      <a href="mailto:eric@ifpi.edu.br,aislan@ifpi.edu.br?subject=[IFPI%20Flix]%20Catalog%20Demo%20Inquiry" class="hub-case-action-btn primary mono">
-        <span>Explore Platform Showcase →</span>
+      <a href="mailto:{{ coordination.email }},{{ technical.email }}?subject=[IFPI%20Flix]%20Catalog%20Demo%20Inquiry" class="hub-case-action-btn primary mono">
+        <span>Request a Platform Demo →</span>
       </a>
       <a href="#engagement" class="hub-case-action-btn secondary mono">
-        <span>Multi-Campus Federation Guide</span>
+        <span>Multi-Discuss Expansion</span>
       </a>
     </div>
   </article>
@@ -346,27 +337,28 @@ url_pt: /portfolio/
         <span class="badge-code">TRACK 03 · IOT & SMART CAMPUS</span>
         <span class="badge-status">DEPLOYED · DTI MAINTAINER</span>
       </div>
-      <h2>Conecta CATCE & Catraka — Smart Campus Access Control</h2>
+      <h2>Conecta CATCE (Catraka) — Smart Campus Access Control</h2>
       <p class="hub-case-demandante mono">
         <strong>Institutional Stakeholder:</strong> General Campus Directorate · IFPI Central Campus
       </p>
+    <p class="dim">{{ conecta.handover.en }} · {{ facts.checked_at }}</p>
     </header>
 
     <div class="hub-product-metrics">
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">Thousands/day</span>
-        <span class="hub-metric-lbl">Monitored Turnstile Gates</span>
+        <span class="hub-metric-val">Access</span>
+        <span class="hub-metric-lbl">Access Management</span>
       </div>
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">Real-Time</span>
-        <span class="hub-metric-lbl">Direct Guardian Alerts</span>
+        <span class="hub-metric-val">Integration</span>
+        <span class="hub-metric-lbl">Turnstile Integration in Progress</span>
       </div>
       <div class="hub-metric-tile">
         <span class="hub-metric-val">GOV.BR</span>
         <span class="hub-metric-lbl">Official Federal Standard</span>
       </div>
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">4 Fellows</span>
+        <span class="hub-metric-val">{{ conecta.residents }} Fellows</span>
         <span class="hub-metric-lbl">Engineering Squad</span>
       </div>
     </div>
@@ -376,7 +368,7 @@ url_pt: /portfolio/
         <div class="hub-case-block">
           <h3>The Public Sector Bottleneck</h3>
           <p>
-            Serving thousands of students, faculty, and visitors daily, the central campus lacked an integrated access control system, relying on manual paper logs at security gates.
+            The campus already used a proprietary desktop application for access control. Its integration limitations made it difficult to connect gatehouse management to other institutional applications.
           </p>
           <p>
             Furthermore, parents and legal guardians of adolescent students enrolled in integrated technical high school had no digital mechanism to track campus attendance, receive real-time arrival/departure alerts, or access official school bulletins.
@@ -390,7 +382,7 @@ url_pt: /portfolio/
           </p>
           <ul>
             <li><strong>Catraka CATCE:</strong> turnstile and gatehouse access management backend designed to interface with physical IoT readers and campus security gates.</li>
-            <li><strong>Conecta CATCE (Mobile App):</strong> mobile application for parents featuring verified student linkages, real-time entry/exit push notifications, official bulletins, and a direct institutional service channel.</li>
+            <li><strong>Conecta CATCE (Mobile App):</strong> mobile application for parents featuring verified student linkages, official bulletins and a direct institutional service channel. Entry/exit notifications depend on turnstile integration, which remains under development.</li>
             <li><strong>Design System GOV.BR:</strong> complete visual and interaction compliance with the official Brazilian Federal Design System standards.</li>
           </ul>
         </div>
@@ -398,14 +390,14 @@ url_pt: /portfolio/
         <div class="hub-case-block">
           <h3>Scalability Beyond Campus</h3>
           <p>
-            Physical security and guardian engagement represent standard challenges across the 600+ federal technical campuses in Brazil.
+            Access management and communication with guardians are shared challenges across federal education campuses.
           </p>
         </div>
 
         <div class="hub-rule-pills">
           <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Official GOV.BR Design System</span>
           <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Turnstile IoT Integration</span>
-          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Real-Time Attendance Push</span>
+          <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Movement Alerts in Development</span>
           <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Secure SUAP Federation</span>
           <span class="hub-rule-pill"><span class="pill-dot" aria-hidden="true"></span> Tamper-Proof Access Trail</span>
         </div>
@@ -419,11 +411,11 @@ url_pt: /portfolio/
             </div>
             <div class="hub-spec-item">
               <span class="hub-spec-label">Status</span>
-              <span class="hub-spec-value">Deployed · Formal DTI Handover</span>
+              <span class="hub-spec-value">Deployed · Documentary handover in progress</span>
             </div>
             <div class="hub-spec-item">
               <span class="hub-spec-label">Core Stack</span>
-              <span class="hub-spec-value">Flutter / Dart · FastAPI · IoT Gateways</span>
+              <span class="hub-spec-value">{{ conecta.stack }}</span>
             </div>
             <div class="hub-spec-item">
               <span class="hub-spec-label">Visual Standard</span>
@@ -445,7 +437,7 @@ url_pt: /portfolio/
             </div>
             <div class="hub-mobile-suite-screen">
               <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }}" data-lightbox-caption="Integrated 4-module view of the Conecta CATCE mobile suite. Click to expand and inspect each screen in high definition." aria-label="Expand Conecta CATCE mobile screens suite">
-                <img src="{{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }}" alt="Integrated 4-screen view of Conecta CATCE mobile suite" class="hub-case-img" loading="lazy">
+                <img width="1100" height="544" src="{{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }}" alt="Integrated 4-screen view of Conecta CATCE mobile suite" class="hub-case-img" loading="lazy">
                 <span class="hub-lightbox-zoom-hint mono">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                   <span>Expand</span>
@@ -468,11 +460,11 @@ url_pt: /portfolio/
 
     <!-- Contextual Action Bar -->
     <div class="hub-case-actions">
-      <a href="mailto:eric@ifpi.edu.br,aislan@ifpi.edu.br?subject=[Conecta%20CATCE]%20Campus%20Deployment%20Inquiry" class="hub-case-action-btn primary mono">
+      <a href="mailto:{{ coordination.email }},{{ technical.email }}?subject=[Conecta%20CATCE]%20Campus%20Deployment%20Inquiry" class="hub-case-action-btn primary mono">
         <span>Deploy at Your Institution →</span>
       </a>
       <a href="#engagement" class="hub-case-action-btn secondary mono">
-        <span>IoT & SUAP Architecture</span>
+        <span>Discuss Integrations</span>
       </a>
     </div>
   </article>
@@ -498,11 +490,11 @@ url_pt: /portfolio/
 
     <div class="hub-product-metrics">
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">24/7 Uptime</span>
-        <span class="hub-metric-lbl">High-Availability SLA</span>
+        <span class="hub-metric-val">Availability</span>
+        <span class="hub-metric-lbl">Operational Requirement</span>
       </div>
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">100% Audited</span>
+        <span class="hub-metric-val">Traceability</span>
         <span class="hub-metric-lbl">Cryptographic LGPD Trail</span>
       </div>
       <div class="hub-metric-tile">
@@ -510,7 +502,7 @@ url_pt: /portfolio/
         <span class="hub-metric-lbl">Public Safety Secrecy</span>
       </div>
       <div class="hub-metric-tile">
-        <span class="hub-metric-val">4 Fellows</span>
+        <span class="hub-metric-val">{{ spia.residents }} Fellows</span>
         <span class="hub-metric-lbl">Mission-Critical Squad</span>
       </div>
     </div>
@@ -527,7 +519,7 @@ url_pt: /portfolio/
         <div class="hub-case-block">
           <h3>Fellow Contributions</h3>
           <p>
-            Four INOVATECH fellows develop high-throughput backend services under state engineering supervision and strict confidentiality protocols:
+            {{ spia.residents }} INOVATECH fellows develop high-throughput backend services under state engineering supervision and strict confidentiality protocols:
           </p>
           <ul>
             <li>Continuous development of high-availability backend microservices.</li>
@@ -587,7 +579,7 @@ url_pt: /portfolio/
           </div>
           <div class="hub-assurance-photo-screen">
             <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" data-lightbox-caption="Official authorized presentation of the SPIA Maestro Squad at the INOVATECH Public Showcase in Piauí Gov Tech." aria-label="Expand official SPIA Maestro squad photo">
-              <img src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" alt="SPIA Maestro Squad presenting at INOVATECH Showcase" class="hub-case-img" loading="lazy">
+              <img width="787" height="524" src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" alt="SPIA Maestro Squad presenting at INOVATECH Showcase" class="hub-case-img" loading="lazy">
               <span class="hub-lightbox-zoom-hint mono">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                 <span>Expand</span>
@@ -610,7 +602,7 @@ url_pt: /portfolio/
 
     <!-- Contextual Action Bar -->
     <div class="hub-case-actions">
-      <a href="mailto:adm@piauigovtech.org,eric@ifpi.edu.br?subject=[SPIA%20Maestro]%20GovTech%20Cooperation%20Inquiry" class="hub-case-action-btn primary mono">
+      <a href="mailto:{{ state_contact.email }},{{ coordination.email }}?subject=[SPIA%20Maestro]%20GovTech%20Cooperation%20Inquiry" class="hub-case-action-btn primary mono">
         <span>Institutional GovTech Partnership →</span>
       </a>
       <a href="#engagement" class="hub-case-action-btn secondary mono">
@@ -634,7 +626,7 @@ url_pt: /portfolio/
         <div class="hub-colabore-num mono">01</div>
         <h3>Institutional Challenge Sponsor</h3>
         <p>
-          Bring a verified public sector bottleneck with dedicated domain owners. INOVATECH mobilizes an elite engineering squad guided by senior academic faculty through formal handover.
+          Bring a public sector challenge, users and a focal point. Scope, capacity and institutional agreements are assessed before mobilising fellows and instructors.
         </p>
       </div>
 
@@ -650,18 +642,11 @@ url_pt: /portfolio/
         <div class="hub-colabore-num mono">03</div>
         <h3>Fund a Fellowship Cohort</h3>
         <p>
-          Fund living stipends for a new cohort of 20 to 50 fellows. Replicate our vetted model: rigorous talent diagnosis, intensive product-oriented engineering, and auditable milestone deliveries.
+          Support new engineering fellowships through institutional coordination, applied learning and documented project milestones.
         </p>
       </div>
     </div>
 
-    <div class="hub-showroom-contacts mono">
-      <p>
-        <strong>General Residency Coordination:</strong> Prof. Franciéric Alves de Araújo · IFPI Central Campus · <a href="mailto:eric@ifpi.edu.br">eric@ifpi.edu.br</a><br>
-        <strong>Residency Instructor:</strong> Prof. Aislan Rafael Rodrigues de Sousa · IFPI Central Campus · <a href="mailto:aislan@ifpi.edu.br">aislan@ifpi.edu.br</a><br>
-        <strong>State Digital Transformation Agency:</strong> Piauí Gov Tech / ETIPI · <a href="mailto:adm@piauigovtech.org">adm@piauigovtech.org</a> · <a href="https://piauigovtech.org">piauigovtech.org</a><br>
-        <strong>Official Portal:</strong> <a href="https://inovatech-ifpi.github.io/portal/">inovatech-ifpi.github.io/portal/</a>
-      </p>
-    </div>
+    <div class="hub-showroom-contacts">{% include contatos.html %}</div>
   </section>
 </div>

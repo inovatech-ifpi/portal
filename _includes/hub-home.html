@@ -1,0 +1,62 @@
+{% assign lang = page.lang | default: 'pt' %}
+{% assign ui = site.data.idiomas[lang] %}
+{% assign facts = site.data.portal.facts %}
+<section class="hub-hero" id="inicio" aria-labelledby="hero-title">
+  <div class="hub-hero-bg" aria-hidden="true"><img src="{{ '/assets/img/portfolio/foto-encontro-abertura.jpg' | relative_url }}" alt="" width="1600" height="900" class="hub-hero-img" fetchpriority="high"><div class="hub-hero-overlay"></div></div>
+  <div class="hub-container"><div class="hub-hero-content">
+    <div class="hub-hero-badge">{{ ui.hero_badge }}</div>
+    <h1 id="hero-title" class="hub-hero-title">{{ ui.hero_title }}</h1>
+    <p class="hub-hero-sub">{{ ui.hero_lead }}</p>
+    <div class="hub-hero-proof"><span>{{ facts.systems }} {{ ui.deployed }}</span><span>{{ facts.work_items }} {{ ui.completed }}</span><span>{{ ui.event }} · {{ facts.showcase_date }}</span></div>
+    <div class="hub-hero-ctas"><a href="#{{ ui.products_anchor }}" class="hub-btn hub-btn-primary">{{ ui.hero_action }} ↓</a><a href="#{{ ui.collaborate_anchor }}" class="hub-btn hub-btn-outline">{{ ui.collaborate }} →</a></div>
+  </div></div>
+</section>
+
+<section class="hub-section" id="{{ ui.products_anchor }}" aria-labelledby="products-heading">
+  <div class="hub-container">
+    <div class="hub-section-head"><p class="hub-kicker">{{ ui.products }}</p><h2 id="products-heading">{{ ui.solutions_title }}</h2><p class="hub-section-lead">{{ ui.solutions_lead }}</p></div>
+    <div class="hub-products-grid">
+      {% for project in site.data.portal.projects %}
+        {% assign label = project %}{% if lang == 'en' %}{% assign label = project.en %}{% endif %}
+        <article class="hub-product-card {{ project.tone }}" id="produto-{{ project.slug }}">
+          <div class="hub-product-media"><img src="{{ project.thumb | relative_url }}" alt="{{ project.image_alt[lang] }}" class="hub-product-img" loading="lazy"><div class="hub-product-badge-bar"><span class="hub-chip">{{ project.code }}</span><span class="hub-chip status-chip">{{ label.stage }}</span></div></div>
+          <div class="hub-product-content"><div class="hub-product-meta">{{ label.stakeholder }}</div><h3 class="hub-product-title">{{ project.public_name }}</h3><p class="hub-product-subtitle"><strong>{{ label.subtitle }}</strong></p><p class="hub-product-desc">{{ label.description }}</p><div class="hub-product-footer"><span class="hub-team-pill">{{ project.residents }} {{ ui.fellows }}</span><a href="{{ ui.portfolio | relative_url }}#{{ project.slug }}" class="hub-card-link">{{ ui.case }} →</a></div></div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="hub-section hub-section-stats" id="indicadores" aria-labelledby="stats-heading"><div class="hub-container">
+  <div class="hub-section-head"><h2 id="stats-heading">{{ ui.stats_title }}</h2><p class="hub-section-lead">{{ ui.stats_lead }}</p></div>
+  {% include indicadores.html %}
+  <p class="hub-stats-single-footer">{{ ui.period }} · {{ facts.period }} · <a href="{{ ui.home | append: 'evidencias/' | relative_url }}">{{ ui.evidence }} →</a></p>
+</div></section>
+
+<section class="hub-section" id="{{ ui.impact_anchor }}" aria-labelledby="impact-heading"><div class="hub-container">
+  <div class="hub-section-head"><p class="hub-kicker">SGAE</p><h2 id="impact-heading">{{ ui.impact_title }}</h2><p class="hub-section-lead">{{ ui.impact_lead }}</p></div>
+  <div class="hub-compare-grid"><div class="hub-compare-col before"><h3>{{ ui.impact_before }}</h3><ul>{% for item in ui.impact_before_list %}<li>{{ item }}</li>{% endfor %}</ul></div><div class="hub-compare-col after"><h3>{{ ui.impact_after }}</h3><ul>{% for item in ui.impact_after_list %}<li>{{ item }}</li>{% endfor %}</ul></div></div>
+  <p class="hub-impact-scale">{% if lang == 'en' %}{{ facts.budget_en }} · approximately {{ facts.students }} students · {{ facts.aid_types }} aid categories{% else %}{{ facts.budget_pt }} · cerca de {{ facts.students }} estudantes · {{ facts.aid_types }} modalidades{% endif %}</p><p class="dim">{{ ui.impact_note }}</p>
+</div></section>
+
+<section class="hub-section hub-section-alt" id="{{ ui.method_anchor }}" aria-labelledby="method-heading"><div class="hub-container">
+  <div class="hub-section-head"><h2 id="method-heading">{{ ui.method_title }}</h2><p class="hub-section-lead">{{ ui.method_lead }}</p></div>
+  <div class="hub-process-summary">{% for title in ui.method_steps %}<article class="hub-process-step"><h3>{{ title }}</h3><p>{{ ui.method_details[forloop.index0] }}</p></article>{% endfor %}</div>
+  <a href="{{ '/metodologia/' | relative_url }}" class="hub-card-link">{{ ui.method_link }} →</a>
+</div></section>
+
+<section class="hub-section" id="equipes" aria-labelledby="teams-heading"><div class="hub-container">
+  <div class="hub-section-head"><h2 id="teams-heading">{{ ui.teams_title }}</h2><p class="hub-section-lead">{{ ui.teams_lead }}</p></div>
+  <div class="hub-squads-grid">{% for project in site.data.portal.projects %}<article class="hub-squad-card"><div class="hub-squad-photo-wrap">{% assign squad = site.data.squads | where: 'code', project.code | first %}<img src="{{ squad.photo | relative_url }}" alt="{{ project.public_name }}" loading="lazy" class="hub-squad-img"></div><div class="hub-squad-info"><h3>{{ project.public_name }}</h3><p>{{ project.residents }} {{ ui.fellows }} · {{ facts.weekly_hours }} h/{% if lang == 'en' %}week{% else %}semana{% endif %}</p></div></article>{% endfor %}</div>
+  <div class="hub-leadership-block"><h3>{{ ui.leadership }}</h3><div class="hub-leadership-grid">{% for leader in site.data.portal.leadership %}<div class="hub-leader-card"><strong>{{ leader.name }}</strong><span>{{ leader[lang] | default: leader.role }}</span></div>{% endfor %}</div></div>
+</div></section>
+
+<section class="hub-section hub-section-alt" id="parceiros" aria-labelledby="partners-heading"><div class="hub-container"><div class="hub-section-head"><h2 id="partners-heading">{{ ui.partners_title }}</h2></div><div class="hub-partners-grid">{% for partner in site.data.portal.partners %}<article class="hub-partner-card"><h3 class="hub-partner-name">{{ partner.name }}</h3><p>{{ partner[lang] | default: partner.detail }}</p>{% if partner.logo %}<img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }}" class="hub-partner-logo" loading="lazy">{% endif %}</article>{% endfor %}</div></div></section>
+
+<section class="hub-section" id="noticias" aria-labelledby="news-heading"><div class="hub-container"><div class="hub-section-head"><h2 id="news-heading">{{ ui.news_title }}</h2></div><div class="hub-news-grid">{% for item in site.data.portal.news %}{% assign label = item %}{% if lang == 'en' %}{% assign label = item.en %}{% endif %}<article class="hub-news-card"><p class="hub-news-meta">{{ item.date }}</p><h3 class="hub-news-title">{{ label.title }}</h3><p>{{ label.summary }}</p><a href="{{ label.link | relative_url }}">{{ ui.news_link }} →</a></article>{% endfor %}</div></div></section>
+
+<section class="hub-section hub-section-dark" id="{{ ui.collaborate_anchor }}" aria-labelledby="cooperation-heading"><div class="hub-container">
+  <div class="hub-section-head"><h2 id="cooperation-heading">{{ ui.contact_title }}</h2><p class="hub-section-lead">{{ ui.contact_lead }}</p></div>
+  <div class="hub-colabore-grid">{% for contact in site.data.portal.public_contacts %}<article class="hub-colabore-card"><h3>{{ ui.contact_labels[forloop.index0] }}</h3><p>{{ ui.contact_descriptions[forloop.index0] }}</p><a class="hub-btn hub-btn-sm hub-btn-outline" href="mailto:{{ contact.email }}?subject={{ ui.contact_subjects[forloop.index0] | uri_escape }}">{{ ui.contact_actions[forloop.index0] }}</a></article>{% endfor %}</div>
+  <div class="hub-contact-direct-box">{% include contatos.html %}</div>
+</div></section>

@@ -13,8 +13,6 @@ hub:
     url: "/#parceiros"
   - titulo: "Portfólio"
     url: "/portfolio/"
-  - titulo: "Colabore"
-    url: "/#colabore"
 
 residencia:
   - titulo: "Painel da Residência"
@@ -23,8 +21,8 @@ residencia:
   - titulo: "Cronograma e Marcos"
     url: "/cronograma/"
     icone: "◷"
-  - titulo: "Sprint E2 (Vigente)"
-    url: "/sprint-e2/"
+  - titulo: "Sprint vigente"
+    dynamic: sprint
     icone: "⚡"
   - titulo: "Metodologia"
     url: "/metodologia/"
@@ -53,5 +51,3 @@ en:
     url: "/en/#impact"
   - title: "Showcase Portfolio"
     url: "/en/portfolio/"
-  - title: "Partnerships"
-    url: "/en/#partnerships"

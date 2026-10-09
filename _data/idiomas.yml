@@ -1,0 +1,209 @@
+---
+pt:
+  home: "/"
+  portfolio: "/portfolio/"
+  products_anchor: solucoes
+  method_anchor: fabrica
+  impact_anchor: impacto
+  collaborate_anchor: colabore
+  skip: Ir para o conteúdo principal
+  brand_label: INOVATECH — Página inicial
+  navigation: Navegação institucional
+  menu: Alternar menu de navegação
+  residency: Área da Residência
+  collaborate: Colabore
+  products: Soluções e frentes
+  case: Ver estudo de caso
+  fellows: residentes bolsistas
+  solutions_title: Tecnologia aplicada a desafios públicos reais
+  solutions_lead: Três sistemas implantados no IFPI e uma frente estadual com a SSP-PI.
+    Cada projeto conecta formação profissional, usuários reais e necessidades institucionais.
+  hero_badge: RESIDÊNCIA INOVATECH · IFPI & PIAUÍ GOV TECH
+  hero_title: Formação aplicada. Soluções públicas em produção.
+  hero_lead: Residentes bolsistas desenvolvem software para instituições públicas,
+    acompanhados por instrutores do IFPI. Do problema real à implantação, cada projeto
+    reúne aprendizado, engenharia e colaboração com quem vai usar a solução.
+  hero_action: Conhecer as soluções
+  deployed: sistemas implantados no IFPI
+  completed: itens concluídos na Fase 1
+  event: Encontro institucional
+  stats_title: Resultados da Fase 1
+  stats_lead: Atividade técnica, implantação e marcos são indicadores distintos. Estes
+    números descrevem o ciclo histórico da Fase 1, sem certificar a transferência
+    documental dos sistemas.
+  period: Período de referência
+  evidence: Consultar critérios e fontes
+  method_title: Do problema real à operação
+  method_lead: Entender o desafio, projetar com usuários, desenvolver e validar em
+    ciclos, implantar e documentar. A transferência formal exige evidências próprias
+    e a evolução continua em sprints.
+  method_steps:
+  - Descoberta e projeto
+  - Desenvolvimento e validação
+  - Implantação e evolução
+  method_details:
+  - Problema, usuários, backlog e arquitetura revisada.
+  - Incrementos demonstráveis, testes e revisão de código.
+  - Operação institucional, documentação e formalização da transferência.
+  method_link: Conhecer a metodologia completa
+  teams_title: Pessoas que constroem tecnologia pública
+  teams_lead: Bolsistas organizados em equipes, com acompanhamento dos instrutores
+    e colaboração dos setores demandantes.
+  leadership: Coordenação e instrutores
+  partners_title: Cooperação institucional
+  news_title: Marcos e acontecimentos
+  news_link: Conhecer o registro
+  contact_title: Canais institucionais de cooperação
+  contact_lead: Apresente um desafio, converse sobre a continuidade das soluções ou
+    apoie a formação de novos residentes. As propostas passam por avaliação e articulação
+    institucional.
+  contact_labels:
+  - Propor um desafio
+  - Apoiar operação e expansão
+  - Apoiar novas bolsas
+  contact_descriptions:
+  - Problema real, usuários e ponto focal para avaliar a demanda.
+  - Condições de infraestrutura, governança e adaptação a outros contextos.
+  - Articulação de novas oportunidades de formação e desenvolvimento.
+  contact_actions:
+  - Enviar proposta por e-mail
+  - Conversar sobre sustentação
+  - Articular com Piauí Gov Tech
+  contact_subjects:
+  - INOVATECH - Proposta de demanda
+  - INOVATECH - Operação e expansão
+  - INOVATECH - Apoio a bolsas
+  footer_desc: Residência de formação profissional em tecnologia do IFPI Campus Teresina
+    Central, em parceria com Piauí Gov Tech e ETIPI.
+  footer_solutions: Soluções e frentes
+  footer_panel: Painel da Residência
+  footer_calendar: Cronograma e marcos
+  footer_method: Metodologia
+  footer_materials: Materiais e templates
+  footer_links: Repositórios e links
+  footer_contact: Contato institucional
+  footer_copy: Formação aplicada, software institucional e colaboração com o setor
+    público.
+  close_image: Fechar visualização (Esc)
+  image_dialog: Visualização ampliada
+  image_hint: Ampliar
+  english_showcase: Vitrine institucional em inglês
+  impact_title: Assistência estudantil com rastreabilidade
+  impact_lead: O SGAE reúne concessões, regras da POLAE e geração de folha de pagamento
+    em um fluxo documentado.
+  impact_before: Antes do sistema
+  impact_after: Com o SGAE
+  impact_before_list:
+  - Planilhas compartilhadas e conferência manual de acúmulos.
+  - Transcrição de dados bancários sujeita a erros.
+  - Rastreabilidade limitada entre concessão e pagamento.
+  impact_after_list:
+  - Validação de regras no fluxo de concessão.
+  - Folha gerada a partir de vínculos e registros de pagamento.
+  - Histórico de aprovações, suspensões e cancelamentos.
+  impact_note: Escala do setor atendido; não representa economia medida. Expansão
+    depende de avaliação institucional e particularidades locais.
+en:
+  home: "/en/"
+  portfolio: "/en/portfolio/"
+  products_anchor: products
+  method_anchor: model
+  impact_anchor: impact
+  collaborate_anchor: partnerships
+  skip: Skip to main content
+  brand_label: INOVATECH — Home
+  navigation: Institutional navigation
+  menu: Toggle navigation menu
+  residency: Residency area (PT)
+  collaborate: Collaborate
+  products: Solutions and tracks
+  case: View case study
+  fellows: engineering fellows
+  solutions_title: Technology for real public sector challenges
+  solutions_lead: Three systems deployed at IFPI and one state public safety track
+    with SSP-PI. Each project connects professional training, real users and institutional
+    needs.
+  hero_badge: INOVATECH TECH RESIDENCY · IFPI & PIAUÍ GOV TECH
+  hero_title: Applied learning. Public solutions in production.
+  hero_lead: Engineering fellows build software for public institutions with guidance
+    from IFPI instructors. From discovery to deployment, each project combines learning,
+    engineering and collaboration with its users.
+  hero_action: Explore the solutions
+  deployed: systems deployed at IFPI
+  completed: completed Phase 1 work items
+  event: Institutional showcase
+  stats_title: Phase 1 results
+  stats_lead: Technical activity, deployment and milestones are distinct indicators.
+    These figures describe the historical Phase 1 cycle and do not certify documentary
+    handover.
+  period: Reference period
+  evidence: Read criteria and sources
+  method_title: From a real problem to operation
+  method_lead: Understand the challenge, design with users, build and validate in
+    cycles, deploy and document. Formal handover requires its own evidence; development
+    continues through sprints.
+  method_steps:
+  - Discovery and design
+  - Development and validation
+  - Deployment and evolution
+  method_details:
+  - Problem, users, backlog and reviewed architecture.
+  - Demonstrable increments, testing and code review.
+  - Institutional operation, documentation and documentary handover.
+  method_link: Read the full methodology (PT)
+  teams_title: People building public technology
+  teams_lead: Fellows work in teams with instructor guidance and collaboration from
+    stakeholder departments.
+  leadership: Coordination and instructors
+  partners_title: Institutional cooperation
+  news_title: Milestones and events
+  news_link: Read the record
+  contact_title: Institutional cooperation channels
+  contact_lead: Bring a challenge, discuss continuity and expansion, or support new
+    engineering fellowships. Proposals are subject to institutional assessment and
+    coordination.
+  contact_labels:
+  - Bring a public challenge
+  - Support operations and expansion
+  - Support new fellowships
+  contact_descriptions:
+  - A real problem, users and a focal point to assess the proposal.
+  - Infrastructure, governance and adaptation to new institutional contexts.
+  - New opportunities for applied training and software development.
+  contact_actions:
+  - Submit a proposal by email
+  - Discuss assisted operations
+  - Contact Piauí Gov Tech
+  contact_subjects:
+  - INOVATECH - Institutional challenge
+  - INOVATECH - Operations and expansion
+  - INOVATECH - Fellowship support
+  footer_desc: A professional technology residency at IFPI Campus Teresina Central,
+    in partnership with Piauí Gov Tech and ETIPI.
+  footer_solutions: Solutions and tracks
+  footer_panel: Residency dashboard (PT)
+  footer_calendar: Schedule and milestones (PT)
+  footer_method: Methodology (PT)
+  footer_materials: Materials and templates (PT)
+  footer_links: Repositories and links (PT)
+  footer_contact: Institutional contacts
+  footer_copy: Applied learning, institutional software and public sector cooperation.
+  close_image: Close preview (Esc)
+  image_dialog: Image preview
+  image_hint: Enlarge
+  english_showcase: Institutional showcase in English
+  impact_title: Traceable student welfare management
+  impact_lead: SGAE brings benefit allocation, POLAE rules and payroll generation
+    into a documented workflow.
+  impact_before: Before the system
+  impact_after: With SGAE
+  impact_before_list:
+  - Shared spreadsheets and manual checks for conflicting benefits.
+  - Manual transcription of banking details prone to errors.
+  - Limited traceability between benefit allocation and payment.
+  impact_after_list:
+  - Rule validation during benefit allocation.
+  - Payroll generated from benefit links and payment records.
+  - History of approvals, suspensions and cancellations.
+  impact_note: Scale of the stakeholder programme; not measured savings. Expansion
+    requires institutional assessment and local adaptation.

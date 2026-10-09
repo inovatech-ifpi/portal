@@ -1,354 +1,535 @@
-brand: "INOVATECH"
-brand_subtitle: "residência técnica · IFPI THE Central"
-
+---
+brand: INOVATECH
+brand_subtitle: residência técnica · IFPI THE Central
 cycle:
-  label: "residência 2026 · fase 2"
-  start: "11/05/2026"
-  end: "30/10/2026"
+  label: residência 2026 · fase 2
+  start: 11/05/2026
+  end: 30/10/2026
   total_weeks: 25
   current_week: 22
-  current_period: "05–09/10"
-  current_phase: "Fase 2 — evolução em sprints"
-  current_focus: "Sprint E2: revisar pendências da E1, priorizar com o demandante e registrar o compromisso da semana"
-  current_sprint_label: "Sprint E2"
+  current_period: 05–09/10
+  current_phase: Fase 2 — evolução em sprints
+  current_focus: 'Sprint E2: revisar pendências da E1, priorizar com o demandante
+    e registrar o compromisso da semana'
+  current_sprint_label: Sprint E2
   current_sprint_link: "/sprint-e2/"
-
 projects:
-  - code: "D02"
-    slug: "sgae"
-    name: "SGAE — Assistência Estudantil"
-    public_name: "SGAE"
-    subtitle: "Sistema de Gestão da Assistência Estudantil"
-    description: "Gestão, conformidade e rastreabilidade da concessão de 7 auxílios estudantis da POLAE"
-    residents: 4
-    status: "Sprint E2"
-    stage: "Implantado no IFPI · Evolução contínua"
-    tone: "active"
-    repository: "equipe-assistencia-bolsas"
-    stakeholder: "Diretoria de Extensão / Assistência Estudantil"
-    image: "/assets/img/portfolio/tela-sgae-pagamentos.jpg"
-    thumb: "/assets/img/portfolio/tela-sgae-pagamentos.jpg"
-  - code: "D05"
-    slug: "flix"
-    name: "Projeto Flix"
-    public_name: "IFPI Flix"
-    subtitle: "Repositório de Conteúdo Institucional"
-    description: "Catálogo streaming interativo para descoberta e difusão de projetos e cursos do IFPI"
-    residents: 3
-    status: "Sprint E2"
-    stage: "Implantado no IFPI · Evolução contínua"
-    tone: "active"
-    repository: "equipe-flix-conteudo"
-    stakeholder: "Reitoria do IFPI"
-    image: "/assets/img/portfolio/tela-flix-home.jpg"
-    thumb: "/assets/img/portfolio/tela-flix-home.jpg"
-  - code: "D07"
-    slug: "conecta"
-    name: "Conecta CATCE (Catraka)"
-    public_name: "Conecta CATCE & Catraka"
-    subtitle: "Controle de Acesso e Comunicação com Famílias"
-    description: "Tecnologia para controle de acesso físico e aplicativo integrado para responsáveis"
-    residents: 4
-    status: "Sprint E2"
-    stage: "Implantado no IFPI · Mantenedor DTI"
-    tone: "active"
-    repository: "equipe-seguranca-campus"
-    stakeholder: "Direção-Geral do Campus Teresina Central"
-    image: "/assets/img/portfolio/tela-conecta-app.jpg"
-    thumb: "/assets/img/portfolio/tela-conecta-app.jpg"
-  - code: "D08"
-    slug: "spia"
-    name: "SPIA Maestro"
-    public_name: "SPIA Maestro"
-    subtitle: "Videomonitoramento e Inteligência em Segurança Pública"
-    description: "Automação de inteligência e despacho de alvos para videomonitoramento em parceria com a SSP-PI"
-    residents: 4
-    status: "Em execução na SSP"
-    stage: "Operacional na SSP-PI · Supervisão estadual"
-    tone: "external"
-    repository:
-    stakeholder: "Secretaria da Segurança Pública do Piauí (SSP-PI)"
-    image: "/assets/img/equipes/foto-spia-equipe.jpg"
-    thumb: "/assets/img/equipes/foto-spia-equipe.jpg"
-
+- code: D02
+  slug: sgae
+  name: SGAE — Assistência Estudantil
+  public_name: SGAE
+  subtitle: Sistema de Gestão da Assistência Estudantil
+  description: Gestão, conformidade e rastreabilidade da concessão de 7 auxílios estudantis
+    da POLAE
+  residents: 4
+  stage: Implantado no IFPI · Evolução contínua
+  tone: active
+  repository: equipe-assistencia-bolsas
+  stakeholder: Diretoria de Extensão / Assistência Estudantil
+  image: "/assets/img/portfolio/tela-sgae-pagamentos.jpg"
+  thumb: "/assets/img/portfolio/tela-sgae-pagamentos.jpg"
+  handover:
+    pt: Transferência documental em andamento
+    en: Documentary handover in progress
+  stack: React · Django REST Framework · PostgreSQL
+  en:
+    name: SGAE
+    subtitle: Student Welfare Management System
+    description: Management, compliance and traceability of student financial aid
+      under the POLAE policy.
+    stage: Deployed at IFPI · Continuous development
+    stakeholder: Extension Directorate / Student Welfare
+  image_alt:
+    pt: Interface do sistema SGAE
+    en: SGAE system interface
+  status_ref: current_sprint
+- code: D05
+  slug: flix
+  name: Projeto Flix
+  public_name: Projeto Flix
+  subtitle: Repositório de Conteúdo Institucional
+  description: Catálogo streaming interativo para descoberta e difusão de projetos
+    e cursos do IFPI
+  residents: 3
+  stage: Implantado no IFPI · Evolução contínua
+  tone: active
+  repository: equipe-flix-conteudo
+  stakeholder: Reitoria do IFPI
+  image: "/assets/img/portfolio/tela-flix-home.jpg"
+  thumb: "/assets/img/portfolio/tela-flix-home.jpg"
+  handover:
+    pt: Transferência documental em andamento
+    en: Documentary handover in progress
+  stack: Next.js · FastAPI · PostgreSQL · Docker
+  en:
+    name: Projeto Flix
+    subtitle: Institutional Content Repository
+    description: A streaming-style catalog for discovering IFPI projects, courses
+      and institutional content.
+    stage: Deployed at IFPI · Continuous development
+    stakeholder: IFPI President’s Office
+  image_alt:
+    pt: Interface do sistema Projeto Flix
+    en: Projeto Flix system interface
+  status_ref: current_sprint
+- code: D07
+  slug: conecta
+  name: Conecta CATCE (Catraka)
+  public_name: Conecta CATCE (Catraka)
+  subtitle: Controle de Acesso e Comunicação com Famílias
+  description: Gestão de acesso e aplicativo de comunicação com responsáveis; integração
+    com a portaria em evolução.
+  residents: 4
+  stage: Implantado no IFPI · Evolução contínua
+  tone: active
+  repository: equipe-seguranca-campus
+  stakeholder: Direção-Geral do Campus Teresina Central
+  image: "/assets/img/portfolio/tela-conecta-app.jpg"
+  thumb: "/assets/img/portfolio/tela-conecta-app.jpg"
+  handover:
+    pt: Transferência documental em andamento
+    en: Documentary handover in progress
+  stack: React Native · Django / Django Ninja · PostgreSQL
+  en:
+    name: Conecta CATCE (Catraka)
+    subtitle: Campus Access and Guardian Communication
+    description: Access management and an official communication app for guardians;
+      turnstile integration remains under development.
+    stage: Deployed at IFPI · Continuous development
+    stakeholder: Campus Teresina Central Directorate
+  image_alt:
+    pt: Interface do sistema Conecta CATCE (Catraka)
+    en: Conecta CATCE (Catraka) system interface
+  status_ref: current_sprint
+- code: D08
+  slug: spia
+  name: SPIA Maestro
+  public_name: SPIA Maestro
+  subtitle: Videomonitoramento e Inteligência em Segurança Pública
+  description: Automação de inteligência e despacho de alvos para videomonitoramento
+    em parceria com a SSP-PI
+  residents: 4
+  status: Em execução na SSP
+  stage: Operacional na SSP-PI · Supervisão estadual
+  tone: external
+  repository:
+  stakeholder: Secretaria da Segurança Pública do Piauí (SSP-PI)
+  image: "/assets/img/equipes/foto-spia-equipe.jpg"
+  thumb: "/assets/img/equipes/foto-spia-equipe.jpg"
+  handover:
+    pt: Condução técnica da SSP-PI
+    en: SSP-PI technical supervision
+  stack: Microsserviços Resilientes · Event-Driven
+  en:
+    name: SPIA Maestro
+    subtitle: Video Monitoring and Public Safety Intelligence
+    description: Embedded backend services automating vehicle target verification,
+      real-time camera broadcast, and target revocation. Fellows develop under strict
+      authorization and state public safety confidentiality.
+    stage: Operational at SSP-PI · State supervision
+    stakeholder: State Department of Public Safety (SSP-PI)
+  image_alt:
+    pt: Equipe SPIA Maestro no Encontro INOVATECH
+    en: SPIA Maestro team at the INOVATECH event
 milestones:
-  - code: "M0"
-    name: "Demandas e equipes"
-    date: "jun/2026"
-    status: "concluído"
-    tone: "done"
-    deliverable: "Equipes formadas e demandas definidas"
-  - code: "M1"
-    name: "Inception"
-    date: "26/06"
-    status: "prazo encerrado"
-    tone: "closed"
-    deliverable: "Visão do produto, personas, jornada e backlog inicial"
-  - code: "Gate"
-    name: "Gate técnico"
-    date: "03/07"
-    status: "prazo encerrado"
-    tone: "closed"
-    deliverable: "Arquitetura, modelo de dados, backlog, ambiente e plano de testes"
-  - code: "M2"
-    name: "Beta funcional"
-    date: "24/07"
-    status: "prazo encerrado"
-    tone: "closed"
-    deliverable: "Beta funcional demonstrável e documentação parcial"
-  - code: "M3"
-    name: "Entrega final"
-    date: "07/08"
-    status: "prazo encerrado"
-    tone: "closed"
-    deliverable: "Solução validada, documentação, relatório e apresentação"
-  - code: "H"
-    name: "Homologação"
-    date: "14/08"
-    status: "prazo encerrado"
-    tone: "closed"
-    deliverable: "Sistemas implantados e rodando no ambiente do IFPI"
-  - code: "T"
-    name: "Transferência"
-    date: "11/09"
-    status: "prazo encerrado"
-    tone: "closed"
-    deliverable: "Responsável pela manutenção nomeado, runbook, rollback testado e termo assinado"
-  - code: "E1"
-    name: "Sprint de evolução 1"
-    date: "02/10"
-    status: "prazo encerrado"
-    tone: "closed"
-    deliverable: "Transferência 7/7 fechada e primeiros itens priorizados pelo setor demandante, em produção e documentados"
-  - code: "E2"
-    name: "Sprint de evolução 2"
-    date: "16/10"
-    status: "próximo marco"
-    tone: "current"
-    deliverable: "Incremento priorizado pelo demandante em produção, README/runbook atualizados e pendências registradas com responsável"
-  - code: "E3"
-    name: "Sprint de evolução 3"
-    date: "30/10"
-    status: "previsto"
-    tone: "pending"
-    deliverable: "Continuidade da evolução com entrega em produção, documentação e evidências"
-
+- code: M0
+  name: Demandas e equipes
+  date: jun/2026
+  status: concluído
+  tone: done
+  deliverable: Equipes formadas e demandas definidas
+- code: M1
+  name: Inception
+  date: 26/06
+  status: prazo encerrado
+  tone: closed
+  deliverable: Visão do produto, personas, jornada e backlog inicial
+- code: Gate
+  name: Gate técnico
+  date: 03/07
+  status: prazo encerrado
+  tone: closed
+  deliverable: Arquitetura, modelo de dados, backlog, ambiente e plano de testes
+- code: M2
+  name: Beta funcional
+  date: 24/07
+  status: prazo encerrado
+  tone: closed
+  deliverable: Beta funcional demonstrável e documentação parcial
+- code: M3
+  name: Entrega final
+  date: 07/08
+  status: prazo encerrado
+  tone: closed
+  deliverable: Solução validada, documentação, relatório e apresentação
+- code: H
+  name: Homologação
+  date: 14/08
+  status: prazo encerrado
+  tone: closed
+  deliverable: Sistemas implantados e rodando no ambiente do IFPI
+- code: T
+  name: Transferência
+  date: 11/09
+  status: formalização em andamento
+  tone: pending
+  deliverable: Responsável pela manutenção nomeado, runbook, rollback testado e termo
+    assinado
+- code: E1
+  name: Sprint de evolução 1
+  date: 02/10
+  status: prazo encerrado
+  tone: closed
+  deliverable: Meta da E1 — concluir os requisitos 7/7 de transferência e entregar
+    os primeiros itens priorizados pelo demandante; pendências seguem na evolução
+- code: E2
+  name: Sprint de evolução 2
+  date: 16/10
+  status: próximo marco
+  tone: current
+  deliverable: Incremento priorizado pelo demandante em produção, README/runbook atualizados
+    e pendências registradas com responsável
+- code: E3
+  name: Sprint de evolução 3
+  date: 30/10
+  status: previsto
+  tone: pending
+  deliverable: Continuidade da evolução com entrega em produção, documentação e evidências
 weeks:
-  - number: "1–5"
-    period: "11/05–12/06"
-    focus: "Onboarding, diagnóstico, capacitação, descoberta de demandas e formação das equipes"
-    state: "done"
-  - number: "6"
-    period: "15–19/06"
-    focus: "Inception: entrevistas com parceiros, organização e estudo das demandas"
-    state: "done"
-  - number: "7"
-    period: "22–26/06"
-    focus: "Fechamento da Inception e prazo do M1"
-    state: "done"
-  - number: "8"
-    period: "29/06–03/07"
-    focus: "Arquitetura, backlog e ambiente — Gate técnico"
-    state: "done"
-  - number: "9"
-    period: "06–10/07"
-    focus: "Sprint 1: planejamento, implementação e Review 1"
-    state: "done"
-    link: "/sprint-1/"
-  - number: "10"
-    period: "13–17/07"
-    focus: "Sprint 2: carry-over da Sprint 1, implementação e Review 2"
-    state: "done"
-    link: "/sprint-2/"
-  - number: "11"
-    period: "20–24/07"
-    focus: "Sprint 3 e beta — M2"
-    state: "done"
-    link: "/sprint-3/"
-  - number: "12"
-    period: "27–31/07"
-    focus: "Validação com usuários e preparação da entrega final"
-    state: "done"
-    link: "/reta-final/"
-  - number: "13"
-    period: "03–07/08"
-    focus: "Demo Day, relatório, encerramento e M3"
-    state: "done"
-    link: "/reta-final/"
-  - number: "14"
-    period: "10–14/08"
-    focus: "Homologação: implantação no ambiente do IFPI e validação com o demandante"
-    state: "done"
-    link: "/homologacao/"
-  - number: "15"
-    period: "17–21/08"
-    focus: "Acompanhamento da homologação e articulação das frentes do Governo do Estado"
-    state: "done"
-  - number: "16"
-    period: "24–28/08"
-    focus: "Preparação da transferência dos sistemas e articulação das frentes do Governo do Estado"
-    state: "done"
-  - number: "17"
-    period: "31/08–04/09"
-    focus: "Pacote de transferência: runbook, rollback testado e roteiro de homologação"
-    state: "done"
-  - number: "18"
-    period: "07–11/09"
-    focus: "Marco Transferência e Encontro INOVATECH — fim da fase 1 (11/09)"
-    state: "done"
-  - number: "19"
-    period: "14–18/09"
-    focus: "Abertura da fase 2: decisão do ciclo de evolução em sprints de duas semanas enquanto as frentes do Estado não abrem"
-    state: "done"
-  - number: "20"
-    period: "21–25/09"
-    focus: "Sprint E1: fechar a transferência e iniciar o backlog priorizado pelo setor demandante"
-    state: "done"
-    link: "/sprint-e1/"
-  - number: "21"
-    period: "28/09–02/10"
-    focus: "Sprint E1: entrega em produção, documentação atualizada e review de sprint"
-    state: "done"
-    link: "/sprint-e1/"
-  - number: "22"
-    period: "05–09/10"
-    focus: "Sprint E2: revisar pendências da E1, priorizar com o demandante e registrar objetivo, responsáveis e critérios de aceite"
-    state: "current"
-    link: "/sprint-e2/"
-  - number: "23"
-    period: "12–16/10"
-    focus: "Sprint E2: validar, implantar, atualizar documentação e demonstrar o resultado na review"
-    state: "upcoming"
-    link: "/sprint-e2/"
-  - number: "24"
-    period: "19–23/10"
-    focus: "Sprint E3: planejamento e implementação dos itens priorizados pelo demandante"
-    state: "upcoming"
-  - number: "25"
-    period: "26–30/10"
-    focus: "Sprint E3: entrega em produção, documentação atualizada e review de sprint"
-    state: "upcoming"
-
+- number: 1–5
+  period: 11/05–12/06
+  focus: Onboarding, diagnóstico, capacitação, descoberta de demandas e formação das
+    equipes
+  state: done
+- number: '6'
+  period: 15–19/06
+  focus: 'Inception: entrevistas com parceiros, organização e estudo das demandas'
+  state: done
+- number: '7'
+  period: 22–26/06
+  focus: Fechamento da Inception e prazo do M1
+  state: done
+- number: '8'
+  period: 29/06–03/07
+  focus: Arquitetura, backlog e ambiente — Gate técnico
+  state: done
+- number: '9'
+  period: 06–10/07
+  focus: 'Sprint 1: planejamento, implementação e Review 1'
+  state: done
+  link: "/sprint-1/"
+- number: '10'
+  period: 13–17/07
+  focus: 'Sprint 2: carry-over da Sprint 1, implementação e Review 2'
+  state: done
+  link: "/sprint-2/"
+- number: '11'
+  period: 20–24/07
+  focus: Sprint 3 e beta — M2
+  state: done
+  link: "/sprint-3/"
+- number: '12'
+  period: 27–31/07
+  focus: Validação com usuários e preparação da entrega final
+  state: done
+  link: "/reta-final/"
+- number: '13'
+  period: 03–07/08
+  focus: Demo Day, relatório, encerramento e M3
+  state: done
+  link: "/reta-final/"
+- number: '14'
+  period: 10–14/08
+  focus: 'Homologação: implantação no ambiente do IFPI e validação com o demandante'
+  state: done
+  link: "/homologacao/"
+- number: '15'
+  period: 17–21/08
+  focus: Acompanhamento da homologação e articulação das frentes do Governo do Estado
+  state: done
+- number: '16'
+  period: 24–28/08
+  focus: Preparação da transferência dos sistemas e articulação das frentes do Governo
+    do Estado
+  state: done
+- number: '17'
+  period: 31/08–04/09
+  focus: 'Pacote de transferência: runbook, rollback testado e roteiro de homologação'
+  state: done
+- number: '18'
+  period: 07–11/09
+  focus: Marco Transferência e Encontro INOVATECH — fim da fase 1 (11/09)
+  state: done
+- number: '19'
+  period: 14–18/09
+  focus: 'Abertura da fase 2: decisão do ciclo de evolução em sprints de duas semanas
+    enquanto as frentes do Estado não abrem'
+  state: done
+- number: '20'
+  period: 21–25/09
+  focus: 'Sprint E1: fechar a transferência e iniciar o backlog priorizado pelo setor
+    demandante'
+  state: done
+  link: "/sprint-e1/"
+- number: '21'
+  period: 28/09–02/10
+  focus: 'Sprint E1: entrega em produção, documentação atualizada e review de sprint'
+  state: done
+  link: "/sprint-e1/"
+- number: '22'
+  period: 05–09/10
+  focus: 'Sprint E2: revisar pendências da E1, priorizar com o demandante e registrar
+    objetivo, responsáveis e critérios de aceite'
+  state: current
+  link: "/sprint-e2/"
+- number: '23'
+  period: 12–16/10
+  focus: 'Sprint E2: validar, implantar, atualizar documentação e demonstrar o resultado
+    na review'
+  state: upcoming
+  link: "/sprint-e2/"
+- number: '24'
+  period: 19–23/10
+  focus: 'Sprint E3: planejamento e implementação dos itens priorizados pelo demandante'
+  state: upcoming
+- number: '25'
+  period: 26–30/10
+  focus: 'Sprint E3: entrega em produção, documentação atualizada e review de sprint'
+  state: upcoming
 deadlines:
-  - date: "09/10"
-    title: "Registro no GitHub — primeira semana da Sprint E2"
-    detail: "atualizar as issues com resultados, evidências, pendências de revisão ou implantação e bloqueios com responsável e próximo passo"
-    link: "/sprint-e2/"
-  - date: "16/10"
-    title: "Review da Sprint E2"
-    detail: "demonstração em produção, README/runbook atualizados e registro da retrospectiva, evidências e pendências no GitHub"
-    link: "/sprint-e2/"
-
+- date: '09/10'
+  title: Registro no GitHub — primeira semana da Sprint E2
+  detail: atualizar as issues com resultados, evidências, pendências de revisão ou
+    implantação e bloqueios com responsável e próximo passo
+  link: "/sprint-e2/"
+- date: 16/10
+  title: Review da Sprint E2
+  detail: demonstração em produção, README/runbook atualizados e registro da retrospectiva,
+    evidências e pendências no GitHub
+  link: "/sprint-e2/"
 contacts:
-  - name: "Prof. Aislan"
-    role: "Instrutor — Assistência Estudantil e Flix (técnico)"
-    topic: "metodologia, planejamento e acompanhamento técnico das sprints"
-  - name: "Profa. Ruthelle"
-    role: "Instrutora — Flix (demandante)"
-    topic: "articulação com a Reitoria e prioridades do setor demandante"
-  - name: "Profa. Aline"
-    role: "Instrutora — Segurança Campus"
-    topic: "acompanhamento do projeto e validação com o campus"
-  - name: "Prof. Rogério"
-    role: "Coordenação técnica"
-    topic: "arquitetura e decisões técnicas transversais"
-  - name: "DTI"
-    role: "Infraestrutura"
-    topic: "ambientes e acessos, por intermédio dos instrutores"
-
+- name: Prof. Aislan
+  role: Instrutor — Assistência Estudantil e Flix (técnico)
+  topic: metodologia, planejamento e acompanhamento técnico das sprints
+- name: Profa. Ruthelle
+  role: Instrutora — Flix (demandante)
+  topic: articulação com a Reitoria e prioridades do setor demandante
+- name: Profa. Aline
+  role: Instrutora — Segurança Campus
+  topic: acompanhamento do projeto e validação com o campus
+- name: Prof. Rogério
+  role: Coordenação técnica
+  topic: arquitetura e decisões técnicas transversais
+- name: DTI
+  role: Infraestrutura
+  topic: ambientes e acessos, por intermédio dos instrutores
 factory_steps:
-  - step: "01"
-    title: "Desafio Real"
-    tag: "Entrada"
-    date: "Demandante"
-    desc: "Problema real trazido por setor público ou órgão de governo com regulamento existente e usuário direto identificado."
-  - step: "02"
-    title: "Inception & Descoberta"
-    tag: "M1"
-    date: "26/06"
-    desc: "Entrevistas com usuários, personas, jornadas, visão do produto e definição de backlog inicial auditável."
-  - step: "03"
-    title: "Gate Técnico"
-    tag: "Arquitetura"
-    date: "03/07"
-    desc: "Arquitetura de software, modelagem de dados, pipelines de CI/CD, esteiras de testes e conformidade com LGPD."
-  - step: "04"
-    title: "Beta Funcional"
-    tag: "M2"
-    date: "24/07"
-    desc: "Ciclos ágeis de desenvolvimento em squads com entregas semanais integradas e homologação com usuários."
-  - step: "05"
-    title: "Entrega Validada"
-    tag: "M3"
-    date: "07/08"
-    desc: "Sistema completo testado, documentação técnica, manuais de operação e apresentação no Demo Day."
-  - step: "06"
-    title: "Homologação"
-    tag: "Produção"
-    date: "14/08"
-    desc: "Deploy em infraestrutura oficial do IFPI e homologação formal direta com os gestores dos setores atendidos."
-  - step: "07"
-    title: "Transferência Formal"
-    tag: "Marco 11/09"
-    date: "11/09"
-    desc: "Entrega com mantenedor nomeado, runbook de sustentação, rollback testado e termo formal de transferência assinado."
-  - step: "08"
-    title: "Evolução Contínua"
-    tag: "Fase 2"
-    date: "Sprints"
-    desc: "Sprints quinzenais de evolução contínua guiadas pelas prioridades dos setores que operam os sistemas em produção."
-
+- step: '01'
+  title: Desafio Real
+  tag: Entrada
+  date: Demandante
+  desc: Problema real trazido por setor público ou órgão de governo com regulamento
+    existente e usuário direto identificado.
+- step: '02'
+  title: Inception & Descoberta
+  tag: M1
+  date: 26/06
+  desc: Entrevistas com usuários, personas, jornadas, visão do produto e definição
+    de backlog inicial auditável.
+- step: '03'
+  title: Gate Técnico
+  tag: Arquitetura
+  date: 03/07
+  desc: Arquitetura de software, modelagem de dados, pipelines de CI/CD, esteiras
+    de testes e conformidade com LGPD.
+- step: '04'
+  title: Beta Funcional
+  tag: M2
+  date: 24/07
+  desc: Ciclos ágeis de desenvolvimento em squads com entregas semanais integradas
+    e homologação com usuários.
+- step: '05'
+  title: Entrega Validada
+  tag: M3
+  date: 07/08
+  desc: Sistema completo testado, documentação técnica, manuais de operação e apresentação
+    no Demo Day.
+- step: '06'
+  title: Homologação
+  tag: Produção
+  date: 14/08
+  desc: Deploy em infraestrutura oficial do IFPI e homologação formal direta com os
+    gestores dos setores atendidos.
+- step: '07'
+  title: Transferência Formal
+  tag: Formalização
+  date: Em andamento
+  desc: A transferência exige mantenedor nomeado, runbook, rollback testado e termo
+    assinado; a documentação dos sistemas do IFPI segue em formalização.
+- step: '08'
+  title: Evolução Contínua
+  tag: Fase 2
+  date: Sprints
+  desc: Sprints quinzenais de evolução contínua guiadas pelas prioridades dos setores
+    que operam os sistemas em produção.
 partners:
-  - name: "IFPI — Instituto Federal do Piauí"
-    category: "Realização & Formação"
-    detail: "Campus Teresina Central · Coordenação acadêmica, infraestrutura de laboratórios e corpo de instrutores."
-    logo: "/assets/img/marcas/logo-ifpi-trim.png"
-  - name: "Piauí Gov Tech / ETIPI"
-    category: "Parceria Estratégica"
-    detail: "Governo do Estado do Piauí · Articulação de desafios públicos, fomento a bolsas e transformação digital estadual."
-    logo: "/assets/img/marcas/marcas-ifpi-govtech.png"
-  - name: "SSP-PI — Secretaria da Segurança Pública"
-    category: "Operação Governamental"
-    detail: "Parceria institucional na evolução de sistemas sob condução técnica da Secretaria. Conteúdo operacional confidencial sob sigilo legal."
-    logo:
-  - name: "Defensoria Pública & Ministério Público"
-    category: "Diálogos Institucionais"
-    detail: "Articulações e prospecções em andamento com DPE-PI e MPPI para novos ciclos de soluções de impacto."
-    logo:
-
+- name: IFPI — Instituto Federal do Piauí
+  category: Realização & Formação
+  detail: Campus Teresina Central · Coordenação acadêmica, infraestrutura de laboratórios
+    e corpo de instrutores.
+  logo: "/assets/img/marcas/logo-ifpi-trim.png"
+  en: Academic coordination, laboratories and instructor guidance at Campus Teresina
+    Central.
+- name: Piauí Gov Tech / ETIPI
+  category: Parceria Estratégica
+  detail: Governo do Estado do Piauí · Articulação de desafios públicos, fomento a
+    bolsas e transformação digital estadual.
+  logo: "/assets/img/marcas/marcas-ifpi-govtech.png"
+  en: State partnerships, fellowship support and digital transformation.
+- name: SSP-PI — Secretaria da Segurança Pública
+  category: Operação Governamental
+  detail: Parceria institucional na evolução de sistemas sob condução técnica da Secretaria.
+    Conteúdo operacional confidencial sob sigilo legal.
+  logo:
+  en: Institutional cooperation under SSP-PI technical supervision.
+- name: Defensoria Pública & Ministério Público
+  category: Diálogos Institucionais
+  detail: Articulações e prospecções em andamento com DPE-PI e MPPI para novos ciclos
+    de soluções de impacto.
+  logo:
+  en: Institutional outreach underway with DPE-PI and MPPI.
 news:
-  - date: "11/09/2026"
-    tag: "Marco Histórico"
-    title: "Encontro INOVATECH consolida Transferência dos Sistemas no Espaço PiauíGovTec"
-    summary: "Apresentação formal dos 3 sistemas entregues ao IFPI com 208 entregas técnicas, 148 PRs e 100% dos marcos no prazo."
-    link: "/portfolio/"
-  - date: "02/10/2026"
-    tag: "Fase 2"
-    title: "Conclusão da Sprint E1 e início da Sprint E2 de Evolução em Produção"
-    summary: "Equipes mantém ritmo de entrega quinzenal com novas melhorias em produção para SGAE, Flix e Conecta CATCE."
-    link: "/sprint-e2/"
-  - date: "Nov/2026"
-    tag: "Internacional"
-    title: "INOVATECH no Web Summit Lisboa 2026"
-    summary: "Apresentação da vitrine de soluções GovTech e do modelo de residência pública para o ecossistema global de inovação."
+- date: 11/09/2026
+  tag: Marco Histórico
+  title: Encontro INOVATECH apresenta os sistemas no Espaço PiauíGovTec
+  summary: Apresentação institucional das soluções implantadas no IFPI e dos resultados
+    da Fase 1.
+  link: "/portfolio/"
+  en:
+    title: INOVATECH showcase at Piauí Gov Tech
+    summary: Institutional presentation of the systems deployed at IFPI and Phase
+      1 results.
     link: "/en/portfolio/"
-
+- date: 05/10/2026
+  tag: Fase 2
+  title: Sprint E2 de evolução contínua
+  summary: Revisão das pendências da E1 e priorização do próximo incremento com os
+    demandantes.
+  link: "/sprint-e2/"
+  en:
+    title: Continuous development in Sprint E2
+    summary: Reviewing E1 carry-over and prioritising the next increment with stakeholders.
+    link: "/sprint-e2/"
+- date: Nov/2026
+  tag: Internacional
+  title: INOVATECH no Web Summit Lisboa 2026
+  summary: Apresentação da vitrine de soluções GovTech e do modelo de residência pública
+    para o ecossistema global de inovação.
+  link: "/en/portfolio/"
+  en:
+    title: INOVATECH at Web Summit Lisbon 2026
+    summary: The public technology portfolio and applied residency model for international
+      cooperation.
+    link: "/en/portfolio/"
 leadership:
-  - name: "Prof. Franciéric Alves de Araújo"
-    role: "Coordenador-Geral"
-    inst: "IFPI Campus Teresina Central"
-  - name: "Prof. Rogério da Silva"
-    role: "Coordenador Técnico"
-    inst: "IFPI Campus Teresina Central"
-  - name: "Prof. Aislan Rafael Rodrigues de Sousa"
-    role: "Instrutor da Residência"
-    inst: "Coordena squads SGAE e Projeto Flix"
-  - name: "Profa. Aline Montenegro Leal"
-    role: "Instrutora da Residência"
-    inst: "Coordena squad Conecta CATCE"
-  - name: "Profa. Ruthelle Maria de Carvalho Sousa"
-    role: "Instrutora de Inovação"
-    inst: "IFPI Campus Teresina Central"
-  - name: "Layane Ribeiro de Araújo Leal"
-    role: "Assistente Pedagógico"
-    inst: "Acompanhamento formativo e institucional"
+- name: Prof. Franciéric Alves de Araújo
+  role: Coordenador-Geral
+  inst: IFPI Campus Teresina Central
+  en: General Coordinator
+- name: Prof. Rogério da Silva
+  role: Coordenador Técnico
+  inst: IFPI Campus Teresina Central
+  en: Technical Coordinator
+- name: Prof. Aislan Rafael Rodrigues de Sousa
+  role: Instrutor da Residência
+  inst: Coordena squads SGAE e Projeto Flix
+  en: Residency Instructor · SGAE and Projeto Flix
+- name: Profa. Aline Montenegro Leal
+  role: Instrutora da Residência
+  inst: Coordena squad Conecta CATCE
+  en: Residency Instructor · Conecta CATCE
+- name: Profa. Ruthelle Maria de Carvalho Sousa
+  role: Instrutora de Inovação
+  inst: IFPI Campus Teresina Central
+  en: Innovation Instructor
+- name: Layane Ribeiro de Araújo Leal
+  role: Assistente Pedagógico
+  inst: Acompanhamento formativo e institucional
+  en: Pedagogical Assistant
+facts:
+  residents: 15
+  weekly_hours: 20
+  tracks: 4
+  systems: 3
+  work_items: 208
+  pull_requests: 148
+  milestones: 5/5
+  aid_types: 7
+  students: 580
+  budget_pt: R$ 1,1 milhão/ano
+  budget_en: BRL 1.1 million/year
+  period: 12/05–14/08/2026
+  checked_at: '09/10/2026'
+  showcase_date: 11/09/2026
+public_contacts:
+- id: coordination
+  name: Prof. Franciéric Alves de Araújo
+  email: eric@ifpi.edu.br
+  pt: Coordenação-Geral
+  en: General Coordination
+- id: technical
+  name: Prof. Aislan Rafael Rodrigues de Sousa
+  email: aislan@ifpi.edu.br
+  pt: Instrutor da Residência
+  en: Residency Instructor
+- id: state
+  name: Piauí Gov Tech / ETIPI
+  email: adm@piauigovtech.org
+  pt: Articulação Estadual
+  en: State Partnerships
+indicators:
+- fact: residents
+  pt:
+    label: Residentes bolsistas
+    detail: Dedicação de 20 h/semana em quatro frentes de formação aplicada.
+    source: Portaria 783/2026-GAB/REI/IFPI
+  en:
+    label: Engineering fellows
+    detail: 20 hours/week across four applied learning tracks.
+    source: Federal Ordinance 783/2026
+- fact: systems
+  pt:
+    label: Sistemas implantados no IFPI
+    detail: SGAE, Projeto Flix e Conecta CATCE, com evolução contínua.
+    source: Homologação · critério obrigatório de 14/08/2026
+  en:
+    label: Systems deployed at IFPI
+    detail: SGAE, Projeto Flix and Conecta CATCE, under continuous development.
+    source: Production acceptance · mandatory criterion, Aug 14, 2026
+- fact: work_items
+  pt:
+    label: Itens de trabalho concluídos
+    detail: Recorte histórico da Fase 1; não equivale a incrementos implantados.
+    source: Relatório consolidado da Fase 1
+  en:
+    label: Completed work items
+    detail: Historical Phase 1 scope; distinct from deployed increments.
+    source: Consolidated Phase 1 report
+- fact: pull_requests
+  pt:
+    label: PRs integrados
+    detail: Revisões de código integradas nos três repositórios dos squads IFPI.
+    source: Relatório consolidado da Fase 1
+  en:
+    label: Merged pull requests
+    detail: Code changes merged across the three IFPI squad repositories.
+    source: Consolidated Phase 1 report
+- fact: milestones
+  pt:
+    label: Marcos técnicos no prazo
+    detail: M1, Gate Técnico, M2, M3 e critério obrigatório da Homologação.
+    source: Cronograma da Fase 1 · transferência documental é um processo separado
+  en:
+    label: Technical milestones on schedule
+    detail: M1, Technical Gate, M2, M3 and mandatory production acceptance criterion.
+    source: Phase 1 schedule · documentary handover is a separate process

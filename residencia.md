@@ -36,8 +36,8 @@ url_en: /en/
   <span class="alert-tag mono">AGORA</span>
   <p>
     <strong>Fase 2: os sistemas continuam evoluindo em produção.</strong>
-    A fase 1 encerrou em 11/09, no marco de Transferência e no Encontro INOVATECH,
-    com os três sistemas implantados no IFPI. Enquanto as frentes do Governo do
+    O Encontro INOVATECH de 11/09 apresentou os resultados da fase 1,
+    com os sistemas implantados no IFPI e a transferência documental em formalização. Enquanto as frentes do Governo do
     Estado seguem em articulação, as equipes trabalham em sprints de duas semanas
     sobre os sistemas entregues. O que entra em cada sprint é o que o setor que usa
     o sistema prioriza, e toda sprint termina em produção e documentada, pronta para
@@ -53,7 +53,7 @@ url_en: /en/
     <article class="team-card {{ project.tone }}">
       <div class="team-head">
         <span class="team-code mono">{{ project.code }}</span>
-        <span class="badge">{{ project.status }}</span>
+        <span class="badge">{% if project.status_ref == "current_sprint" %}{{ site.data.portal.cycle.current_sprint_label }}{% else %}{{ project.status }}{% endif %}</span>
       </div>
       <h3>{{ project.name }}</h3>
       <p>{{ project.description }}</p>

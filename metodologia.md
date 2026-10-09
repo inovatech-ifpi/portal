@@ -14,14 +14,27 @@ O processo não começa pelo código. Começa pelo problema, pelo usuário e pel
 
 ## Como o ciclo funciona
 
-1. **Diagnóstico e equipes (concluído).** Vocês responderam o diagnóstico e as equipes foram organizadas em torno de demandas reais, dimensionadas pelo tamanho de cada problema.
-2. **Inception (prazo encerrado — M1 26/06).** Cada equipe entrevistou o setor demandante, definiu o problema, usuários, escopo mínimo e backlog inicial.
-3. **Projeto e prototipação (prazo encerrado — Gate 03/07).** Arquitetura, modelo de dados, repositório, ambiente e plano de testes.
-4. **Implementação (prazo encerrado — M2 24/07).** Sprints curtos com review demonstrável, do [planejamento da Sprint 1]({{ '/sprint-1/' | relative_url }}) até o **beta funcional**.
-5. **Validação e entrega (prazo encerrado — M3 07/08).** Testes com usuários reais, documentação completa, Demo Day e relatório final.
-6. **Homologação (prazo encerrado — 14/08).** Implantação no ambiente do IFPI e validação com o demandante. Ver o [guia da homologação]({{ '/homologacao/' | relative_url }}).
-7. **Transferência (prazo encerrado — 11/09).** Cada sistema passa ao setor que o pediu, com responsável pela manutenção nomeado, runbook de operação, procedimento de rollback testado e termo assinado.
-8. **Evolução em sprints (agora — fase 2).** Sprints de duas semanas sobre os sistemas entregues, com backlog priorizado pelo setor demandante. Toda sprint termina em produção, com documentação atualizada e pendências registradas, pronta para outra equipe assumir. Ver o [guia da {{ site.data.portal.cycle.current_sprint_label }}]({{ site.data.portal.cycle.current_sprint_link | relative_url }}).
+<ol>
+{% for step in site.data.portal.factory_steps %}
+  <li><strong>{{ step.title }} — {{ step.date }}.</strong> {{ step.desc }}</li>
+{% endfor %}
+</ol>
+
+A homologação segue o [guia público de aceite]({{ '/homologacao/' | relative_url }}). O ciclo vigente está no [guia da {{ site.data.portal.cycle.current_sprint_label }}]({{ site.data.portal.cycle.current_sprint_link | relative_url }}).
+
+## Requisitos para concluir a transferência
+
+A transferência documental segue sete requisitos de sustentabilidade. O encontro institucional e a implantação não certificam o cumprimento desta lista por cada sistema.
+
+1. Mantenedor técnico nomeado pelo setor demandante.
+2. Runbook de operação entregue.
+3. Procedimento de rollback testado.
+4. Homologação formal assinada pelo gestor.
+5. Repositório institucional auditado e sem dados sensíveis.
+6. Documentação de arquitetura e dados atualizada.
+7. Termo formal de transferência assinado entre as partes.
+
+Na conferência de {{ site.data.portal.facts.checked_at }}, a formalização dos sistemas do IFPI continuava em andamento.
 
 ## Papéis nas equipes
 

@@ -1,0 +1,12 @@
+{% assign lang = page.lang | default: 'pt' %}
+<div class="hub-stats-grid">
+  {% for indicator in site.data.portal.indicators %}
+    {% assign label = indicator[lang] %}
+    <article class="hub-stat-card">
+      <div class="hub-stat-number mono">{{ site.data.portal.facts[indicator.fact] }}</div>
+      <h3 class="hub-stat-label">{{ label.label }}</h3>
+      <p class="hub-stat-detail">{{ label.detail }}</p>
+      <footer class="hub-stat-stamp">{{ label.source }}</footer>
+    </article>
+  {% endfor %}
+</div>

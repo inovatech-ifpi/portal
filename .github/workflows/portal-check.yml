@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
       - name: Verificar estrutura e conteúdo
         run: ruby scripts/check_portal.rb
       - name: Compilar o portal com Jekyll
@@ -20,6 +23,10 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Conferir links, imagens e metadados compilados
+        run: |
+          gem install nokogiri --no-document
+          ruby scripts/check_site.rb _site
       - name: Disponibilizar preview para auditoria
         uses: actions/upload-artifact@v4
         with:
