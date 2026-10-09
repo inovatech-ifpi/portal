@@ -3722,6 +3722,8 @@ body.has-lightbox-open {
 .hub-section-dark .hub-btn-outline:hover { color: var(--azul-dark); background: #fff; }
 .hub-kicker, .hub-stat-number, .hub-partner-category { color: var(--azul-govtech); }
 .hub-section-head h2 { text-transform: none; font-size: clamp(1.6rem, 3vw, 2.3rem); }
+.hub-section-dark .hub-section-head h2 { color: #fff; }
+.hub-section-dark .hub-kicker { color: #dae2f5; }
 .hub-stats-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 205px), 1fr)); }
 .hub-products-grid > *, .hub-case-grid > *, .hub-case-text, .hub-case-media { min-width: 0; }
 .hub-news-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
