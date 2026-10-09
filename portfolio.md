@@ -282,11 +282,12 @@ url_en: /en/portfolio/
       </div>
 
       <div class="hub-case-media">
-        <div class="hub-case-restricted-box mono">
-          <div class="restricted-icon">🔒</div>
-          <h4>CONTEÚDO OPERACIONAL CONFIDENCIAL</h4>
-          <p class="dim">Informações técnicas, topologias e integrantes protegidos por sigilo de segurança pública estadual.</p>
-        </div>
+        <figure class="hub-case-figure">
+          <img src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" alt="Squad SPIA Maestro no Encontro INOVATECH" class="hub-case-img">
+          <figcaption class="mono dim">
+            Apresentação do Squad SPIA Maestro no Encontro INOVATECH no Espaço PiauíGovTec.
+          </figcaption>
+        </figure>
         <div class="hub-case-card-stats mono">
           <div><span>Infraestrutura:</span> Secretaria de Segurança Pública</div>
           <div><span>Regulamento:</span> Sigilo de Segurança Pública</div>

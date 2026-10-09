@@ -282,15 +282,16 @@ url_pt: /portfolio/
       </div>
 
       <div class="hub-case-media">
-        <div class="hub-case-restricted-box mono">
-          <div class="restricted-icon">🔒</div>
-          <h4>CLASSIFIED OPERATIONAL SYSTEMS</h4>
-          <p class="dim">Internal architectures, servers, and personnel rosters protected under state public safety security statutes.</p>
-        </div>
+        <figure class="hub-case-figure">
+          <img src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" alt="SPIA Maestro Squad presenting at INOVATECH Showcase" class="hub-case-img">
+          <figcaption class="mono dim">
+            SPIA Maestro fellow squad presenting at the INOVATECH Public Showcase in Piauí Gov Tech.
+          </figcaption>
+        </figure>
         <div class="hub-case-card-stats mono">
           <div><span>Environment:</span> State Police Infrastructure</div>
           <div><span>Policy:</span> State Confidentiality Statute</div>
-          <div><span>Standard:</span> Zero-tolerance data consistency</div>
+          <div><span>Standard:</span> High-consequence data consistency</div>
           <div><span>Fellow Squad:</span> 4 engineering fellows</div>
         </div>
       </div>

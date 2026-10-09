@@ -25,8 +25,7 @@
 - code: "D08"
   name: "Frente SPIA Maestro · SSP-PI"
   focus: "Engenharia de sistemas sob condução técnica da Secretaria da Segurança Pública"
-  photo:
-  alt: "Frente de Segurança Pública"
+  photo: "/assets/img/equipes/foto-spia-equipe.jpg"
+  alt: "Squad SPIA Maestro no Encontro INOVATECH"
   residents_count: 4
-  is_restricted: true
-  description: "Quatro residentes integrados aos sistemas de segurança pública do Estado. Equipe, infraestrutura e arquiteturas sob estrito sigilo legal."
+  description: "Quatro residentes bolsistas integrados ao desenvolvimento evolutivo de sistemas de segurança pública do Estado, sob supervisão técnica da SSP-PI."

@@ -60,16 +60,16 @@ projects:
     slug: "spia"
     name: "SPIA Maestro"
     public_name: "SPIA Maestro"
-    subtitle: "Parceria em Segurança Pública"
-    description: "Atuação de residentes em engenharia de sistemas sob condução técnica da SSP-PI · conteúdo operacional confidencial"
+    subtitle: "Videomonitoramento e Inteligência em Segurança Pública"
+    description: "Automação de inteligência e despacho de alvos para videomonitoramento em parceria com a SSP-PI"
     residents: 4
     status: "Em execução na SSP"
-    stage: "Operacional na SSP-PI · Sigilo legal"
+    stage: "Operacional na SSP-PI · Supervisão estadual"
     tone: "external"
     repository:
     stakeholder: "Secretaria da Segurança Pública do Piauí (SSP-PI)"
-    image:
-    thumb:
+    image: "/assets/img/equipes/foto-spia-equipe.jpg"
+    thumb: "/assets/img/equipes/foto-spia-equipe.jpg"
 
 milestones:
   - code: "M0"
