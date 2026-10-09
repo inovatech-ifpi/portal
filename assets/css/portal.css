@@ -3690,3 +3690,101 @@ body.has-lightbox-open {
 
 
 
+
+/* Identidade institucional e correções de navegação do Hub. */
+:root {
+  --dim: #526079;
+  --sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --titulo-sans: "Montserrat", system-ui, sans-serif;
+  --papel: #f5f7fb;
+  --linha-suave: #dce2ec;
+}
+.hub-body h1, .hub-body h2, .hub-body h3, .hub-body h4 { font-weight: 800; }
+.hub-container { min-width: 0; }
+.hub-nav-container { height: 84px; gap: 24px; }
+.hub-brand { flex: 0 0 auto; }
+.hub-official-logo { width: 230px; height: auto; border-radius: 0; }
+.hub-nav { gap: 16px; }
+.hub-nav-list { gap: 9px; }
+.hub-nav-link { white-space: nowrap; font-size: 13px; }
+.hub-action-btn { white-space: nowrap; }
+.hub-hero { padding: 80px 0; }
+.hub-hero-overlay { background: linear-gradient(110deg, rgba(22,36,89,.97), rgba(38,57,130,.9)); }
+.hub-hero-title { font-size: clamp(2rem, 4.2vw, 3.6rem); line-height: 1.16; max-width: 950px; }
+.hub-hero-sub { max-width: 790px; font-size: 18px; }
+.hub-hero-badge { color: #fff; background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.35); }
+.hub-hero-proof { border-radius: 12px; color: #fff; background: rgba(0,0,0,.15); gap: 12px 24px; }
+.hub-btn-primary { background: var(--azul-govtech); color: #fff; border-color: var(--azul-govtech); box-shadow: none; }
+.hub-btn-primary:hover { background: var(--azul-dark); color: #fff; border-color: var(--azul-dark); }
+.hub-hero .hub-btn-primary { background: #fff; color: var(--azul-dark); border-color: #fff; }
+.hub-hero .hub-btn-primary:hover { background: #edf2f9; }
+.hub-hero .hub-btn-outline, .hub-section-dark .hub-btn-outline { color: #fff; border-color: #bfcaf0; }
+.hub-section-dark .hub-btn-outline:hover { color: var(--azul-dark); background: #fff; }
+.hub-kicker, .hub-stat-number, .hub-partner-category { color: var(--azul-govtech); }
+.hub-section-head h2 { text-transform: none; font-size: clamp(1.6rem, 3vw, 2.3rem); }
+.hub-stats-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 205px), 1fr)); }
+.hub-products-grid > *, .hub-case-grid > *, .hub-case-text, .hub-case-media { min-width: 0; }
+.hub-news-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.hub-partners-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
+.hub-squads-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
+.hub-process-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-bottom: 24px; }
+.hub-process-summary h3 { margin: 0 0 12px; font-size: 17px; }
+.hub-process-summary p { margin: 0; font-size: 14px; }
+.hub-impact-scale { font-weight: 700; color: var(--azul-govtech); }
+.hub-stat-stamp, .hub-stats-single-footer { font-size: 13px; }
+.hub-stat-stamp { color: var(--dim); }
+.hub-stats-ribbon { grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); }
+.hub-page-hero, .hub-section-dark, .hub-footer { background: var(--azul-dark); }
+.hub-footer-official-logo { width: 280px; max-width: 100%; height: auto; border-radius: 0; margin-bottom: 20px; }
+.hub-footer-desc, .hub-footer-links a, .hub-footer-contact, .hub-footer-copy { color: #dae2f5; }
+.hub-footer-contact a, .hub-footer-legal { color: #fff; }
+.hub-contacts-list p { margin: 0 0 16px; }
+.hub-contact-direct-box { margin-top: 28px; }
+.hub-contact-direct-box .hub-contacts-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.hub-contact-direct-box a { color: #fff; }
+.hub-section-dark .hub-section-lead, .hub-section-dark .hub-colabore-card p { color: #dae2f5; }
+.hub-colabore-card { min-width: 0; }
+.hub-colabore-action, .hub-case-action-btn { max-width: 100%; }
+.hub-case-action-btn, .hub-colabore-card .hub-btn { white-space: normal; overflow-wrap: anywhere; }
+.hub-case-text code { white-space: normal; overflow-wrap: anywhere; }
+.hub-case-card p, .hub-case-demandante, .hub-spec-value { overflow-wrap: anywhere; }
+.hub-case-card h2 { text-transform: none; }
+.hub-case-card-head h2 { font-size: clamp(1.3rem, 3vw, 2rem); }
+.hub-nav a:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid #a95308; outline-offset: 4px; }
+.hub-footer a:focus-visible, .hub-section-dark a:focus-visible, .hub-hero a:focus-visible { outline-color: #fff; }
+.hub-section, .hub-case-card, #proximo-ciclo, #conteudo { scroll-margin-top: 104px; }
+.hub-section:focus, .hub-case-card:focus { outline: none; }
+.residency-logo { width: 218px; height: auto; border-radius: 0; }
+.residency-showcase-link { font-size: 13px; }
+.hub-evidence { padding-top: 48px; padding-bottom: 64px; max-width: 960px; }
+.hub-evidence h1 { font-size: clamp(1.8rem, 4vw, 2.7rem); }
+.hub-evidence h2 { margin-top: 32px; }
+@media (max-width: 1280px) {
+  .hub-menu-toggle { display: block; flex: 0 0 auto; }
+  .hub-nav { display: none; position: absolute; top: 84px; left: 0; right: 0; background: #fff; border-bottom: 2px solid var(--azul-govtech); padding: 20px 24px; flex-direction: column; align-items: stretch; gap: 20px; max-height: calc(100dvh - 84px); overflow-y: auto; box-shadow: 0 10px 24px rgba(0,0,0,.12); }
+  .hub-nav.is-open { display: flex; }
+  .hub-nav-list { flex-direction: column; align-items: stretch; gap: 6px; }
+  .hub-nav-link { display: block; padding: 8px 4px; }
+  .hub-nav-actions { flex-direction: column; align-items: stretch; }
+  .hub-lang-switch { align-self: flex-start; }
+}
+@media (min-width: 1281px) { .hub-nav { display: flex; } }
+@media (max-width: 640px) {
+  .hub-container { padding-left: 18px; padding-right: 18px; }
+  .hub-nav-container { gap: 12px; }
+  .hub-official-logo { width: 200px; }
+  .hub-hero { padding: 52px 0; }
+  .hub-hero-sub { font-size: 16px; }
+  .hub-hero-proof { font-size: 12px; display: flex; flex-direction: column; align-items: flex-start; padding: 12px; }
+  .hub-process-summary { grid-template-columns: minmax(0, 1fr); }
+  .hub-contact-direct-box .hub-contacts-list { grid-template-columns: minmax(0, 1fr); }
+  .hub-case-card { padding: 22px 14px; }
+  .hub-showroom-body { padding: 32px 14px 48px; }
+  .hub-showroom-cta-box { padding: 24px 16px; }
+  .hub-product-content { padding: 22px 18px; }
+  .hub-btn { min-width: 0; white-space: normal; overflow-wrap: anywhere; }
+  .hub-case-actions { flex-direction: column; }
+  .hub-assurance-seal, .hub-assurance-photo-header { flex-wrap: wrap; gap: 8px; }
+  .hub-assurance-photo-header-left, .hub-assurance-photo-header-right { min-width: 0; }
+  .hub-stats-ribbon { padding: 16px; }
+}

@@ -1,0 +1,6 @@
+{% assign lang = page.lang | default: 'pt' %}
+<div class="hub-contacts-list">
+  {% for contact in site.data.portal.public_contacts %}
+    <p><strong>{{ contact[lang] }}</strong><br>{{ contact.name }}<br><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+  {% endfor %}
+</div>

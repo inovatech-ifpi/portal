@@ -1,0 +1,24 @@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#263982">
+    <title>{{ page.title | escape }} · INOVATECH</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="{% if page.lang == 'en' %}en{% else %}pt-BR{% endif %}" href="{{ page.url | absolute_url }}">
+    {% if page.url_en %}<link rel="alternate" hreflang="en" href="{{ page.url_en | absolute_url }}">{% endif %}
+    {% if page.url_pt %}<link rel="alternate" hreflang="pt-BR" href="{{ page.url_pt | absolute_url }}">{% endif %}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title | escape }} · INOVATECH">
+    <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/img/marcas/marcas-inovatech-ifpi-govtech.png' | absolute_url }}">
+    <meta property="og:image:alt" content="INOVATECH · IFPI · Piauí Gov Tech">
+    <meta property="og:locale" content="{% if page.lang == 'en' %}en_US{% else %}pt_BR{% endif %}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | escape }} · INOVATECH">
+    <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
+    <meta name="twitter:image" content="{{ '/assets/img/marcas/marcas-inovatech-ifpi-govtech.png' | absolute_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Montserrat:wght@800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/portal.css' | relative_url }}?v={{ site.time | date: '%s' }}">

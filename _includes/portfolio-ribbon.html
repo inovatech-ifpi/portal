@@ -1,0 +1,7 @@
+{% assign lang = page.lang | default: 'pt' %}
+<div class="hub-stats-ribbon">
+  {% for indicator in site.data.portal.indicators %}
+    <div class="ribbon-item"><span class="ribbon-num">{{ site.data.portal.facts[indicator.fact] }}</span><span class="ribbon-label">{{ indicator[lang].label }}</span></div>
+  {% endfor %}
+</div>
+<p class="dim">{{ site.data.idiomas[lang].period }} · {{ site.data.portal.facts.period }}</p>

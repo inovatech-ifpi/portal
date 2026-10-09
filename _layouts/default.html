@@ -1,45 +1,18 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: 'pt-BR' }}">
+<html lang="{% if page.lang == 'en' %}en{% else %}pt-BR{% endif %}">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0e3d22">
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
-    {% if page.url_en %}
-      <link rel="alternate" hreflang="en" href="{{ page.url_en | absolute_url }}">
-    {% endif %}
-    {% if page.url_pt %}
-      <link rel="alternate" hreflang="pt-BR" href="{{ page.url_pt | absolute_url }}">
-    {% endif %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/portal.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    {% include head.html %}
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
     <div class="shell">
       <aside class="sidebar">
         <a class="brand" href="{{ '/' | relative_url }}" aria-label="Página inicial do Hub">
-          <span class="brand-mark mono">&gt;_</span>
-          <span>
-            <span class="brand-name">{{ site.data.portal.brand }}</span>
-            <span class="brand-sub mono">Hub de Inovação · IFPI THE Central</span>
-          </span>
+          <img src="{{ '/assets/img/marcas/logo-inovatech-oficial.png' | relative_url }}" alt="INOVATECH — Residência em Inovação Tecnológica" width="1221" height="338" class="residency-logo">
         </a>
 
-        <div class="lang-switch-box">
-          <div class="lang-switch mono" aria-label="Seleção de idioma">
-            <a class="lang-opt{% unless page.lang == 'en' %} active{% endunless %}" href="{{ page.url_pt | default: '/portfolio/' | relative_url }}" title="Versão em Português">
-              <span>PT</span>
-            </a>
-            <span class="lang-divider"></span>
-            <a class="lang-opt{% if page.lang == 'en' %} active{% endif %}" href="{{ page.url_en | default: '/en/portfolio/' | relative_url }}" title="English Edition">
-              <span>EN</span> <span class="summit-tag">Web Summit</span>
-            </a>
-          </div>
-        </div>
+        <p class="residency-showcase-link"><a href="{{ '/en/' | relative_url }}" lang="en">Institutional showcase in English →</a></p>
+
 
         {% if page.lang == 'en' %}
           <nav aria-label="Main navigation">
@@ -67,8 +40,8 @@
             <a class="nav-item{% if page.url == '/residencia/' %} active{% endif %}" href="{{ '/residencia/' | relative_url }}">
               <span class="nav-ico mono">⌂</span> Painel Operacional
             </a>
-            <a class="nav-item{% if page.url == '/sprint-e2/' %} active{% endif %}" href="{{ '/sprint-e2/' | relative_url }}">
-              <span class="nav-ico mono">›</span> Sprint E2 (Vigente)
+            <a class="nav-item{% if page.url == site.data.portal.cycle.current_sprint_link %} active{% endif %}" href="{{ site.data.portal.cycle.current_sprint_link | relative_url }}">
+              <span class="nav-ico mono">›</span> {{ site.data.portal.cycle.current_sprint_label }} (Vigente)
             </a>
             <a class="nav-item{% if page.url == '/cronograma/' %} active{% endif %}" href="{{ '/cronograma/' | relative_url }}">
               <span class="nav-ico mono">◷</span> Cronograma & Marcos
@@ -96,13 +69,7 @@
 
       <main id="conteudo">
         {{ content }}
-        <footer class="page-foot mono dim">
-          {% if page.lang == 'en' %}
-            inovatech@ifpi:~$ official sovereign govtech residency portal · IFPI & Piauí Gov Tech_
-          {% else %}
-            inovatech@ifpi:~$ hub de inovação e fábrica de soluções · ifpi campus teresina central_
-          {% endif %}
-        </footer>
+        <footer class="page-foot">INOVATECH · IFPI Campus Teresina Central · Piauí Gov Tech / ETIPI</footer>
       </main>
     </div>
   </body>

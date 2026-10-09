@@ -1,46 +1,28 @@
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: 'pt-BR' }}">
+<html lang="{% if page.lang == 'en' %}en{% else %}pt-BR{% endif %}">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0e3d22">
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
-    {% if page.url_en %}
-      <link rel="alternate" hreflang="en" href="{{ page.url_en | absolute_url }}">
-    {% endif %}
-    {% if page.url_pt %}
-      <link rel="alternate" hreflang="pt-BR" href="{{ page.url_pt | absolute_url }}">
-    {% endif %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/portal.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    {% include head.html %}
   </head>
   <body class="hub-body">
-    <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+    {% assign lang = page.lang | default: 'pt' %}
+    {% assign ui = site.data.idiomas[lang] %}
+    <a class="skip-link" href="#conteudo">{{ ui.skip }}</a>
 
     <!-- Cabeçalho Principal do Hub -->
     <header class="hub-header" role="banner">
       <div class="hub-container hub-nav-container">
-        <a class="hub-brand" href="{{ page.brand_url | default: '/' | relative_url }}" aria-label="INOVATECH — Página Inicial">
-          <div class="hub-brand-logo">
-            <span class="hub-brand-badge mono">&gt;_</span>
-          </div>
-          <div class="hub-brand-meta">
-            <span class="hub-brand-title">INOVATECH</span>
-            <span class="hub-brand-tagline">Hub de Inovação & Fábrica de Soluções · IFPI</span>
-          </div>
+        <a class="hub-brand" href="{{ ui.home | relative_url }}" aria-label="{{ ui.brand_label }}">
+          <img class="hub-official-logo" src="{{ '/assets/img/marcas/logo-inovatech-oficial.png' | relative_url }}" alt="INOVATECH — Residência em Inovação Tecnológica" width="1221" height="338">
         </a>
 
         <!-- Botão Menu Mobile -->
-        <button class="hub-menu-toggle" id="hubMenuToggle" type="button" aria-expanded="false" aria-controls="hubNavMenu" aria-label="Alternar menu de navegação">
+        <button class="hub-menu-toggle" id="hubMenuToggle" type="button" aria-expanded="false" aria-controls="hubNavMenu" aria-label="{{ ui.menu }}">
           <span class="menu-icon-bar" aria-hidden="true"></span>
           <span class="menu-icon-bar" aria-hidden="true"></span>
           <span class="menu-icon-bar" aria-hidden="true"></span>
         </button>
 
-        <nav class="hub-nav" id="hubNavMenu" aria-label="Navegação institucional">
+        <nav class="hub-nav" id="hubNavMenu" aria-label="{{ ui.navigation }}">
           <ul class="hub-nav-list">
             {% if page.lang == 'en' %}
               {% for item in site.data.navegacao.en %}
@@ -63,9 +45,9 @@
 
           <div class="hub-nav-actions">
             <!-- Seletor de Idioma -->
-            <div class="hub-lang-switch mono" aria-label="Opções de idioma">
+            <div class="hub-lang-switch mono" aria-label="{% if page.lang == 'en' %}Language options{% else %}Opções de idioma{% endif %}">
               {% if page.lang == 'en' %}
-                <a class="lang-btn" href="{{ page.url_pt | default: '/' | relative_url }}" title="Mudar para Português">PT</a>
+                <a class="lang-btn" href="{{ page.url_pt | default: '/' | relative_url }}" title="Switch to Portuguese">PT</a>
                 <span class="lang-sep" aria-hidden="true">/</span>
                 <span class="lang-btn active" aria-current="page">EN</span>
               {% else %}
@@ -76,14 +58,14 @@
             </div>
 
             <!-- Botão da Residência -->
-            <a class="hub-action-btn secondary mono" href="{{ '/residencia/' | relative_url }}" title="Acessar o painel operacional da residência">
+            <a class="hub-action-btn secondary mono" href="{{ '/residencia/' | relative_url }}">
               <span class="btn-icon">⚡</span>
-              <span>Área da Residência</span>
+              <span>{{ ui.residency }}</span>
             </a>
 
             <!-- CTA Propor Desafio -->
-            <a class="hub-action-btn primary" href="{{ '/#colabore' | relative_url }}">
-              <span>Colabore</span>
+            <a class="hub-action-btn primary" href="{{ ui.home | append: '#' | append: ui.collaborate_anchor | relative_url }}">
+              <span>{{ ui.collaborate }}</span>
             </a>
           </div>
         </nav>
@@ -99,77 +81,36 @@
     <footer class="hub-footer" role="contentinfo">
       <div class="hub-container hub-footer-top">
         <div class="hub-footer-brand-col">
-          <div class="hub-footer-logo-wrap">
-            <span class="hub-brand-badge mono" aria-hidden="true">&gt;_</span>
-            <span class="hub-footer-brand-title">INOVATECH</span>
-          </div>
-          <p class="hub-footer-desc">
-            Ecossistema de inovação e engenharia de software aplicada, conectando talentos do IFPI, pesquisa tecnológica e desafios reais de governo para construir e implantar soluções públicas em produção.
-          </p>
-          <div class="hub-footer-legal mono">
-            <span>Portaria 783/2026-GAB/REI/IFPI</span>
-            <span>IFPI Campus Teresina Central · Parceria Piauí Gov Tech & ETIPI</span>
-          </div>
+          <img class="hub-footer-official-logo" src="{{ '/assets/img/marcas/inovatech-logo-branca.png' | relative_url }}" alt="INOVATECH" width="2856" height="789" loading="lazy">
+          <p class="hub-footer-desc">{{ ui.footer_desc }}</p>
+          <div class="hub-footer-legal">Portaria 783/2026-GAB/REI/IFPI</div>
         </div>
-
-        <div class="hub-footer-col">
-          <h3 class="hub-footer-heading">Soluções em Produção</h3>
-          <ul class="hub-footer-links">
-            <li><a href="{{ '/portfolio/#sgae' | relative_url }}">SGAE — Assistência Estudantil</a></li>
-            <li><a href="{{ '/portfolio/#flix' | relative_url }}">Projeto Flix — Conteúdo Institucional</a></li>
-            <li><a href="{{ '/portfolio/#conecta' | relative_url }}">Conecta CATCE & Catraka</a></li>
-            <li><a href="{{ '/portfolio/#spia' | relative_url }}">SPIA Maestro (Parceria SSP-PI)</a></li>
-            <li><a href="{{ '/portfolio/' | relative_url }}">Ver Showroom de Produtos →</a></li>
-          </ul>
-        </div>
-
-        <div class="hub-footer-col">
-          <h3 class="hub-footer-heading">Área da Residência</h3>
-          <ul class="hub-footer-links">
-            <li><a href="{{ '/residencia/' | relative_url }}">Painel Operacional</a></li>
-            <li><a href="{{ '/cronograma/' | relative_url }}">Cronograma e Marcos</a></li>
-            <li><a href="{{ '/sprint-e2/' | relative_url }}">Sprint E2 (Vigente)</a></li>
-            <li><a href="{{ '/metodologia/' | relative_url }}">Metodologia & Rituais</a></li>
-            <li><a href="{{ '/materiais/' | relative_url }}">Materiais e Templates</a></li>
-            <li><a href="{{ '/links/' | relative_url }}">Repositórios e Links</a></li>
-          </ul>
-        </div>
-
-        <div class="hub-footer-col">
-          <h3 class="hub-footer-heading">Contato & Governança</h3>
-          <div class="hub-footer-contact">
-            <p><strong>Coordenação-Geral:</strong><br>Prof. Franciéric Alves de Araújo<br><a href="mailto:eric@ifpi.edu.br">eric@ifpi.edu.br</a></p>
-            <p><strong>Instrutor da Residência:</strong><br>Prof. Aislan Rafael Rodrigues de Sousa<br><a href="mailto:aislan@ifpi.edu.br">aislan@ifpi.edu.br</a></p>
-            <p><strong>Articulação Estadual:</strong><br>Piauí Gov Tech / ETIPI<br><a href="mailto:adm@piauigovtech.org">adm@piauigovtech.org</a></p>
-          </div>
-        </div>
+        <div class="hub-footer-col"><h3 class="hub-footer-heading">{{ ui.footer_solutions }}</h3><ul class="hub-footer-links">
+          {% for project in site.data.portal.projects %}<li><a href="{{ ui.portfolio | relative_url }}#{{ project.slug }}">{{ project.public_name }}</a></li>{% endfor %}
+          <li><a href="{{ ui.home | append: 'evidencias/' | relative_url }}">{{ ui.evidence }}</a></li>
+        </ul></div>
+        <div class="hub-footer-col"><h3 class="hub-footer-heading">{{ ui.residency }}</h3><ul class="hub-footer-links">
+          <li><a href="{{ '/residencia/' | relative_url }}">{{ ui.footer_panel }}</a></li>
+          <li><a href="{{ '/cronograma/' | relative_url }}">{{ ui.footer_calendar }}</a></li>
+          <li><a href="{{ site.data.portal.cycle.current_sprint_link | relative_url }}">{{ site.data.portal.cycle.current_sprint_label }}{% if lang == 'en' %} (PT){% endif %}</a></li>
+          <li><a href="{{ '/metodologia/' | relative_url }}">{{ ui.footer_method }}</a></li>
+          <li><a href="{{ '/materiais/' | relative_url }}">{{ ui.footer_materials }}</a></li>
+          <li><a href="{{ '/links/' | relative_url }}">{{ ui.footer_links }}</a></li>
+        </ul></div>
+        <div class="hub-footer-col"><h3 class="hub-footer-heading">{{ ui.footer_contact }}</h3><div class="hub-footer-contact">{% include contatos.html %}</div></div>
       </div>
-
-      <div class="hub-container hub-footer-bottom">
-        <div class="hub-footer-badges">
-          <span class="hub-badge-item">Instituto Federal do Piauí</span>
-          <span class="hub-badge-sep" aria-hidden="true">·</span>
-          <span class="hub-badge-item">Piauí Gov Tech</span>
-          <span class="hub-badge-sep" aria-hidden="true">·</span>
-          <span class="hub-badge-item">ETIPI</span>
-          <span class="hub-badge-sep" aria-hidden="true">·</span>
-          <span class="hub-badge-item">Governo do Estado do Piauí</span>
-        </div>
-        <div class="hub-footer-copy mono">
-          <span>Software público desenvolvido em repositórios institucionais com homologação e transferência formal.</span>
-        </div>
-      </div>
+      <div class="hub-container hub-footer-bottom"><p>IFPI · Piauí Gov Tech · ETIPI</p><p>{{ ui.footer_copy }}</p></div>
     </footer>
 
     <!-- Lightbox Modal Global do Showroom (Acessível, Vanilla JS) -->
-    <div id="hubLightbox" class="hub-lightbox" role="dialog" aria-modal="true" aria-label="{% if page.lang == 'en' %}Image Preview Modal{% else %}Visualização Ampliada do Produto{% endif %}" hidden>
+    <div id="hubLightbox" class="hub-lightbox" role="dialog" aria-modal="true" aria-label="{{ ui.image_dialog }}" hidden>
       <div class="hub-lightbox-backdrop" data-lightbox-close></div>
       <div class="hub-lightbox-dialog">
-        <button type="button" class="hub-lightbox-close" data-lightbox-close aria-label="{% if page.lang == 'en' %}Close preview (Esc){% else %}Fechar visualização (Esc){% endif %}">
+        <button type="button" class="hub-lightbox-close" data-lightbox-close aria-label="{{ ui.close_image }}">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
         <figure class="hub-lightbox-figure">
-          <img id="hubLightboxImg" class="hub-lightbox-img" src="" alt="">
+          <img id="hubLightboxImg" class="hub-lightbox-img" alt="">
           <figcaption id="hubLightboxCaption" class="hub-lightbox-caption mono"></figcaption>
         </figure>
       </div>
@@ -181,22 +122,50 @@
         var toggle = document.getElementById('hubMenuToggle');
         var nav = document.getElementById('hubNavMenu');
         if (toggle && nav) {
+          function closeMenu(restoreFocus) {
+            if (toggle.getAttribute('aria-expanded') !== 'true') return;
+            toggle.setAttribute('aria-expanded', 'false');
+            nav.classList.remove('is-open');
+            if (restoreFocus) toggle.focus();
+          }
           toggle.addEventListener('click', function() {
             var expanded = toggle.getAttribute('aria-expanded') === 'true';
-            toggle.setAttribute('aria-expanded', !expanded);
-            nav.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', String(!expanded));
+            nav.classList.toggle('is-open', !expanded);
+          });
+          nav.addEventListener('click', function(event) {
+            var link = event.target.closest('a');
+            if (!link) return;
+            closeMenu(false);
+            var destination = new URL(link.href, location.href);
+            if (destination.pathname === location.pathname && destination.hash) {
+              var target = document.getElementById(destination.hash.slice(1));
+              if (target) { target.setAttribute('tabindex', '-1'); target.focus({preventScroll: true}); }
+            }
+          });
+          document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') { event.preventDefault(); closeMenu(true); }
+          });
+          document.addEventListener('click', function(event) {
+            if (!nav.contains(event.target) && !toggle.contains(event.target)) closeMenu(false);
+          });
+          window.addEventListener('resize', function() {
+            if (window.matchMedia('(min-width: 1281px)').matches) closeMenu(false);
           });
         }
 
-        // Showroom Lightbox Modal Controller (Vanilla JS, Zero Dependencies, WCAG Accessible)
+        // Image preview with keyboard navigation and focus return.
         var lightbox = document.getElementById('hubLightbox');
         var lightboxImg = document.getElementById('hubLightboxImg');
         var lightboxCaption = document.getElementById('hubLightboxCaption');
         var lastFocusedEl = null;
+        var closeTimer = null;
+        var background = document.querySelectorAll('header.hub-header, main.hub-main, footer.hub-footer');
 
         if (!lightbox || !lightboxImg || !lightboxCaption) return;
 
         function openLightbox(trigger) {
+          clearTimeout(closeTimer);
           lastFocusedEl = trigger;
           var img = trigger.querySelector('img');
           var src = trigger.getAttribute('data-lightbox-src') || (img ? img.getAttribute('src') : '');
@@ -209,6 +178,7 @@
           lightboxImg.setAttribute('alt', alt);
           lightboxCaption.textContent = caption;
 
+          background.forEach(function(el) { el.inert = true; });
           lightbox.removeAttribute('hidden');
           // Força reflow para transição suave de opacidade e escala
           void lightbox.offsetWidth;
@@ -224,9 +194,10 @@
           lightbox.classList.remove('is-open');
           document.body.classList.remove('has-lightbox-open');
 
-          setTimeout(function() {
+          closeTimer = setTimeout(function() {
             lightbox.setAttribute('hidden', '');
-            lightboxImg.setAttribute('src', '');
+            background.forEach(function(el) { el.inert = false; });
+            lightboxImg.removeAttribute('src');
             if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
               lastFocusedEl.focus();
             }
