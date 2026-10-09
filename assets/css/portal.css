@@ -3748,7 +3748,8 @@ body.has-lightbox-open {
 .hub-stat-stamp, .hub-stats-single-footer { font-size: 13px; }
 .hub-stat-stamp { color: var(--dim); }
 .hub-stats-ribbon { grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); }
-.hub-page-hero, .hub-section-dark, .hub-footer { background: var(--azul-dark); }
+.hub-page-hero, .hub-section-dark { background: var(--azul-dark); }
+.hub-footer { background: #080f26; border-top: 4px solid #526ab7; }
 .hub-footer-official-logo { width: 280px; max-width: 100%; height: auto; border-radius: 0; margin-bottom: 20px; }
 .hub-footer-desc, .hub-footer-links a, .hub-footer-contact, .hub-footer-copy { color: #dae2f5; }
 .hub-footer-contact a, .hub-footer-legal { color: #fff; }
