@@ -2360,6 +2360,18 @@ main.hub-main {
   border-bottom: 1px solid rgba(159, 226, 181, 0.2);
 }
 
+.hub-page-hero h1,
+.hub-page-hero h2,
+.hub-page-hero h3,
+.hub-page-hero h4,
+.hub-page-hero strong {
+  color: #ffffff;
+}
+
+.hub-page-hero .dim {
+  color: #bad3c2;
+}
+
 .hub-page-title {
   font-family: var(--titulo-sans);
   font-size: clamp(2rem, 4.5vw, 3.2rem);
@@ -2367,6 +2379,7 @@ main.hub-main {
   line-height: 1.15;
   margin: 12px 0 18px;
   letter-spacing: -0.02em;
+  color: #ffffff;
 }
 
 .hub-page-lead {
@@ -2423,17 +2436,19 @@ main.hub-main {
 }
 
 .hub-showroom-nav span {
-  color: var(--dim);
+  color: var(--ink-soft);
+  font-weight: 700;
 }
 
 .hub-showroom-nav a {
-  color: var(--verde-tech);
+  color: var(--verde-ifpi);
   text-decoration: none;
   white-space: nowrap;
+  font-weight: 600;
 }
 
 .hub-showroom-nav a:hover {
-  color: var(--verde-ifpi);
+  color: var(--verde-tech);
   text-decoration: underline;
 }
 
