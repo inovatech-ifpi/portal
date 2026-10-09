@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'pt-BR' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0e3d22">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    {% if page.url_en %}
+      <link rel="alternate" hreflang="en" href="{{ page.url_en | absolute_url }}">
+    {% endif %}
+    {% if page.url_pt %}
+      <link rel="alternate" hreflang="pt-BR" href="{{ page.url_pt | absolute_url }}">
+    {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/portal.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  </head>
+  <body class="hub-body">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+
+    <!-- Cabeçalho Principal do Hub -->
+    <header class="hub-header" role="banner">
+      <div class="hub-container hub-nav-container">
+        <a class="hub-brand" href="{{ page.brand_url | default: '/' | relative_url }}" aria-label="INOVATECH — Página Inicial">
+          <div class="hub-brand-logo">
+            <span class="hub-brand-badge mono">&gt;_</span>
+          </div>
+          <div class="hub-brand-meta">
+            <span class="hub-brand-title">INOVATECH</span>
+            <span class="hub-brand-tagline">Hub de Inovação & Fábrica de Soluções · IFPI</span>
+          </div>
+        </a>
+
+        <!-- Botão Menu Mobile -->
+        <button class="hub-menu-toggle" id="hubMenuToggle" type="button" aria-expanded="false" aria-controls="hubNavMenu" aria-label="Alternar menu de navegação">
+          <span class="menu-icon-bar" aria-hidden="true"></span>
+          <span class="menu-icon-bar" aria-hidden="true"></span>
+          <span class="menu-icon-bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="hub-nav" id="hubNavMenu" aria-label="Navegação institucional">
+          <ul class="hub-nav-list">
+            {% if page.lang == 'en' %}
+              {% for item in site.data.navegacao.en %}
+                <li>
+                  <a class="hub-nav-link{% if page.url == item.url %} active{% endif %}" href="{{ item.url | relative_url }}">
+                    {{ item.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            {% else %}
+              {% for item in site.data.navegacao.hub %}
+                <li>
+                  <a class="hub-nav-link{% if page.url == item.url %} active{% endif %}" href="{{ item.url | relative_url }}">
+                    {{ item.titulo }}
+                  </a>
+                </li>
+              {% endfor %}
+            {% endif %}
+          </ul>
+
+          <div class="hub-nav-actions">
+            <!-- Seletor de Idioma -->
+            <div class="hub-lang-switch mono" aria-label="Opções de idioma">
+              {% if page.lang == 'en' %}
+                <a class="lang-btn" href="{{ page.url_pt | default: '/' | relative_url }}" title="Mudar para Português">PT</a>
+                <span class="lang-sep" aria-hidden="true">/</span>
+                <span class="lang-btn active" aria-current="page">EN</span>
+              {% else %}
+                <span class="lang-btn active" aria-current="page">PT</span>
+                <span class="lang-sep" aria-hidden="true">/</span>
+                <a class="lang-btn" href="{{ page.url_en | default: '/en/' | relative_url }}" title="Switch to English (Web Summit Edition)">EN</a>
+              {% endif %}
+            </div>
+
+            <!-- Botão da Residência -->
+            <a class="hub-action-btn secondary mono" href="{{ '/residencia/' | relative_url }}" title="Acessar o painel operacional da residência">
+              <span class="btn-icon">⚡</span>
+              <span>Área da Residência</span>
+            </a>
+
+            <!-- CTA Propor Desafio -->
+            <a class="hub-action-btn primary" href="{{ '/#colabore' | relative_url }}">
+              <span>Colabore</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo Central -->
+    <main id="conteudo" class="hub-main" role="main">
+      {{ content }}
+    </main>
+
+    <!-- Rodapé Institucional Expandido -->
+    <footer class="hub-footer" role="contentinfo">
+      <div class="hub-container hub-footer-top">
+        <div class="hub-footer-brand-col">
+          <div class="hub-footer-logo-wrap">
+            <span class="hub-brand-badge mono" aria-hidden="true">&gt;_</span>
+            <span class="hub-footer-brand-title">INOVATECH</span>
+          </div>
+          <p class="hub-footer-desc">
+            Ecossistema de inovação e engenharia de software aplicada, conectando talentos do IFPI, pesquisa tecnológica e desafios reais de governo para construir e implantar soluções públicas em produção.
+          </p>
+          <div class="hub-footer-legal mono">
+            <span>Portaria 783/2026-GAB/REI/IFPI</span>
+            <span>IFPI Campus Teresina Central · Parceria Piauí Gov Tech & ETIPI</span>
+          </div>
+        </div>
+
+        <div class="hub-footer-col">
+          <h3 class="hub-footer-heading">Soluções em Produção</h3>
+          <ul class="hub-footer-links">
+            <li><a href="{{ '/portfolio/#sgae' | relative_url }}">SGAE — Assistência Estudantil</a></li>
+            <li><a href="{{ '/portfolio/#flix' | relative_url }}">Projeto Flix — Conteúdo Institucional</a></li>
+            <li><a href="{{ '/portfolio/#conecta' | relative_url }}">Conecta CATCE & Catraka</a></li>
+            <li><a href="{{ '/portfolio/#spia' | relative_url }}">SPIA Maestro (Parceria SSP-PI)</a></li>
+            <li><a href="{{ '/portfolio/' | relative_url }}">Ver Showroom de Produtos →</a></li>
+          </ul>
+        </div>
+
+        <div class="hub-footer-col">
+          <h3 class="hub-footer-heading">Área da Residência</h3>
+          <ul class="hub-footer-links">
+            <li><a href="{{ '/residencia/' | relative_url }}">Painel Operacional</a></li>
+            <li><a href="{{ '/cronograma/' | relative_url }}">Cronograma e Marcos</a></li>
+            <li><a href="{{ '/sprint-e2/' | relative_url }}">Sprint E2 (Vigente)</a></li>
+            <li><a href="{{ '/metodologia/' | relative_url }}">Metodologia & Rituais</a></li>
+            <li><a href="{{ '/materiais/' | relative_url }}">Materiais e Templates</a></li>
+            <li><a href="{{ '/links/' | relative_url }}">Repositórios e Links</a></li>
+          </ul>
+        </div>
+
+        <div class="hub-footer-col">
+          <h3 class="hub-footer-heading">Contato & Governança</h3>
+          <div class="hub-footer-contact">
+            <p><strong>Coordenação-Geral:</strong><br>Prof. Franciéric Alves de Araújo<br><a href="mailto:eric@ifpi.edu.br">eric@ifpi.edu.br</a></p>
+            <p><strong>Instrutor da Residência:</strong><br>Prof. Aislan Rafael Rodrigues de Sousa<br><a href="mailto:aislan@ifpi.edu.br">aislan@ifpi.edu.br</a></p>
+            <p><strong>Articulação Estadual:</strong><br>Piauí Gov Tech / ETIPI<br><a href="mailto:adm@piauigovtech.org">adm@piauigovtech.org</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hub-container hub-footer-bottom">
+        <div class="hub-footer-badges">
+          <span class="hub-badge-item">Instituto Federal do Piauí</span>
+          <span class="hub-badge-sep" aria-hidden="true">·</span>
+          <span class="hub-badge-item">Piauí Gov Tech</span>
+          <span class="hub-badge-sep" aria-hidden="true">·</span>
+          <span class="hub-badge-item">ETIPI</span>
+          <span class="hub-badge-sep" aria-hidden="true">·</span>
+          <span class="hub-badge-item">Governo do Estado do Piauí</span>
+        </div>
+        <div class="hub-footer-copy mono">
+          <span>Software público desenvolvido em repositórios institucionais com homologação e transferência formal.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function() {
+        var toggle = document.getElementById('hubMenuToggle');
+        var nav = document.getElementById('hubNavMenu');
+        if (toggle && nav) {
+          toggle.addEventListener('click', function() {
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('is-open');
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+# Indicadores consolidados e auditáveis do INOVATECH
+# Fonte canônica única para métricas exibidas no Hub, Portfólio e Versão em Inglês.
+# Regra: consistência factual rigorosa e dados verificados.
+
+- id: residentes
+  numero: "15"
+  rotulo: "Residentes Bolsistas"
+  detalhe: "Dedicação de 20 h/semana em squads ágeis de engenharia de software aplicada"
+  fonte: "Portaria 783/2026-GAB/REI/IFPI"
+
+- id: implantados
+  numero: "3"
+  rotulo: "Sistemas em Produção no IFPI"
+  detalhe: "Soluções implantadas no ambiente institucional e em evolução contínua"
+  fonte: "Homologação de 14/08 e Encontro INOVATECH de 11/09"
+
+- id: entregas
+  numero: "208"
+  rotulo: "Entregas Técnicas Auditadas"
+  detalhe: "148 pull requests revisados, testados e integrados na organização oficial"
+  fonte: "Relatório Consolidado da Fase 1 e GitHub inovatech-ifpi"
+
+- id: marcos
+  numero: "5 de 5"
+  rotulo: "Marcos Formais no Prazo"
+  detalhe: "100% de cumprimento no prazo (M1, Gate Técnico, M2, M3 e Homologação)"
+  fonte: "Cronograma Canônico da Residência · ADR-0007"

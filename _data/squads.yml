@@ -1,0 +1,32 @@
+- code: "D02"
+  name: "Squad SGAE — Assistência Estudantil"
+  focus: "Automatização de auxílios e conformidade contínua com as regras da POLAE"
+  photo: "/assets/img/equipes/foto-sgae-equipe.jpg"
+  alt: "Squad SGAE reunido no Espaço PiauíGovTec"
+  residents_count: 4
+  description: "Quatro residentes bolsistas dedicados à modelagem de regras de negócio, proteção LGPD e automação de folha de pagamento para 580 estudantes."
+
+- code: "D05"
+  name: "Squad Projeto Flix"
+  focus: "Repositório streaming e difusão de conteúdo educacional da rede IFPI"
+  photo: "/assets/img/equipes/foto-flix-equipe.jpg"
+  alt: "Squad Projeto Flix reunido no Espaço PiauíGovTec"
+  residents_count: 3
+  description: "Três residentes bolsistas focados em experiência de usuário, performance de streaming em rede e CMS simplificado para coordenadores e gestores."
+
+- code: "D07"
+  name: "Squad Conecta CATCE & Catraka"
+  focus: "Controle de portaria inteligente e comunicação digital com responsáveis"
+  photo: "/assets/img/equipes/foto-conecta-equipe.jpg"
+  alt: "Squad Conecta CATCE reunido no Espaço PiauíGovTec"
+  residents_count: 4
+  description: "Quatro residentes bolsistas responsáveis pela integração IoT de portarias e pelo aplicativo mobile sob os padrões do Design System GOV.BR."
+
+- code: "D08"
+  name: "Frente SPIA Maestro · SSP-PI"
+  focus: "Engenharia de sistemas sob condução técnica da Secretaria da Segurança Pública"
+  photo:
+  alt: "Frente de Segurança Pública"
+  residents_count: 4
+  is_restricted: true
+  description: "Quatro residentes integrados aos sistemas de segurança pública do Estado. Equipe, infraestrutura e arquiteturas sob estrito sigilo legal."

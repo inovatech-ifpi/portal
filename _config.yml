@@ -1,14 +1,15 @@
-title: "INOVATECH — Residência Técnica"
-description: "Portal oficial dos residentes · IFPI Campus Teresina Central"
+title: "INOVATECH — Hub de Inovação & Fábrica de Soluções"
+description: "Hub de inovação e engenharia de software aplicada · IFPI Campus Teresina Central & Piauí Gov Tech"
 lang: pt-BR
 url: "https://inovatech-ifpi.github.io"
 baseurl: "/portal"
 markdown: kramdown
 permalink: pretty
 header_pages:
-  - cronograma.md
   - portfolio.md
+  - residencia.md
   - sprint-e2.md
+  - cronograma.md
   - metodologia.md
   - materiais.md
   - templates-entregas.md
