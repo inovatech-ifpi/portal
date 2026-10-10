@@ -426,17 +426,6 @@ news:
     title: Continuous development in Sprint E2
     summary: Reviewing E1 carry-over and prioritising the next increment with stakeholders.
     link: "/sprint-e2/"
-- date: Nov/2026
-  tag: Internacional
-  title: INOVATECH no Web Summit Lisboa 2026
-  summary: Apresentação da vitrine de soluções GovTech e do modelo de residência pública
-    para o ecossistema global de inovação.
-  link: "/en/portfolio/"
-  en:
-    title: INOVATECH at Web Summit Lisbon 2026
-    summary: The public technology portfolio and applied residency model for international
-      cooperation.
-    link: "/en/portfolio/"
 leadership:
 - name: Prof. Franciéric Alves de Araújo
   role: Coordenador-Geral
