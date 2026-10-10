@@ -1,6 +1,6 @@
 ---
 layout: hub
-title: "Web Summit Showcase & Tech Portfolio"
+title: "International Showcase & Tech Portfolio"
 permalink: /en/portfolio/
 description: "Three systems deployed at IFPI and the state public safety track SPIA Maestro, combining applied learning and institutional cooperation."
 lang: en
@@ -20,7 +20,7 @@ url_pt: /portfolio/
   <div class="hub-container hub-container--showroom">
     <div class="hub-hero-badge">
       <span class="hub-badge-dot" aria-hidden="true"></span>
-      <span>WEB SUMMIT LISBON 2026 EDITION · IFPI & PIAUÍ GOV TECH</span>
+      <span>INTERNATIONAL EDITION · IFPI & PIAUÍ GOV TECH</span>
     </div>
     <h1 class="hub-page-title">Sovereign GovTech Solutions Engineered for Real Impact</h1>
     <p class="hub-page-lead">
@@ -39,7 +39,7 @@ url_pt: /portfolio/
     <a href="#flix">02. Projeto Flix (EdTech)</a>
     <a href="#conecta">03. Conecta CATCE (IoT)</a>
     <a href="#spia">04. SPIA Maestro (Public Safety)</a>
-    <a href="#engagement">05. Web Summit Collaboration</a>
+    <a href="#engagement">05. International Collaboration</a>
   </nav>
 
   <!-- TRACK 01: SGAE -->
@@ -611,13 +611,13 @@ url_pt: /portfolio/
     </div>
   </article>
 
-  <!-- WEB SUMMIT ENGAGEMENT -->
+  <!-- INTERNATIONAL ENGAGEMENT -->
   <section class="hub-showroom-cta-box" id="engagement">
     <div class="hub-showroom-cta-head">
       <p class="hub-kicker">Global Engagement Models</p>
-      <h2>Collaborate with INOVATECH at Web Summit Lisbon 2026</h2>
+      <h2>Collaborate with INOVATECH</h2>
       <p class="hub-section-lead">
-        Phase 1 proved that the public residency model builds real, production-ready software on schedule and within budget. At Web Summit, we invite global and institutional partners to engage across three tracks:
+        Phase 1 proved that the public residency model builds real, production-ready software on schedule and within budget. We invite international and institutional partners to engage across three tracks:
       </p>
     </div>
 
