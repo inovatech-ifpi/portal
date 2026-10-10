@@ -5,6 +5,10 @@ require "uri"
 require "yaml"
 require "pathname"
 
+# Sem isto, num terminal com locale ASCII o Nokogiri falha no primeiro acento e devolve páginas
+# vazias — e o script passava sem verificar nada.
+Encoding.default_external = Encoding::UTF_8
+
 root = File.expand_path("..", __dir__)
 site = File.expand_path(ARGV.fetch(0))
 config = YAML.safe_load(File.read(File.join(root, "_config.yml")))
@@ -13,11 +17,15 @@ host = URI(config.fetch("url")).host
 errors = []
 documents = {}
 Dir[File.join(site, "**", "*.html")].each do |path|
-  documents[path] = Nokogiri::HTML(File.read(path))
+  documents[path] = Nokogiri::HTML(File.read(path, encoding: "UTF-8"))
 end
 abort "ERRO: nenhum HTML compilado em #{site}" if documents.empty?
 documents.each do |path, doc|
   relative = path.delete_prefix(site)
+  if doc.at_css("body").nil? || doc.css("a[href]").empty?
+    errors << "#{relative}: página vazia ou ilegível após o parse (#{doc.errors.first})"
+    next
+  end
   page_url = relative.end_with?("/index.html") ? relative.delete_suffix("index.html") : relative
   doc.css("a[href], img[src], link[href], meta[property='og:image'], meta[name='twitter:image'], [data-lightbox-src]").each do |element|
     attribute = if element["data-lightbox-src"]
@@ -50,6 +58,15 @@ documents.each do |path, doc|
       end
     rescue URI::InvalidURIError
       errors << "#{relative}: URL inválida: #{href}"
+    end
+  end
+  doc.css("img").each do |img|
+    next if img["id"] == "hubLightboxImg"
+    name = img["src"].to_s.split("/").last
+    errors << "#{relative}: imagem sem alt: #{name}" if img["alt"].nil?
+    errors << "#{relative}: imagem sem width/height: #{name}" if img["width"].to_s.empty? || img["height"].to_s.empty?
+    if img["src"].to_s.include?("/assets/img/") && !img.ancestors("picture").first&.at_css("source[type='image/webp']")
+      errors << "#{relative}: imagem sem versão WebP: #{name}"
     end
   end
   if doc.at_css("body.hub-body")

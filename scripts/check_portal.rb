@@ -146,6 +146,88 @@ if today.between?(cycle_start, cycle_end)
   end
 end
 
+# Imagens (onda 3, A5): toda imagem tem versão WebP registrada, dimensões corretas e peso sob controle.
+IMG_LIMITE_ORIGINAL_KB = 450
+IMG_LIMITE_WEBP_KB = 150
+
+# Largura e altura de PNG/JPEG lidas do cabeçalho do arquivo, sem gems.
+def dimensoes_imagem(path)
+  File.open(path, "rb") do |file|
+    head = file.read(24).to_s
+    return head[16, 8].unpack("NN") if head.start_with?("\x89PNG".b)
+    file.rewind
+    return nil unless file.read(2) == "\xFF\xD8".b
+    loop do
+      byte = file.read(1) or return nil
+      next unless byte == "\xFF".b
+      code = file.read(1).to_s.ord
+      next if code == 0xFF || code.zero? || code.between?(0xD0, 0xD9)
+      length = file.read(2).unpack1("n")
+      if code.between?(0xC0, 0xCF) && ![0xC4, 0xC8, 0xCC].include?(code)
+        file.read(1)
+        height, width = file.read(4).unpack("nn")
+        return [width, height]
+      end
+      file.seek(length - 2, IO::SEEK_CUR)
+    end
+  end
+end
+
+registro_path = File.join(ROOT, "_data", "imagens.yml")
+registro = File.exist?(registro_path) ? (YAML.safe_load(File.read(registro_path)) || {}) : {}
+originais = Dir[File.join(ROOT, "assets", "img", "**", "*.{jpg,jpeg,png,JPG,JPEG,PNG}")].reject { |path| path.include?("/assets/img/otimizadas/") }
+originais.each do |path|
+  chave = path.delete_prefix(ROOT)
+  kb = (File.size(path) / 1024.0).ceil
+  errors << "#{chave}: #{kb} KB, acima do limite de #{IMG_LIMITE_ORIGINAL_KB} KB para originais" if kb > IMG_LIMITE_ORIGINAL_KB
+  dados = registro[chave]
+  unless dados
+    errors << "#{chave}: sem versão otimizada — rode bash scripts/otimizar-imagens.sh"
+    next
+  end
+  if dimensoes_imagem(path) != [dados["width"], dados["height"]]
+    errors << "#{chave}: dimensões em _data/imagens.yml desatualizadas — rode bash scripts/otimizar-imagens.sh"
+  end
+  Array(dados["webp"]).each do |versao|
+    webp = File.join(ROOT, versao["src"].to_s)
+    if !File.file?(webp)
+      errors << "#{chave}: versão WebP ausente: #{versao['src']}"
+    elsif (File.size(webp) / 1024.0).ceil > IMG_LIMITE_WEBP_KB
+      errors << "#{versao['src']}: acima do limite de #{IMG_LIMITE_WEBP_KB} KB para WebP"
+    end
+  end
+end
+registro.each_key do |chave|
+  errors << "_data/imagens.yml: imagem registrada não existe mais: #{chave}" unless File.file?(File.join(ROOT, chave))
+end
+registradas = registro.values.flat_map { |dados| Array(dados["webp"]).map { |versao| versao["src"] } }
+Dir[File.join(ROOT, "assets", "img", "otimizadas", "**", "*.webp")].each do |webp|
+  rel = webp.delete_prefix(ROOT)
+  errors << "#{rel}: WebP órfão, fora de _data/imagens.yml — rode bash scripts/otimizar-imagens.sh" unless registradas.include?(rel)
+end
+
+# Imagens entram pelo include, para ganhar WebP, dimensões e lazy loading.
+marcacao = Dir[File.join(ROOT, "*.md"), File.join(ROOT, "en", "*.md"), File.join(ROOT, "templates", "*.md"),
+               File.join(ROOT, "_includes", "*.html"), File.join(ROOT, "_layouts", "*.html")]
+marcacao.each do |path|
+  next if File.basename(path) == "imagem.html" || File.basename(path) == "README.md"
+  File.read(path).each_line.with_index(1) do |line, number|
+    next if line.include?('id="hubLightboxImg"')
+    if line.match?(/<img\b/i) || line.match?(/!\[[^\]]*\]\([^)]+\)/)
+      errors << "#{path.delete_prefix("#{ROOT}/")}:#{number}: imagem direta — use {% include imagem.html src=... alt=... %}"
+    end
+  end
+end
+
+# Navegação sem emoji: leitores de tela anunciam e o visual destoa dos ícones de traço.
+EMOJI = /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}]/
+[File.join(ROOT, "_data", "navegacao.yml"), File.join(ROOT, "_includes", "hub-header.html"),
+ File.join(ROOT, "_includes", "hub-footer.html"), *Dir[File.join(ROOT, "_layouts", "*.html")]].each do |path|
+  File.read(path).each_line.with_index(1) do |line, number|
+    errors << "#{path.delete_prefix("#{ROOT}/")}:#{number}: emoji na navegação: #{line.strip[0, 60]}" if line.match?(EMOJI)
+  end
+end
+
 if errors.empty?
   puts "OK: estrutura, dados canônicos, idiomas, links e referências temporais"
   exit 0
