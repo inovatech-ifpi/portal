@@ -1600,3 +1600,15 @@ body.hub-body :is(h1, h2, h3, h4) { font-weight: 800; }
   .hub-milestone { grid-template-columns: minmax(0, 1fr); }
   .hub-subsection { margin-top: 40px; padding-top: 32px; }
 }
+
+/* Alvos de toque de 44 px (A9): links e botões soltos. Links dentro de frase ficam de fora. */
+.hub-nav-link,
+.hub-card-link,
+.hub-action-btn,
+.hub-btn,
+.hub-footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.hub-footer-links a { min-width: 44px; }
+.hub-menu-toggle { min-width: 44px; min-height: 44px; }
+.hub-lang-switch { padding-block: 0; }
+.lang-btn { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+.hub-footer-links { gap: 0; }

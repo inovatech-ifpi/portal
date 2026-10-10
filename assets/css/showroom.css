@@ -1314,3 +1314,8 @@ body.has-lightbox-open {
   .hub-assurance-photo-header-left, .hub-assurance-photo-header-right { min-width: 0; }
   .hub-stats-ribbon { padding: 16px; }
 }
+
+/* Alvos de toque de 44 px (A9). */
+.hub-case-action-btn,
+.hub-showroom-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.hub-showroom-nav { padding-block: 0; }

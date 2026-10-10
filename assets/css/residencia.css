@@ -343,3 +343,7 @@
   .res-subnav-list { padding: 0 8px; width: 100%; }
   .res-subnav-cycle { padding: 4px 18px 10px; }
 }
+
+/* Alvos de toque de 44 px (A9). */
+.week-focus a,
+.table-wrap td > a:only-child { display: inline-flex; align-items: center; min-height: 44px; }
