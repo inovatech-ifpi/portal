@@ -1,0 +1,58 @@
+    <!-- Cabeçalho Principal do Hub -->
+    <header class="hub-header" role="banner">
+      <div class="hub-container hub-nav-container">
+        <a class="hub-brand" href="{{ ui.home | relative_url }}" aria-label="{{ ui.brand_label }}">
+          <img class="hub-official-logo" src="{{ '/assets/img/marcas/logo-inovatech-oficial.png' | relative_url }}" alt="INOVATECH — Residência em Inovação Tecnológica" width="1221" height="338">
+        </a>
+
+        <!-- Botão Menu Mobile -->
+        <button class="hub-menu-toggle" id="hubMenuToggle" type="button" aria-expanded="false" aria-controls="hubNavMenu" aria-label="{{ ui.menu }}">
+          <span class="menu-icon-bar" aria-hidden="true"></span>
+          <span class="menu-icon-bar" aria-hidden="true"></span>
+          <span class="menu-icon-bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="hub-nav" id="hubNavMenu" aria-label="{{ ui.navigation }}">
+          <ul class="hub-nav-list">
+            {% if page.lang == 'en' %}
+              {% for item in site.data.navegacao.en %}
+                <li>
+                  <a class="hub-nav-link{% if page.url == item.url %} active{% endif %}" href="{{ item.url | relative_url }}">
+                    {{ item.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            {% else %}
+              {% for item in site.data.navegacao.hub %}
+                <li>
+                  {% assign nav_active = false %}{% if page.url == item.url %}{% assign nav_active = true %}{% elsif item.url == '/residencia/' and residencia_area %}{% assign nav_active = true %}{% endif %}
+                  <a class="hub-nav-link{% if nav_active %} active{% endif %}" href="{{ item.url | relative_url }}"{% if nav_active %} aria-current="page"{% endif %}>
+                    {{ item.titulo }}
+                  </a>
+                </li>
+              {% endfor %}
+            {% endif %}
+          </ul>
+
+          <div class="hub-nav-actions">
+            <!-- Seletor de Idioma -->
+            <div class="hub-lang-switch mono" aria-label="{% if page.lang == 'en' %}Language options{% else %}Opções de idioma{% endif %}">
+              {% if page.lang == 'en' %}
+                <a class="lang-btn" href="{{ page.url_pt | default: '/' | relative_url }}" title="Switch to Portuguese">PT</a>
+                <span class="lang-sep" aria-hidden="true">/</span>
+                <span class="lang-btn active" aria-current="page">EN</span>
+              {% else %}
+                <span class="lang-btn active" aria-current="page">PT</span>
+                <span class="lang-sep" aria-hidden="true">/</span>
+                <a class="lang-btn" href="{{ page.url_en | default: '/en/' | relative_url }}" title="Switch to English">EN</a>
+              {% endif %}
+            </div>
+
+            <!-- CTA Propor Desafio -->
+            <a class="hub-action-btn primary" href="{{ ui.home | append: '#' | append: ui.collaborate_anchor | relative_url }}">
+              <span>{{ ui.collaborate }}</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>

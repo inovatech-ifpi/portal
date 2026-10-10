@@ -1,0 +1,171 @@
+    <!-- Rodapé Institucional Expandido -->
+    <footer class="hub-footer" role="contentinfo">
+      <div class="hub-container hub-footer-top">
+        <div class="hub-footer-brand-col">
+          <img class="hub-footer-official-logo" src="{{ '/assets/img/marcas/inovatech-logo-branca.png' | relative_url }}" alt="INOVATECH" width="2856" height="789" loading="lazy">
+          <p class="hub-footer-desc">{{ ui.footer_desc }}</p>
+          <div class="hub-footer-legal">Portaria 783/2026-GAB/REI/IFPI</div>
+        </div>
+        <div class="hub-footer-col"><h3 class="hub-footer-heading">{{ ui.footer_solutions }}</h3><ul class="hub-footer-links">
+          {% for project in site.data.portal.projects %}<li><a href="{{ ui.portfolio | relative_url }}#{{ project.slug }}">{{ project.public_name }}</a></li>{% endfor %}
+          <li><a href="{{ ui.home | append: 'evidencias/' | relative_url }}">{{ ui.evidence }}</a></li>
+        </ul></div>
+        <div class="hub-footer-col"><h3 class="hub-footer-heading">{{ ui.residency }}</h3><ul class="hub-footer-links">
+          <li><a href="{{ '/residencia/' | relative_url }}">{{ ui.footer_panel }}</a></li>
+          <li><a href="{{ '/cronograma/' | relative_url }}">{{ ui.footer_calendar }}</a></li>
+          <li><a href="{{ site.data.portal.cycle.current_sprint_link | relative_url }}">{{ site.data.portal.cycle.current_sprint_label }}{% if lang == 'en' %} (PT){% endif %}</a></li>
+          <li><a href="{{ '/metodologia/' | relative_url }}">{{ ui.footer_method }}</a></li>
+          <li><a href="{{ '/materiais/' | relative_url }}">{{ ui.footer_materials }}</a></li>
+          <li><a href="{{ '/links/' | relative_url }}">{{ ui.footer_links }}</a></li>
+        </ul></div>
+        <div class="hub-footer-col"><h3 class="hub-footer-heading">{{ ui.footer_contact }}</h3><div class="hub-footer-contact">{% include contatos.html %}</div></div>
+      </div>
+      <div class="hub-container hub-footer-bottom"><p>IFPI · Piauí Gov Tech · ETIPI</p><p>{{ ui.footer_copy }}</p></div>
+    </footer>
+
+    <!-- Lightbox Modal Global do Showroom (Acessível, Vanilla JS) -->
+    <div id="hubLightbox" class="hub-lightbox" role="dialog" aria-modal="true" aria-label="{{ ui.image_dialog }}" hidden>
+      <div class="hub-lightbox-backdrop" data-lightbox-close></div>
+      <div class="hub-lightbox-dialog">
+        <button type="button" class="hub-lightbox-close" data-lightbox-close aria-label="{{ ui.close_image }}">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <figure class="hub-lightbox-figure">
+          <img id="hubLightboxImg" class="hub-lightbox-img" alt="">
+          <figcaption id="hubLightboxCaption" class="hub-lightbox-caption mono"></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        // Menu Mobile Toggle
+        var toggle = document.getElementById('hubMenuToggle');
+        var nav = document.getElementById('hubNavMenu');
+        if (toggle && nav) {
+          function closeMenu(restoreFocus) {
+            if (toggle.getAttribute('aria-expanded') !== 'true') return;
+            toggle.setAttribute('aria-expanded', 'false');
+            nav.classList.remove('is-open');
+            if (restoreFocus) toggle.focus();
+          }
+          toggle.addEventListener('click', function() {
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', String(!expanded));
+            nav.classList.toggle('is-open', !expanded);
+          });
+          nav.addEventListener('click', function(event) {
+            var link = event.target.closest('a');
+            if (!link) return;
+            closeMenu(false);
+            var destination = new URL(link.href, location.href);
+            if (destination.pathname === location.pathname && destination.hash) {
+              var target = document.getElementById(destination.hash.slice(1));
+              if (target) { target.setAttribute('tabindex', '-1'); target.focus({preventScroll: true}); }
+            }
+          });
+          document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') { event.preventDefault(); closeMenu(true); }
+          });
+          document.addEventListener('click', function(event) {
+            if (!nav.contains(event.target) && !toggle.contains(event.target)) closeMenu(false);
+          });
+          window.addEventListener('resize', function() {
+            if (window.matchMedia('(min-width: 1024px)').matches) closeMenu(false);
+          });
+        }
+
+        // Image preview with keyboard navigation and focus return.
+        var lightbox = document.getElementById('hubLightbox');
+        var lightboxImg = document.getElementById('hubLightboxImg');
+        var lightboxCaption = document.getElementById('hubLightboxCaption');
+        var lastFocusedEl = null;
+        var closeTimer = null;
+        var background = document.querySelectorAll('header.hub-header, main.hub-main, footer.hub-footer');
+
+        if (!lightbox || !lightboxImg || !lightboxCaption) return;
+
+        function openLightbox(trigger) {
+          clearTimeout(closeTimer);
+          lastFocusedEl = trigger;
+          var img = trigger.querySelector('img');
+          var src = trigger.getAttribute('data-lightbox-src') || (img ? img.getAttribute('src') : '');
+          var alt = trigger.getAttribute('data-lightbox-alt') || (img ? img.getAttribute('alt') : '');
+          var caption = trigger.getAttribute('data-lightbox-caption') || alt;
+
+          if (!src) return;
+
+          lightboxImg.setAttribute('src', src);
+          lightboxImg.setAttribute('alt', alt);
+          lightboxCaption.textContent = caption;
+
+          background.forEach(function(el) { el.inert = true; });
+          lightbox.removeAttribute('hidden');
+          // Força reflow para transição suave de opacidade e escala
+          void lightbox.offsetWidth;
+          lightbox.classList.add('is-open');
+          document.body.classList.add('has-lightbox-open');
+
+          var closeBtn = lightbox.querySelector('.hub-lightbox-close');
+          if (closeBtn) closeBtn.focus();
+        }
+
+        function closeLightbox() {
+          if (lightbox.hasAttribute('hidden')) return;
+          lightbox.classList.remove('is-open');
+          document.body.classList.remove('has-lightbox-open');
+
+          closeTimer = setTimeout(function() {
+            lightbox.setAttribute('hidden', '');
+            background.forEach(function(el) { el.inert = false; });
+            lightboxImg.removeAttribute('src');
+            if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
+              lastFocusedEl.focus();
+            }
+          }, 200);
+        }
+
+        // Event delegation para triggers e botões de fechamento
+        document.addEventListener('click', function(e) {
+          var trigger = e.target.closest('.hub-lightbox-trigger');
+          if (trigger) {
+            e.preventDefault();
+            openLightbox(trigger);
+            return;
+          }
+
+          if (e.target.closest('[data-lightbox-close]')) {
+            e.preventDefault();
+            closeLightbox();
+            return;
+          }
+        });
+
+        // Controle por Teclado: Tecla Esc e Focus Trap
+        document.addEventListener('keydown', function(e) {
+          if (lightbox.hasAttribute('hidden')) return;
+
+          if (e.key === 'Escape' || e.key === 'Esc') {
+            e.preventDefault();
+            closeLightbox();
+            return;
+          }
+
+          if (e.key === 'Tab') {
+            var focusable = lightbox.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+            var focusableArr = Array.prototype.slice.call(focusable);
+            if (focusableArr.length === 0) return;
+            var first = focusableArr[0];
+            var last = focusableArr[focusableArr.length - 1];
+
+            if (e.shiftKey && document.activeElement === first) {
+              e.preventDefault();
+              last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+              e.preventDefault();
+              first.focus();
+            }
+          }
+        });
+      })();
+    </script>
