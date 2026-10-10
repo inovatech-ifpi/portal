@@ -17,46 +17,46 @@
         {% if page.lang == 'en' %}
           <nav aria-label="Main navigation">
             <a class="nav-item{% if page.url == '/en/' %} active{% endif %}" href="{{ '/en/' | relative_url }}">
-              <span class="nav-ico mono">~</span> Overview
+              <span class="nav-ico mono" aria-hidden="true">~</span> Overview
             </a>
             <a class="nav-item{% if page.url == '/en/portfolio/' %} active{% endif %}" href="{{ '/en/portfolio/' | relative_url }}">
-              <span class="nav-ico mono">▣</span> Web Summit Showcase
+              <span class="nav-ico mono" aria-hidden="true">▣</span> Web Summit Showcase
             </a>
             <a class="nav-item" href="{{ '/' | relative_url }}">
-              <span class="nav-ico mono">←</span> Portal Hub (PT)
+              <span class="nav-ico mono" aria-hidden="true">←</span> Portal Hub (PT)
             </a>
           </nav>
         {% else %}
           <nav aria-label="Navegação da área operacional">
             <div class="nav-group-title mono">// HUB INSTITUCIONAL</div>
             <a class="nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">
-              <span class="nav-ico mono">⚡</span> Início do Hub
+              <span class="nav-ico mono" aria-hidden="true">~</span> Início do Hub
             </a>
             <a class="nav-item{% if page.url == '/portfolio/' %} active{% endif %}" href="{{ '/portfolio/' | relative_url }}">
-              <span class="nav-ico mono">▣</span> Portfólio de Soluções
+              <span class="nav-ico mono" aria-hidden="true">▣</span> Portfólio de Soluções
             </a>
 
             <div class="nav-group-title mono" style="margin-top: 18px;">// ÁREA DA RESIDÊNCIA</div>
             <a class="nav-item{% if page.url == '/residencia/' %} active{% endif %}" href="{{ '/residencia/' | relative_url }}">
-              <span class="nav-ico mono">⌂</span> Painel Operacional
+              <span class="nav-ico mono" aria-hidden="true">⌂</span> Painel Operacional
             </a>
             <a class="nav-item{% if page.url == site.data.portal.cycle.current_sprint_link %} active{% endif %}" href="{{ site.data.portal.cycle.current_sprint_link | relative_url }}">
-              <span class="nav-ico mono">›</span> {{ site.data.portal.cycle.current_sprint_label }} (Vigente)
+              <span class="nav-ico mono" aria-hidden="true">›</span> {{ site.data.portal.cycle.current_sprint_label }} (Vigente)
             </a>
             <a class="nav-item{% if page.url == '/cronograma/' %} active{% endif %}" href="{{ '/cronograma/' | relative_url }}">
-              <span class="nav-ico mono">◷</span> Cronograma & Marcos
+              <span class="nav-ico mono" aria-hidden="true">◷</span> Cronograma & Marcos
             </a>
             <a class="nav-item{% if page.url == '/metodologia/' %} active{% endif %}" href="{{ '/metodologia/' | relative_url }}">
-              <span class="nav-ico mono">⟳</span> Metodologia
+              <span class="nav-ico mono" aria-hidden="true">⟳</span> Metodologia
             </a>
             <a class="nav-item{% if page.url == '/materiais/' %} active{% endif %}" href="{{ '/materiais/' | relative_url }}">
-              <span class="nav-ico mono">▤</span> Materiais & Guias
+              <span class="nav-ico mono" aria-hidden="true">▤</span> Materiais & Guias
             </a>
             <a class="nav-item{% if page.url == '/templates-entregas/' %} active{% endif %}" href="{{ '/templates-entregas/' | relative_url }}">
-              <span class="nav-ico mono">📋</span> Templates & Entregas
+              <span class="nav-ico mono" aria-hidden="true">≡</span> Templates & Entregas
             </a>
             <a class="nav-item{% if page.url == '/links/' %} active{% endif %}" href="{{ '/links/' | relative_url }}">
-              <span class="nav-ico mono">↗</span> Links & Repositórios
+              <span class="nav-ico mono" aria-hidden="true">↗</span> Links & Repositórios
             </a>
           </nav>
         {% endif %}

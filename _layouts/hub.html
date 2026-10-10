@@ -57,12 +57,6 @@
               {% endif %}
             </div>
 
-            <!-- Botão da Residência -->
-            <a class="hub-action-btn secondary mono" href="{{ '/residencia/' | relative_url }}">
-              <span class="btn-icon">⚡</span>
-              <span>{{ ui.residency }}</span>
-            </a>
-
             <!-- CTA Propor Desafio -->
             <a class="hub-action-btn primary" href="{{ ui.home | append: '#' | append: ui.collaborate_anchor | relative_url }}">
               <span>{{ ui.collaborate }}</span>
@@ -150,7 +144,7 @@
             if (!nav.contains(event.target) && !toggle.contains(event.target)) closeMenu(false);
           });
           window.addEventListener('resize', function() {
-            if (window.matchMedia('(min-width: 1281px)').matches) closeMenu(false);
+            if (window.matchMedia('(min-width: 1024px)').matches) closeMenu(false);
           });
         }
 
