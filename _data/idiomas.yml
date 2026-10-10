@@ -12,7 +12,10 @@ pt:
   menu: Alternar menu de navegação
   residency: Área da Residência
   collaborate: Colabore
-  products: Soluções e frentes
+  products: Soluções
+  method_kicker: Como trabalhamos
+  teams_kicker: Pessoas
+  impact_kicker: Impacto · SGAE
   case: Ver estudo de caso
   fellows: residentes bolsistas
   solutions_title: Tecnologia aplicada a desafios públicos reais
@@ -116,7 +119,10 @@ en:
   menu: Toggle navigation menu
   residency: Residency area (PT)
   collaborate: Collaborate
-  products: Solutions and tracks
+  products: Solutions
+  method_kicker: How we work
+  teams_kicker: People
+  impact_kicker: Impact · SGAE
   case: View case study
   fellows: engineering fellows
   solutions_title: Technology for real public sector challenges

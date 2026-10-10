@@ -616,7 +616,7 @@ url_en: /en/portfolio/
   <section class="hub-showroom-cta-box" id="proximo-ciclo">
     <div class="hub-showroom-cta-head">
       <p class="hub-kicker">Oportunidades & Expansão</p>
-      <h2>Como Cooperar com o INOVATECH</h2>
+      <h2>Como cooperar com o INOVATECH</h2>
       <p class="hub-section-lead">
         A primeira fase comprovou o método, a velocidade e o rigor técnico das entregas. O ciclo atual abre oportunidades para três modalidades de engajamento institucional:
       </p>
