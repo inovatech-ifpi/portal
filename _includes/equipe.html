@@ -1,0 +1,11 @@
+{% assign lang = page.lang | default: 'pt' %}
+{% assign ui = site.data.idiomas[lang] %}
+{% for grupo in ui.team_groups %}
+  {% assign pessoas = site.data.portal.leadership | where: 'grupo', grupo[0] %}
+  <section class="hub-team-group" aria-labelledby="equipe-{{ grupo[0] }}">
+    <h2 id="equipe-{{ grupo[0] }}">{{ grupo[1] }}</h2>
+    <ul class="hub-team-list">
+      {% for pessoa in pessoas %}<li class="hub-team-person"><strong>{{ pessoa.name }}</strong><span>{% if lang == 'en' %}{{ pessoa.en }}{% else %}{{ pessoa.role }}{% endif %}</span>{% if lang != 'en' and pessoa.inst %}<span class="hub-team-detail">{{ pessoa.inst }}</span>{% endif %}</li>{% endfor %}
+    </ul>
+  </section>
+{% endfor %}

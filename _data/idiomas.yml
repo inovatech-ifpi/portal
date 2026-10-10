@@ -53,10 +53,17 @@ pt:
   teams_title: Pessoas que constroem tecnologia pública
   teams_lead: Bolsistas organizados em equipes, com acompanhamento dos instrutores
     e colaboração dos setores demandantes.
-  leadership: Coordenação e instrutores
+  team_page: "/equipe/"
+  team_link: Conhecer a equipe completa
+  team_title: Equipe da Residência INOVATECH
+  team_lead: A residência é conduzida por uma equipe designada pela Portaria 783/2026-GAB/REI/IFPI, no IFPI Campus Teresina Central, em parceria com a Piauí Gov Tech e a ETIPI.
+  team_groups:
+    coordenacao: Coordenação
+    instrucao: Instrutores
+    apoio: Apoio pedagógico, administrativo e técnico
+  team_residents: Os 15 residentes bolsistas atuam em quatro equipes, com dedicação de 20 horas semanais.
+  team_residents_link: Conhecer as equipes
   partners_title: Cooperação institucional
-  news_title: Marcos e acontecimentos
-  news_link: Conhecer o registro
   contact_title: Canais institucionais de cooperação
   contact_lead: Apresente um desafio, converse sobre a continuidade das soluções ou
     apoie a formação de novos residentes. As propostas passam por avaliação e articulação
@@ -162,10 +169,17 @@ en:
   teams_title: People building public technology
   teams_lead: Fellows work in teams with instructor guidance and collaboration from
     stakeholder departments.
-  leadership: Coordination and instructors
+  team_page: "/en/team/"
+  team_link: Meet the full team
+  team_title: INOVATECH Residency team
+  team_lead: The residency is led by a team appointed under IFPI Ordinance 783/2026-GAB/REI/IFPI at Campus Teresina Central, in partnership with Piauí Gov Tech and ETIPI.
+  team_groups:
+    coordenacao: Coordination
+    instrucao: Instructors
+    apoio: Pedagogical, administrative and technical support
+  team_residents: The 15 engineering fellows work in four teams, 20 hours a week.
+  team_residents_link: Meet the teams
   partners_title: Institutional cooperation
-  news_title: Milestones and events
-  news_link: Read the record
   contact_title: Institutional cooperation channels
   contact_lead: Bring a challenge, discuss continuity and expansion, or support new
     engineering fellowships. Proposals are subject to institutional assessment and
