@@ -1,0 +1,149 @@
+# Gerado por scripts/otimizar-imagens.sh — não editar à mão.
+/assets/img/equipes/foto-conecta-equipe.jpg:
+  width: 1400
+  height: 787
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/equipes/foto-conecta-equipe-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/equipes/foto-conecta-equipe-960.webp
+  - w: 1400
+    src: /assets/img/otimizadas/equipes/foto-conecta-equipe-1400.webp
+/assets/img/equipes/foto-flix-equipe.jpg:
+  width: 1400
+  height: 787
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/equipes/foto-flix-equipe-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/equipes/foto-flix-equipe-960.webp
+  - w: 1400
+    src: /assets/img/otimizadas/equipes/foto-flix-equipe-1400.webp
+/assets/img/equipes/foto-sgae-equipe.jpg:
+  width: 1400
+  height: 787
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/equipes/foto-sgae-equipe-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/equipes/foto-sgae-equipe-960.webp
+  - w: 1400
+    src: /assets/img/otimizadas/equipes/foto-sgae-equipe-1400.webp
+/assets/img/equipes/foto-spia-equipe.jpg:
+  width: 787
+  height: 524
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/equipes/foto-spia-equipe-480.webp
+  - w: 787
+    src: /assets/img/otimizadas/equipes/foto-spia-equipe-787.webp
+/assets/img/foto-encontro-abertura.jpg:
+  width: 1600
+  height: 900
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/foto-encontro-abertura-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/foto-encontro-abertura-960.webp
+  - w: 1600
+    src: /assets/img/otimizadas/foto-encontro-abertura-1600.webp
+/assets/img/foto-plateia.jpg:
+  width: 1400
+  height: 787
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/foto-plateia-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/foto-plateia-960.webp
+  - w: 1400
+    src: /assets/img/otimizadas/foto-plateia-1400.webp
+/assets/img/marcas/inovatech-logo-branca.png:
+  width: 2856
+  height: 789
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/marcas/inovatech-logo-branca-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/marcas/inovatech-logo-branca-960.webp
+  - w: 1600
+    src: /assets/img/otimizadas/marcas/inovatech-logo-branca-1600.webp
+/assets/img/marcas/logo-ifpi-trim.png:
+  width: 231
+  height: 334
+  webp:
+  - w: 231
+    src: /assets/img/otimizadas/marcas/logo-ifpi-trim-231.webp
+/assets/img/marcas/logo-inovatech-oficial.png:
+  width: 1221
+  height: 338
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/marcas/logo-inovatech-oficial-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/marcas/logo-inovatech-oficial-960.webp
+  - w: 1221
+    src: /assets/img/otimizadas/marcas/logo-inovatech-oficial-1221.webp
+/assets/img/marcas/marcas-ifpi-govtech.png:
+  width: 641
+  height: 118
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/marcas/marcas-ifpi-govtech-480.webp
+  - w: 641
+    src: /assets/img/otimizadas/marcas/marcas-ifpi-govtech-641.webp
+/assets/img/marcas/marcas-inovatech-ifpi-govtech.png:
+  width: 915
+  height: 118
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/marcas/marcas-inovatech-ifpi-govtech-480.webp
+  - w: 915
+    src: /assets/img/otimizadas/marcas/marcas-inovatech-ifpi-govtech-915.webp
+/assets/img/portfolio/foto-encontro-abertura.jpg:
+  width: 1600
+  height: 900
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/portfolio/foto-encontro-abertura-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/portfolio/foto-encontro-abertura-960.webp
+  - w: 1600
+    src: /assets/img/otimizadas/portfolio/foto-encontro-abertura-1600.webp
+/assets/img/portfolio/foto-spia-equipe.jpg:
+  width: 787
+  height: 524
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/portfolio/foto-spia-equipe-480.webp
+  - w: 787
+    src: /assets/img/otimizadas/portfolio/foto-spia-equipe-787.webp
+/assets/img/portfolio/tela-conecta-app.jpg:
+  width: 1100
+  height: 544
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/portfolio/tela-conecta-app-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/portfolio/tela-conecta-app-960.webp
+  - w: 1100
+    src: /assets/img/otimizadas/portfolio/tela-conecta-app-1100.webp
+/assets/img/portfolio/tela-flix-home.jpg:
+  width: 1804
+  height: 693
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/portfolio/tela-flix-home-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/portfolio/tela-flix-home-960.webp
+  - w: 1600
+    src: /assets/img/otimizadas/portfolio/tela-flix-home-1600.webp
+/assets/img/portfolio/tela-sgae-pagamentos.jpg:
+  width: 1671
+  height: 853
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/portfolio/tela-sgae-pagamentos-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/portfolio/tela-sgae-pagamentos-960.webp
+  - w: 1600
+    src: /assets/img/otimizadas/portfolio/tela-sgae-pagamentos-1600.webp

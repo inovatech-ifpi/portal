@@ -1,29 +1,21 @@
 ---
 - code: D02
   photo: "/assets/img/equipes/foto-sgae-equipe.jpg"
-  width: 1400
-  height: 787
   alt:
     pt: Três residentes da equipe do SGAE em pé ao lado da tela com a apresentação do sistema
     en: Three SGAE team fellows standing next to a screen showing the system presentation
 - code: D05
   photo: "/assets/img/equipes/foto-flix-equipe.jpg"
-  width: 1400
-  height: 787
   alt:
     pt: Equipe do Projeto Flix apresentando o sistema diante da tela, com a instrutora à esquerda
     en: Projeto Flix team presenting the system in front of a screen, with the instructor on the left
 - code: D07
   photo: "/assets/img/equipes/foto-conecta-equipe.jpg"
-  width: 1400
-  height: 787
   alt:
     pt: Residentes do Conecta CATCE apresentando o sistema ao lado da tela com a marca do projeto
     en: Conecta CATCE fellows presenting the system beside a screen showing the project logo
 - code: D08
   photo: "/assets/img/equipes/foto-spia-equipe.jpg"
-  width: 787
-  height: 524
   alt:
     pt: Quatro integrantes do SPIA Maestro em pé diante da tela de abertura da apresentação
     en: Four SPIA Maestro members standing in front of the presentation title screen

@@ -2,7 +2,7 @@
     <header class="hub-header" role="banner">
       <div class="hub-container hub-nav-container">
         <a class="hub-brand" href="{{ ui.home | relative_url }}" aria-label="{{ ui.brand_label }}">
-          <img class="hub-official-logo" src="{{ '/assets/img/marcas/logo-inovatech-oficial.png' | relative_url }}" alt="INOVATECH — Residência em Inovação Tecnológica" width="1221" height="338">
+          {% include imagem.html src="/assets/img/marcas/logo-inovatech-oficial.png" alt="INOVATECH — Residência em Inovação Tecnológica" class="hub-official-logo" sizes="230px" loading="eager" %}
         </a>
 
         <!-- Botão Menu Mobile -->

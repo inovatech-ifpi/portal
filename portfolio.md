@@ -156,7 +156,7 @@ url_en: /en/portfolio/
           </div>
           <div class="hub-browser-screen">
             <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" data-lightbox-caption="Módulo de folha de pagamento do SGAE com verificação de conformidade POLAE e controle de status." aria-label="Ampliar captura de tela do SGAE">
-              <img width="1671" height="853" src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" alt="Módulo de Gestão de Pagamentos e Folha do SGAE" class="hub-case-img" loading="lazy">
+              {% include imagem.html src="/assets/img/portfolio/tela-sgae-pagamentos.jpg" alt="Módulo de Gestão de Pagamentos e Folha do SGAE" class="hub-case-img" sizes="(min-width: 1100px) 560px, 100vw" %}
               <span class="hub-lightbox-zoom-hint mono">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                 <span>Ampliar</span>
@@ -300,7 +300,7 @@ url_en: /en/portfolio/
           </div>
           <div class="hub-browser-screen">
             <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" data-lightbox-caption="Página inicial do Projeto Flix com destaque visual e organização por trilhos de conteúdo." aria-label="Ampliar captura de tela do Projeto Flix">
-              <img width="1804" height="693" src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" alt="Interface pública do catálogo streaming Projeto Flix" class="hub-case-img" loading="lazy">
+              {% include imagem.html src="/assets/img/portfolio/tela-flix-home.jpg" alt="Interface pública do catálogo streaming Projeto Flix" class="hub-case-img" sizes="(min-width: 1100px) 560px, 100vw" %}
               <span class="hub-lightbox-zoom-hint mono">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                 <span>Ampliar</span>
@@ -438,7 +438,7 @@ url_en: /en/portfolio/
             </div>
             <div class="hub-mobile-suite-screen">
               <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }}" data-lightbox-caption="Visão integrada da suíte mobile Conecta CATCE em 4 módulos. Clique para ampliar e inspecionar cada tela em alta definição." aria-label="Ampliar suíte mobile Conecta CATCE">
-                <img width="1100" height="544" src="{{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }}" alt="Visão integrada das 4 telas do aplicativo Conecta CATCE" class="hub-case-img" loading="lazy">
+                {% include imagem.html src="/assets/img/portfolio/tela-conecta-app.jpg" alt="Visão integrada das 4 telas do aplicativo Conecta CATCE" class="hub-case-img" sizes="(min-width: 1100px) 560px, 100vw" %}
                 <span class="hub-lightbox-zoom-hint mono">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                   <span>Ampliar</span>
@@ -580,7 +580,7 @@ url_en: /en/portfolio/
           </div>
           <div class="hub-assurance-photo-screen">
             <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" data-lightbox-caption="Apresentação autorizada do Squad SPIA Maestro no Encontro INOVATECH no Espaço PiauíGovTec." aria-label="Ampliar foto oficial do Squad SPIA Maestro">
-              <img width="787" height="524" src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" alt="Squad SPIA Maestro no Encontro INOVATECH" class="hub-case-img" loading="lazy">
+              {% include imagem.html src="/assets/img/equipes/foto-spia-equipe.jpg" alt="Squad SPIA Maestro no Encontro INOVATECH" class="hub-case-img" sizes="(min-width: 1100px) 560px, 100vw" %}
               <span class="hub-lightbox-zoom-hint mono">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                 <span>Ampliar</span>

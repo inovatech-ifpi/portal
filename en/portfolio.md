@@ -155,7 +155,7 @@ url_pt: /portfolio/
           </div>
           <div class="hub-browser-screen">
             <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" data-lightbox-caption="SGAE payroll module with POLAE rule checks. Demonstration screenshot with SEED identifiers." aria-label="Expand SGAE screenshot">
-              <img width="1671" height="853" src="{{ '/assets/img/portfolio/tela-sgae-pagamentos.jpg' | relative_url }}" alt="SGAE Payments Module" class="hub-case-img" loading="lazy">
+              {% include imagem.html src="/assets/img/portfolio/tela-sgae-pagamentos.jpg" alt="SGAE Payments Module" class="hub-case-img" sizes="(min-width: 1100px) 560px, 100vw" %}
               <span class="hub-lightbox-zoom-hint mono">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                 <span>Expand</span>
@@ -299,7 +299,7 @@ url_pt: /portfolio/
           </div>
           <div class="hub-browser-screen">
             <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" data-lightbox-caption="Projeto Flix public homepage featuring thematic educational rows and campus filters." aria-label="Expand Projeto Flix screenshot">
-              <img width="1804" height="693" src="{{ '/assets/img/portfolio/tela-flix-home.jpg' | relative_url }}" alt="Projeto Flix Streaming Catalog" class="hub-case-img" loading="lazy">
+              {% include imagem.html src="/assets/img/portfolio/tela-flix-home.jpg" alt="Projeto Flix Streaming Catalog" class="hub-case-img" sizes="(min-width: 1100px) 560px, 100vw" %}
               <span class="hub-lightbox-zoom-hint mono">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                 <span>Expand</span>
@@ -437,7 +437,7 @@ url_pt: /portfolio/
             </div>
             <div class="hub-mobile-suite-screen">
               <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }}" data-lightbox-caption="Integrated 4-module view of the Conecta CATCE mobile suite. Click to expand and inspect each screen in high definition." aria-label="Expand Conecta CATCE mobile screens suite">
-                <img width="1100" height="544" src="{{ '/assets/img/portfolio/tela-conecta-app.jpg' | relative_url }}" alt="Integrated 4-screen view of Conecta CATCE mobile suite" class="hub-case-img" loading="lazy">
+                {% include imagem.html src="/assets/img/portfolio/tela-conecta-app.jpg" alt="Integrated 4-screen view of Conecta CATCE mobile suite" class="hub-case-img" sizes="(min-width: 1100px) 560px, 100vw" %}
                 <span class="hub-lightbox-zoom-hint mono">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                   <span>Expand</span>
@@ -579,7 +579,7 @@ url_pt: /portfolio/
           </div>
           <div class="hub-assurance-photo-screen">
             <button type="button" class="hub-lightbox-trigger" data-lightbox-src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" data-lightbox-caption="Official authorized presentation of the SPIA Maestro Squad at the INOVATECH Public Showcase in Piauí Gov Tech." aria-label="Expand official SPIA Maestro squad photo">
-              <img width="787" height="524" src="{{ '/assets/img/equipes/foto-spia-equipe.jpg' | relative_url }}" alt="SPIA Maestro Squad presenting at INOVATECH Showcase" class="hub-case-img" loading="lazy">
+              {% include imagem.html src="/assets/img/equipes/foto-spia-equipe.jpg" alt="SPIA Maestro Squad presenting at INOVATECH Showcase" class="hub-case-img" sizes="(min-width: 1100px) 560px, 100vw" %}
               <span class="hub-lightbox-zoom-hint mono">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
                 <span>Expand</span>
