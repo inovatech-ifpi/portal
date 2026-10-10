@@ -79,12 +79,24 @@
     src: /assets/img/otimizadas/marcas/inovatech-logo-branca-960.webp
   - w: 1600
     src: /assets/img/otimizadas/marcas/inovatech-logo-branca-1600.webp
+/assets/img/marcas/logo-faifpi.png:
+  width: 326
+  height: 293
+  webp:
+  - w: 326
+    src: /assets/img/otimizadas/marcas/logo-faifpi-326.webp
 /assets/img/marcas/logo-ifpi-trim.png:
   width: 231
   height: 334
   webp:
   - w: 231
     src: /assets/img/otimizadas/marcas/logo-ifpi-trim-231.webp
+/assets/img/marcas/logo-ifpi.png:
+  width: 438
+  height: 529
+  webp:
+  - w: 438
+    src: /assets/img/otimizadas/marcas/logo-ifpi-438.webp
 /assets/img/marcas/logo-inovatech-oficial.png:
   width: 1221
   height: 338
@@ -95,6 +107,14 @@
     src: /assets/img/otimizadas/marcas/logo-inovatech-oficial-960.webp
   - w: 1221
     src: /assets/img/otimizadas/marcas/logo-inovatech-oficial-1221.webp
+/assets/img/marcas/logo-piauigovtech.png:
+  width: 511
+  height: 145
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/marcas/logo-piauigovtech-480.webp
+  - w: 511
+    src: /assets/img/otimizadas/marcas/logo-piauigovtech-511.webp
 /assets/img/marcas/marcas-ifpi-govtech.png:
   width: 641
   height: 118

@@ -375,15 +375,21 @@ partners:
   category: Realização & Formação
   detail: Campus Teresina Central · Coordenação acadêmica, infraestrutura de laboratórios
     e corpo de instrutores.
-  logo: "/assets/img/marcas/logo-ifpi-trim.png"
+  logo: "/assets/img/marcas/logo-ifpi.png"
   en: Academic coordination, laboratories and instructor guidance at Campus Teresina
     Central.
 - name: Piauí Gov Tech / ETIPI
   category: Parceria Estratégica
   detail: Governo do Estado do Piauí · Articulação de desafios públicos, fomento a
     bolsas e transformação digital estadual.
-  logo: "/assets/img/marcas/marcas-ifpi-govtech.png"
+  logo: "/assets/img/marcas/logo-piauigovtech.png"
   en: State partnerships, fellowship support and digital transformation.
+- name: FAIFPI — Fundação de Apoio do IFPI
+  category: Gestão de Bolsas
+  detail: Fundação de apoio do IFPI · Participa da gestão administrativa e financeira
+    das bolsas da residência.
+  logo: "/assets/img/marcas/logo-faifpi.png"
+  en: IFPI support foundation · Administrative and financial management of the fellowships.
 - name: SSP-PI — Secretaria da Segurança Pública
   category: Operação Governamental
   detail: Parceria institucional na evolução de sistemas sob condução técnica da Secretaria.
