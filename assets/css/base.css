@@ -1,0 +1,219 @@
+/* ==========================================================================
+   TOKENS ÚNICOS DO PORTAL (A6). Cores e fontes só aqui.
+   ========================================================================== */
+:root {
+  --azul: #263982;
+  --azul-escuro: #162459;
+  --azul-claro: #edf2f9;
+  --azul-luz: #b8c6f2;
+  --rodape: #080f26;
+  --papel: #f5f7fb;
+  --superficie: #ffffff;
+  --texto: #0d1730;
+  --texto-2: #3d4a63;
+  --texto-3: #526079;
+  --linha: #dce2ec;
+  --linha-forte: #b9c4d8;
+  --alerta: #a95308;
+  --alerta-claro: #fdf0df;
+  --foco: #a95308;
+  --fonte-titulo: "Montserrat", system-ui, sans-serif;
+  --fonte-corpo: "Plus Jakarta Sans", system-ui, sans-serif;
+  --fonte-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--texto-2);
+  font-family: var(--fonte-corpo);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--azul);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--azul-escuro);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.mono {
+  font-family: var(--fonte-mono);
+  font-size: 0.86em;
+}
+
+.dim {
+  color: var(--texto-3);
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 8px;
+  left: 8px;
+  padding: 8px 12px;
+  transform: translateY(-160%);
+  background: #fff;
+  color: var(--azul-escuro);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+  color: var(--texto);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.4rem);
+  line-height: 1.15;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 38px 0 15px;
+  color: var(--texto);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h2::after {
+  height: 1px;
+  flex: 1;
+  background: var(--linha);
+  content: "";
+}
+
+h3 {
+  margin: 26px 0 6px;
+  font-size: 18px;
+}
+
+h4 {
+  margin: 20px 0 4px;
+  font-size: 16px;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+ul,
+ol {
+  padding-left: 1.4rem;
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+blockquote {
+  margin: 26px 0;
+  padding: 14px 18px;
+  border-left: 4px solid var(--azul);
+  background: var(--azul-claro);
+  color: var(--azul-escuro);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+code {
+  padding: 2px 5px;
+  border: 1px solid var(--linha);
+  border-radius: 3px;
+  background: #fff;
+  color: var(--azul-escuro);
+  font-family: var(--fonte-mono);
+  font-size: 0.88em;
+}
+
+hr {
+  margin: 32px 0;
+  border: 0;
+  border-top: 1px dashed var(--linha);
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border: 1px solid var(--linha);
+  border-collapse: collapse;
+  background: var(--superficie);
+  font-size: 14px;
+}
+
+th {
+  padding: 9px 13px;
+  border-bottom: 1px solid var(--linha);
+  background: var(--azul-claro);
+  color: var(--azul-escuro);
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 10px 13px;
+  border-bottom: 1px solid var(--linha);
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+@media print {
+  .res-subnav,
+  .hub-header,
+  .hub-footer,
+  .skip-link {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
+  body {
+    background: #fff;
+  }
+}
