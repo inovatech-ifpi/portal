@@ -28,8 +28,6 @@ projects:
   stakeholder: Diretoria de Extensão / Assistência Estudantil
   image: "/assets/img/portfolio/tela-sgae-pagamentos.jpg"
   thumb: "/assets/img/portfolio/tela-sgae-pagamentos.jpg"
-  thumb_width: 1671
-  thumb_height: 853
   handover:
     pt: Transferência documental em andamento
     en: Documentary handover in progress
@@ -59,8 +57,6 @@ projects:
   stakeholder: Reitoria do IFPI
   image: "/assets/img/portfolio/tela-flix-home.jpg"
   thumb: "/assets/img/portfolio/tela-flix-home.jpg"
-  thumb_width: 1804
-  thumb_height: 693
   handover:
     pt: Transferência documental em andamento
     en: Documentary handover in progress
@@ -90,8 +86,6 @@ projects:
   stakeholder: Direção-Geral do Campus Teresina Central
   image: "/assets/img/portfolio/tela-conecta-app.jpg"
   thumb: "/assets/img/portfolio/tela-conecta-app.jpg"
-  thumb_width: 1100
-  thumb_height: 544
   handover:
     pt: Transferência documental em andamento
     en: Documentary handover in progress
@@ -122,8 +116,6 @@ projects:
   stakeholder: Secretaria da Segurança Pública do Piauí (SSP-PI)
   image: "/assets/img/equipes/foto-spia-equipe.jpg"
   thumb: "/assets/img/equipes/foto-spia-equipe.jpg"
-  thumb_width: 787
-  thumb_height: 524
   media_note:
     pt: Frente confidencial · imagem da equipe, sem telas do sistema
     en: Confidential track · team photo, no system screens

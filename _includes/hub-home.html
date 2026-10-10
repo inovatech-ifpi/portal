@@ -2,7 +2,7 @@
 {% assign ui = site.data.idiomas[lang] %}
 {% assign facts = site.data.portal.facts %}
 <section class="hub-hero" id="inicio" aria-labelledby="hero-title">
-  <div class="hub-hero-bg" aria-hidden="true"><img src="{{ '/assets/img/portfolio/foto-encontro-abertura.jpg' | relative_url }}" alt="" width="1600" height="900" class="hub-hero-img" fetchpriority="high"><div class="hub-hero-overlay"></div></div>
+  <div class="hub-hero-bg" aria-hidden="true">{% include imagem.html src="/assets/img/portfolio/foto-encontro-abertura.jpg" alt="" class="hub-hero-img" sizes="100vw" loading="eager" fetchpriority="high" %}<div class="hub-hero-overlay"></div></div>
   <div class="hub-container"><div class="hub-hero-content">
     <div class="hub-hero-badge">{{ ui.hero_badge }}</div>
     <h1 id="hero-title" class="hub-hero-title">{{ ui.hero_title }}</h1>
@@ -19,7 +19,7 @@
       {% for project in site.data.portal.projects %}
         {% assign label = project %}{% if lang == 'en' %}{% assign label = project.en %}{% endif %}
         <article class="hub-product-card {{ project.tone }}" id="produto-{{ project.slug }}">
-          <div class="hub-product-media"><img src="{{ project.thumb | relative_url }}" alt="{{ project.image_alt[lang] }}" class="hub-product-img" width="{{ project.thumb_width | default: 1600 }}" height="{{ project.thumb_height | default: 900 }}" loading="lazy" decoding="async">{% if project.media_note %}<p class="hub-product-media-note">{{ project.media_note[lang] }}</p>{% endif %}<div class="hub-product-badge-bar"><span class="hub-chip">{{ project.code }}</span><span class="hub-chip status-chip">{{ label.stage }}</span></div></div>
+          <div class="hub-product-media">{% assign img_alt = project.image_alt[lang] %}{% include imagem.html src=project.thumb alt=img_alt class="hub-product-img" sizes="(min-width: 1100px) 570px, 90vw" %}{% if project.media_note %}<p class="hub-product-media-note">{{ project.media_note[lang] }}</p>{% endif %}<div class="hub-product-badge-bar"><span class="hub-chip">{{ project.code }}</span><span class="hub-chip status-chip">{{ label.stage }}</span></div></div>
           <div class="hub-product-content"><div class="hub-product-meta">{{ label.stakeholder }}</div><h3 class="hub-product-title">{{ project.public_name }}</h3><p class="hub-product-subtitle"><strong>{{ label.subtitle }}</strong></p><p class="hub-product-desc">{{ label.description }}</p><div class="hub-product-footer"><span class="hub-team-pill">{{ project.residents }} {{ ui.fellows }}</span><a href="{{ ui.portfolio | relative_url }}#{{ project.slug }}" class="hub-card-link">{{ ui.case }} →</a></div></div>
         </article>
       {% endfor %}
@@ -52,11 +52,11 @@
 
 <section class="hub-section" id="equipes" aria-labelledby="teams-heading"><div class="hub-container">
   <div class="hub-section-head"><p class="hub-kicker">{{ ui.teams_kicker }}</p><h2 id="teams-heading">{{ ui.teams_title }}</h2><p class="hub-section-lead">{{ ui.teams_lead }}</p></div>
-  <div class="hub-squads-grid">{% for project in site.data.portal.projects %}<article class="hub-squad-card"><div class="hub-squad-photo-wrap">{% assign squad = site.data.squads | where: 'code', project.code | first %}<img src="{{ squad.photo | relative_url }}" alt="{{ squad.alt[lang] | default: project.public_name }}" width="{{ squad.width }}" height="{{ squad.height }}" loading="lazy" decoding="async" class="hub-squad-img"></div><div class="hub-squad-info"><h3>{{ project.public_name }}</h3><p>{{ project.residents }} {{ ui.fellows }} · {{ facts.weekly_hours }} h/{% if lang == 'en' %}week{% else %}semana{% endif %}</p></div></article>{% endfor %}</div>
+  <div class="hub-squads-grid">{% for project in site.data.portal.projects %}<article class="hub-squad-card"><div class="hub-squad-photo-wrap">{% assign squad = site.data.squads | where: 'code', project.code | first %}{% assign img_alt = squad.alt[lang] | default: project.public_name %}{% include imagem.html src=squad.photo alt=img_alt class="hub-squad-img" sizes="(min-width: 1100px) 273px, (min-width: 900px) 23vw, (min-width: 600px) 50vw, 100vw" %}</div><div class="hub-squad-info"><h3>{{ project.public_name }}</h3><p>{{ project.residents }} {{ ui.fellows }} · {{ facts.weekly_hours }} h/{% if lang == 'en' %}week{% else %}semana{% endif %}</p></div></article>{% endfor %}</div>
   <div class="hub-leadership-block"><h3>{{ ui.leadership }}</h3><div class="hub-leadership-grid">{% for leader in site.data.portal.leadership %}<div class="hub-leader-card"><strong>{{ leader.name }}</strong><span>{{ leader[lang] | default: leader.role }}</span></div>{% endfor %}</div></div>
   <div class="hub-subsection" id="parceiros" aria-labelledby="partners-heading">
     <h3 id="partners-heading" class="hub-subsection-title">{{ ui.partners_title }}</h3>
-    <div class="hub-partners-grid">{% for partner in site.data.portal.partners %}<article class="hub-partner-card"><h4 class="hub-partner-name">{{ partner.name }}</h4><p>{{ partner[lang] | default: partner.detail }}</p>{% if partner.logo %}<img src="{{ partner.logo | relative_url }}" alt="{{ partner.name }}" class="hub-partner-logo" loading="lazy">{% endif %}</article>{% endfor %}</div>
+    <div class="hub-partners-grid">{% for partner in site.data.portal.partners %}<article class="hub-partner-card"><h4 class="hub-partner-name">{{ partner.name }}</h4><p>{{ partner[lang] | default: partner.detail }}</p>{% if partner.logo %}{% include imagem.html src=partner.logo alt=partner.name class="hub-partner-logo" sizes="240px" %}{% endif %}</article>{% endfor %}</div>
   </div>
 </div></section>
 

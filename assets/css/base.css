@@ -220,3 +220,7 @@ tr:last-child td {
 
 /* Alvos de toque de 44 px (A9). */
 .skip-link { min-height: 44px; display: inline-flex; align-items: center; }
+
+/* Imagens otimizadas (A5): o <picture> não interfere no layout; quem manda é o <img>. */
+picture.img-otimizada { display: contents; }
+picture.img-otimizada > source { display: none; }
