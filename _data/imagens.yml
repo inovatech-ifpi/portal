@@ -57,6 +57,18 @@
     src: /assets/img/otimizadas/foto-plateia-960.webp
   - w: 1400
     src: /assets/img/otimizadas/foto-plateia-1400.webp
+/assets/img/marcas/apple-touch-icon.png:
+  width: 180
+  height: 180
+  webp:
+  - w: 180
+    src: /assets/img/otimizadas/marcas/apple-touch-icon-180.webp
+/assets/img/marcas/favicon-32.png:
+  width: 32
+  height: 32
+  webp:
+  - w: 32
+    src: /assets/img/otimizadas/marcas/favicon-32-32.webp
 /assets/img/marcas/inovatech-logo-branca.png:
   width: 2856
   height: 789

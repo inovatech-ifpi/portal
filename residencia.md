@@ -9,7 +9,7 @@ nav_title: "Painel da Residência"
 url_en: /en/
 ---
 
-<div class="progress-block" aria-label="Progresso do ciclo">
+<div class="progress-block" role="group" aria-label="Progresso do ciclo">
   <div class="progress-meta mono">
     <span>semana {{ site.data.portal.cycle.current_week }}/{{ site.data.portal.cycle.total_weeks }}</span>
     <span>{{ site.data.portal.cycle.current_period }} · {{ site.data.portal.cycle.current_focus }}</span>
