@@ -3,74 +3,39 @@
   <head>
     {% include head.html %}
   </head>
-  <body>
-    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
-    <div class="shell">
-      <aside class="sidebar">
-        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Página inicial do Hub">
-          <img src="{{ '/assets/img/marcas/logo-inovatech-oficial.png' | relative_url }}" alt="INOVATECH — Residência em Inovação Tecnológica" width="1221" height="338" class="residency-logo">
-        </a>
+  <body class="hub-body res-body">
+    {% assign lang = page.lang | default: 'pt' %}
+    {% assign ui = site.data.idiomas[lang] %}
+    {% assign residencia_area = true %}
+    <a class="skip-link" href="#conteudo">{{ ui.skip }}</a>
 
-        <p class="residency-showcase-link"><a href="{{ '/en/' | relative_url }}" lang="en">Institutional showcase in English →</a></p>
+    {% include hub-header.html %}
 
+    <!-- Subnavegação da Área da Residência -->
+    <nav class="res-subnav" aria-label="Área da Residência">
+      <div class="hub-container res-subnav-inner">
+        <ul class="res-subnav-list">
+          {% for item in site.data.navegacao.residencia %}
+            {% assign tab_url = item.url %}
+            {% assign tab_title = item.titulo %}
+            {% if item.dynamic == 'sprint' %}
+              {% assign tab_url = site.data.portal.cycle.current_sprint_link %}
+              {% assign tab_title = site.data.portal.cycle.current_sprint_label %}
+            {% endif %}
+            {% assign tab_active = false %}
+            {% if page.url == tab_url %}{% assign tab_active = true %}{% endif %}
+            {% if item.prefixo and page.url contains item.prefixo %}{% assign tab_active = true %}{% endif %}
+            <li><a class="res-subnav-link{% if tab_active %} active{% endif %}" href="{{ tab_url | relative_url }}"{% if tab_active %} aria-current="page"{% endif %}>{{ tab_title }}</a></li>
+          {% endfor %}
+        </ul>
+        <p class="res-subnav-cycle mono">{{ site.data.portal.cycle.label }} · {{ site.data.portal.cycle.start }} → {{ site.data.portal.cycle.end }}</p>
+      </div>
+    </nav>
 
-        {% if page.lang == 'en' %}
-          <nav aria-label="Main navigation">
-            <a class="nav-item{% if page.url == '/en/' %} active{% endif %}" href="{{ '/en/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">~</span> Overview
-            </a>
-            <a class="nav-item{% if page.url == '/en/portfolio/' %} active{% endif %}" href="{{ '/en/portfolio/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">▣</span> Web Summit Showcase
-            </a>
-            <a class="nav-item" href="{{ '/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">←</span> Portal Hub (PT)
-            </a>
-          </nav>
-        {% else %}
-          <nav aria-label="Navegação da área operacional">
-            <div class="nav-group-title mono">// HUB INSTITUCIONAL</div>
-            <a class="nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">~</span> Início do Hub
-            </a>
-            <a class="nav-item{% if page.url == '/portfolio/' %} active{% endif %}" href="{{ '/portfolio/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">▣</span> Portfólio de Soluções
-            </a>
+    <main id="conteudo" class="res-main" role="main">
+      {{ content }}
+    </main>
 
-            <div class="nav-group-title mono" style="margin-top: 18px;">// ÁREA DA RESIDÊNCIA</div>
-            <a class="nav-item{% if page.url == '/residencia/' %} active{% endif %}" href="{{ '/residencia/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">⌂</span> Painel Operacional
-            </a>
-            <a class="nav-item{% if page.url == site.data.portal.cycle.current_sprint_link %} active{% endif %}" href="{{ site.data.portal.cycle.current_sprint_link | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">›</span> {{ site.data.portal.cycle.current_sprint_label }} (Vigente)
-            </a>
-            <a class="nav-item{% if page.url == '/cronograma/' %} active{% endif %}" href="{{ '/cronograma/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">◷</span> Cronograma & Marcos
-            </a>
-            <a class="nav-item{% if page.url == '/metodologia/' %} active{% endif %}" href="{{ '/metodologia/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">⟳</span> Metodologia
-            </a>
-            <a class="nav-item{% if page.url == '/materiais/' %} active{% endif %}" href="{{ '/materiais/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">▤</span> Materiais & Guias
-            </a>
-            <a class="nav-item{% if page.url == '/templates-entregas/' %} active{% endif %}" href="{{ '/templates-entregas/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">≡</span> Templates & Entregas
-            </a>
-            <a class="nav-item{% if page.url == '/links/' %} active{% endif %}" href="{{ '/links/' | relative_url }}">
-              <span class="nav-ico mono" aria-hidden="true">↗</span> Links & Repositórios
-            </a>
-          </nav>
-        {% endif %}
-
-        <div class="sidebar-foot mono">
-          <div>{{ site.data.portal.cycle.label }} · {{ site.data.portal.cycle.current_phase }}</div>
-          <div class="dim">{{ site.data.portal.cycle.start }} → {{ site.data.portal.cycle.end }}</div>
-        </div>
-      </aside>
-
-      <main id="conteudo">
-        {{ content }}
-        <footer class="page-foot">INOVATECH · IFPI Campus Teresina Central · Piauí Gov Tech / ETIPI</footer>
-      </main>
-    </div>
+    {% include hub-footer.html %}
   </body>
 </html>

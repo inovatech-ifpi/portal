@@ -9,12 +9,6 @@ nav_title: "Painel da Residência"
 url_en: /en/
 ---
 
-<div class="hub-back-banner">
-  <a href="{{ '/' | relative_url }}" class="hub-back-link">
-    ← Voltar para o Hub de Inovação & Vitrine Institucional
-  </a>
-</div>
-
 <div class="progress-block" aria-label="Progresso do ciclo">
   <div class="progress-meta mono">
     <span>semana {{ site.data.portal.cycle.current_week }}/{{ site.data.portal.cycle.total_weeks }}</span>
