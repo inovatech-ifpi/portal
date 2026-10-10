@@ -1319,3 +1319,7 @@ body.has-lightbox-open {
 .hub-case-action-btn,
 .hub-showroom-nav a { display: inline-flex; align-items: center; min-height: 44px; }
 .hub-showroom-nav { padding-block: 0; }
+
+/* Texto secundário nos cards escuros (auditoria final: 2,76 → acima de 4,5:1). */
+.hub-case-card--streaming .dim,
+.hub-case-card--assurance .dim { color: var(--azul-luz); }

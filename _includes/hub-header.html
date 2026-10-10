@@ -36,7 +36,7 @@
 
           <div class="hub-nav-actions">
             <!-- Seletor de Idioma -->
-            <div class="hub-lang-switch mono" aria-label="{% if page.lang == 'en' %}Language options{% else %}Opções de idioma{% endif %}">
+            <div class="hub-lang-switch mono" role="group" aria-label="{% if page.lang == 'en' %}Language options{% else %}Opções de idioma{% endif %}">
               {% if page.lang == 'en' %}
                 <a class="lang-btn" href="{{ page.url_pt | default: '/' | relative_url }}" title="Switch to Portuguese">PT</a>
                 <span class="lang-sep" aria-hidden="true">/</span>
