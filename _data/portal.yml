@@ -396,53 +396,47 @@ partners:
     de soluções de impacto.
   logo:
   en: Institutional outreach underway with DPE-PI and MPPI.
-news:
-- date: 11/09/2026
-  tag: Marco Histórico
-  title: Encontro INOVATECH apresenta os sistemas no Espaço PiauíGovTec
-  summary: Apresentação institucional das soluções implantadas no IFPI e dos resultados
-    da Fase 1.
-  link: "/portfolio/"
-  en:
-    title: INOVATECH showcase at Piauí Gov Tech
-    summary: Institutional presentation of the systems deployed at IFPI and Phase
-      1 results.
-    link: "/en/portfolio/"
-- date: 05/10/2026
-  tag: Fase 2
-  title: Sprint E2 de evolução contínua
-  summary: Revisão das pendências da E1 e priorização do próximo incremento com os
-    demandantes.
-  link: "/sprint-e2/"
-  en:
-    title: Continuous development in Sprint E2
-    summary: Reviewing E1 carry-over and prioritising the next increment with stakeholders.
-    link: "/sprint-e2/"
 leadership:
 - name: Prof. Franciéric Alves de Araújo
+  grupo: coordenacao
   role: Coordenador-Geral
   inst: IFPI Campus Teresina Central
   en: General Coordinator
 - name: Prof. Rogério da Silva
+  grupo: coordenacao
   role: Coordenador Técnico
   inst: IFPI Campus Teresina Central
   en: Technical Coordinator
 - name: Prof. Aislan Rafael Rodrigues de Sousa
+  grupo: instrucao
   role: Instrutor da Residência
   inst: Coordena squads SGAE e Projeto Flix
   en: Residency Instructor · SGAE and Projeto Flix
 - name: Profa. Aline Montenegro Leal
+  grupo: instrucao
   role: Instrutora da Residência
   inst: Coordena squad Conecta CATCE
   en: Residency Instructor · Conecta CATCE
 - name: Profa. Ruthelle Maria de Carvalho Sousa
+  grupo: instrucao
   role: Instrutora de Inovação
   inst: IFPI Campus Teresina Central
   en: Innovation Instructor
 - name: Layane Ribeiro de Araújo Leal
+  grupo: apoio
   role: Assistente Pedagógico
   inst: Acompanhamento formativo e institucional
   en: Pedagogical Assistant
+- name: Janaína Peres da Silva Galeno
+  grupo: apoio
+  role: Apoio Administrativo-Financeiro
+  inst: IFPI Campus Teresina Central
+  en: Administrative and Financial Support
+- name: Prof. Rômulo Oliveira Barros
+  grupo: apoio
+  role: Apoio de Tecnologia da Informação
+  inst: IFPI Campus Teresina Central
+  en: Information Technology Support
 facts:
   residents: 15
   weekly_hours: 20

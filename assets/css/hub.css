@@ -1612,3 +1612,16 @@ body.hub-body :is(h1, h2, h3, h4) { font-weight: 800; }
 .hub-lang-switch { padding-block: 0; }
 .lang-btn { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
 .hub-footer-links { gap: 0; }
+
+/* Página Equipe: coordenação, instrutores e apoio, da Portaria 783/2026. */
+.hub-team-page .hub-section-lead { margin-bottom: 8px; }
+.hub-team-group { margin-top: 40px; }
+.hub-team-group h2 { margin: 0 0 16px; font-family: var(--fonte-titulo); font-size: 1.3rem; text-transform: none; letter-spacing: 0; }
+.hub-team-group h2::after { display: none; }
+.hub-team-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+.hub-team-person { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 18px 20px; background: var(--superficie); border: 1px solid var(--linha); border-radius: 10px; }
+.hub-team-person strong { color: var(--texto); font-size: 15px; }
+.hub-team-person span { color: var(--azul); font-size: 13.5px; font-weight: 600; }
+.hub-team-person .hub-team-detail { color: var(--texto-3); font-weight: 400; }
+.hub-team-residents { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--linha); }
+.hub-team-cta { margin: 24px 0 0; }
