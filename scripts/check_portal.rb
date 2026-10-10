@@ -30,7 +30,7 @@ if File.exist?(File.join(ROOT, "index.html"))
   errors << "index.html compilado não deve coexistir com index.md"
 end
 
-%w[_layouts/default.html _layouts/page.html _layouts/hub.html _includes/head.html assets/css/portal.css _data/portal.yml _data/idiomas.yml].each do |relative|
+%w[_layouts/default.html _layouts/page.html _layouts/hub.html _includes/head.html assets/css/base.css assets/css/hub.css assets/css/showroom.css assets/css/residencia.css _data/estilos.yml _data/portal.yml _data/idiomas.yml].each do |relative|
   errors << "#{relative} ausente" unless File.exist?(File.join(ROOT, relative))
 end
 

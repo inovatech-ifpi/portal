@@ -1,0 +1,6 @@
+# Camadas de CSS do portal, na ordem em que carregam (a ordem importa: cada camada pode refinar a anterior).
+# Cores e fontes ficam só no :root de base.css.
+- base
+- hub
+- showroom
+- residencia
