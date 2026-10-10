@@ -1546,7 +1546,6 @@ body.hub-body :is(h1, h2, h3, h4) { font-weight: 800; }
 .hub-contacts-list p { margin: 0 0 16px; }
 .hub-section-dark .hub-section-lead, .hub-section-dark .hub-colabore-card p { color: #dae2f5; }
 .hub-colabore-card { min-width: 0; }
-.hub-product-media-note { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; padding: 8px 14px; background: rgba(8,15,38,.85); color: #fff; font-size: 12.5px; line-height: 1.4; }
 .hub-nav a:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid var(--foco); outline-offset: 4px; }
 .hub-footer a:focus-visible, .hub-section-dark a:focus-visible, .hub-hero a:focus-visible { outline-color: #fff; }
 .hub-section, .hub-case-card, #proximo-ciclo, #conteudo, .res-main h2 { scroll-margin-top: 104px; }
@@ -1625,3 +1624,16 @@ body.hub-body :is(h1, h2, h3, h4) { font-weight: 800; }
 .hub-team-person .hub-team-detail { color: var(--texto-3); font-weight: 400; }
 .hub-team-residents { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--linha); }
 .hub-team-cta { margin: 24px 0 0; }
+
+/* Cards de produto compactos na home: 4 em linha no desktop, sem descrição (ela segue no portfólio). */
+.hub-products-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+@media (min-width: 600px) { .hub-products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .hub-products-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.hub-product-media { height: 150px; }
+.hub-product-title { font-size: 20px; }
+.hub-product-content { padding: 20px; }
+.hub-product-badge-bar { top: 10px; left: 10px; right: auto; }
+.hub-product-stage { display: flex; align-items: baseline; gap: 8px; margin: 0 0 8px; font-size: 12.5px; font-weight: 600; line-height: 1.4; color: var(--azul); }
+.hub-status-dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--azul); transform: translateY(-1px); }
+.hub-product-note { margin: 0 0 12px; font-size: 12px; line-height: 1.45; color: var(--texto-3); }
+.hub-product-footer { margin-top: auto; }
