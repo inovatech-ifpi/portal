@@ -10,8 +10,8 @@ cycle:
   current_period: 12–16/10
   current_phase: Fase 2 — evolução em sprints
   current_focus: 'Sprint E2 em fechamento: validar entregas em produção, atualizar documentação
-    e preparar a abertura da Sprint E3 (19/10)'
-  current_sprint_label: Sprint E3 (a partir de 19/10)
+    e preparar a abertura da Sprint E3 (terça 20/10, pós-feriado do Dia do Piauí)'
+  current_sprint_label: Sprint E3 (19–30/10)
   current_sprint_link: "/sprint-e3/"
 projects:
 - code: D02
