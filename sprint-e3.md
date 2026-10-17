@@ -25,11 +25,9 @@ Os guias da [E1]({{ '/sprint-e1/' | relative_url }}) e da [E2]({{ '/sprint-e2/' 
 
 ## Planejamento e compromisso da primeira semana
 
-Cada equipe organiza no próprio repositório o milestone **Sprint E3 — 19/10 a 30/10**:
+Cada equipe organiza suas entregas no próprio repositório usando o milestone **Sprint E3 — 19/10 a 30/10** (já criado):
 
-1. **Revisar o que ficou da E1 e da E2.** Identificar itens sem revisão, validação,
-   implantação ou evidência. Registrar o destino de cada pendência e vincular à
-   E3 o que for mantido, sem encerrar issues apenas porque a sprint terminou.
+1. **Agrupar as tarefas no milestone da sprint.** Na Sprint E2, o trabalho não foi vinculado ao milestone correspondente. Nesta Sprint E3, vincule ao marco **Sprint E3 — 19/10 a 30/10** tanto as novas issues quanto o que continuar aberto da E1/E2, para mantermos o mapeamento do ciclo sem encerrar issues apenas por virada de sprint.
 2. **Definir o objetivo em uma frase verificável.** Selecionar de 3 a 5 itens
    priorizados pelo demandante, considerando o trabalho que ficou pendente.
 3. **Registrar responsáveis e critérios de aceite.** Cada issue deve mostrar o
