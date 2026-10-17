@@ -10,7 +10,8 @@ _Os materiais de cada etapa são publicados aqui após as sessões._
 
 ## Fase 2 — Sprints de evolução
 
-- [Guia da Sprint E2 (05/10 a 16/10 — vigente)]({{ '/sprint-e2/' | relative_url }})
+- [Guia da Sprint E3 (19/10 a 30/10 — vigente)]({{ '/sprint-e3/' | relative_url }})
+- [Guia da Sprint E2 (05/10 a 16/10 — encerrada)]({{ '/sprint-e2/' | relative_url }})
 - [Guia da Sprint E1 (21/09 a 02/10 — encerrada)]({{ '/sprint-e1/' | relative_url }})
 - [README da equipe]({{ '/templates/readme-squad/' | relative_url }})
 - [Retrospectiva de sprint]({{ '/templates/retrospectiva/' | relative_url }})

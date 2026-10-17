@@ -72,7 +72,8 @@ nav_title: "Templates e entregas"
 
 **Sprints de evolução (fase 2)**
 
-- [Guia da Sprint E2 (vigente: 05/10 a 16/10)]({{ '/sprint-e2/' | relative_url }})
+- [Guia da Sprint E3 (vigente: 19/10 a 30/10)]({{ '/sprint-e3/' | relative_url }})
+- [Guia da Sprint E2 (encerrada em 16/10)]({{ '/sprint-e2/' | relative_url }})
 - [Guia da Sprint E1 (encerrada em 02/10)]({{ '/sprint-e1/' | relative_url }})
 - Na review de cada sprint: itens em produção com evidência, README/runbook atualizados,
   pendências abertas como issue e [retrospectiva]({{ '/templates/retrospectiva/' | relative_url }})

@@ -6,13 +6,13 @@ cycle:
   start: 11/05/2026
   end: 30/10/2026
   total_weeks: 25
-  current_week: 22
-  current_period: 05–09/10
+  current_week: 23
+  current_period: 12–16/10
   current_phase: Fase 2 — evolução em sprints
-  current_focus: 'Sprint E2: revisar pendências da E1, priorizar com o demandante
-    e registrar o compromisso da semana'
-  current_sprint_label: Sprint E2
-  current_sprint_link: "/sprint-e2/"
+  current_focus: 'Sprint E2 em fechamento: validar entregas em produção, atualizar documentação
+    e preparar a abertura da Sprint E3 (19/10)'
+  current_sprint_label: Sprint E3 (a partir de 19/10)
+  current_sprint_link: "/sprint-e3/"
 projects:
 - code: D02
   slug: sgae
@@ -188,15 +188,15 @@ milestones:
 - code: E2
   name: Sprint de evolução 2
   date: 16/10
-  status: próximo marco
-  tone: current
+  status: prazo encerrado
+  tone: closed
   deliverable: Incremento priorizado pelo demandante em produção, README/runbook atualizados
     e pendências registradas com responsável
 - code: E3
   name: Sprint de evolução 3
   date: 30/10
-  status: previsto
-  tone: pending
+  status: próximo marco
+  tone: current
   deliverable: Continuidade da evolução com entrega em produção, documentação e evidências
 weeks:
 - number: 1–5
@@ -283,28 +283,30 @@ weeks:
   period: 05–09/10
   focus: 'Sprint E2: revisar pendências da E1, priorizar com o demandante e registrar
     objetivo, responsáveis e critérios de aceite'
-  state: current
+  state: done
   link: "/sprint-e2/"
 - number: '23'
   period: 12–16/10
   focus: 'Sprint E2: validar, implantar, atualizar documentação e demonstrar o resultado
     na review'
-  state: upcoming
+  state: current
   link: "/sprint-e2/"
 - number: '24'
   period: 19–23/10
   focus: 'Sprint E3: planejamento e implementação dos itens priorizados pelo demandante'
   state: upcoming
+  link: "/sprint-e3/"
 - number: '25'
   period: 26–30/10
   focus: 'Sprint E3: entrega em produção, documentação atualizada e review de sprint'
   state: upcoming
+  link: "/sprint-e3/"
 deadlines:
-- date: 16/10
-  title: Review da Sprint E2
+- date: 30/10
+  title: Review da Sprint E3
   detail: demonstração em produção, README/runbook atualizados e registro da retrospectiva,
     evidências e pendências no GitHub
-  link: "/sprint-e2/"
+  link: "/sprint-e3/"
 contacts:
 - name: Prof. Aislan
   role: Instrutor — Assistência Estudantil e Flix (técnico)
@@ -456,7 +458,7 @@ facts:
   budget_pt: R$ 1,1 milhão/ano
   budget_en: BRL 1.1 million/year
   period: 12/05–14/08/2026
-  checked_at: '09/10/2026'
+  checked_at: '17/10/2026'
   showcase_date: 11/09/2026
 public_contacts:
 - id: coordination
