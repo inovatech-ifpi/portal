@@ -6,11 +6,11 @@ cycle:
   start: 11/05/2026
   end: 30/10/2026
   total_weeks: 25
-  current_week: 23
-  current_period: 12–16/10
+  current_week: 25
+  current_period: 26–30/10
   current_phase: Fase 2 — evolução em sprints
-  current_focus: 'Sprint E2 em fechamento: validar entregas em produção, atualizar documentação
-    e preparar a abertura da Sprint E3 (terça 20/10, pós-feriado do Dia do Piauí)'
+  current_focus: 'Sprint E3 na reta final: validação em produção, resolução de pendências,
+    atualização de documentação e review em 30/10'
   current_sprint_label: Sprint E3 (19–30/10)
   current_sprint_link: "/sprint-e3/"
 projects:
@@ -289,17 +289,17 @@ weeks:
   period: 12–16/10
   focus: 'Sprint E2: validar, implantar, atualizar documentação e demonstrar o resultado
     na review'
-  state: current
+  state: done
   link: "/sprint-e2/"
 - number: '24'
   period: 19–23/10
   focus: 'Sprint E3: planejamento e implementação dos itens priorizados pelo demandante'
-  state: upcoming
+  state: done
   link: "/sprint-e3/"
 - number: '25'
   period: 26–30/10
   focus: 'Sprint E3: entrega em produção, documentação atualizada e review de sprint'
-  state: upcoming
+  state: current
   link: "/sprint-e3/"
 deadlines:
 - date: 30/10
