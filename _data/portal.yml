@@ -147,8 +147,8 @@ projects:
   tone: active
   repository: equipe-saude-digital
   stakeholder: ETIPI · PiauíGovTec · SESAPI
-  image: "/assets/img/equipes/foto-conecta-equipe.jpg"
-  thumb: "/assets/img/equipes/foto-conecta-equipe.jpg"
+  image: "/assets/img/equipes/telas-caderneta-tea.jpg"
+  thumb: "/assets/img/equipes/telas-caderneta-tea.jpg"
   handover:
     pt: Em desenvolvimento ativo pelo squad
     en: Under active development by the squad
@@ -162,8 +162,8 @@ projects:
     stage: In development · ETIPI / PGT partnership
     stakeholder: ETIPI · PiauíGovTec · State Health Department (SESAPI)
   image_alt:
-    pt: Squad de Saúde Digital do INOVATECH
-    en: INOVATECH Digital Health Squad
+    pt: Três telas do protótipo da Caderneta TEA em celulares, com início, registros da família e visão integrada
+    en: Three Caderneta TEA prototype screens on phones, showing home, family records and integrated view
   status_ref: current_sprint
 milestones:
 - code: M0

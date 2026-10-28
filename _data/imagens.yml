@@ -37,6 +37,16 @@
     src: /assets/img/otimizadas/equipes/foto-spia-equipe-480.webp
   - w: 787
     src: /assets/img/otimizadas/equipes/foto-spia-equipe-787.webp
+/assets/img/equipes/telas-caderneta-tea.jpg:
+  width: 1400
+  height: 787
+  webp:
+  - w: 480
+    src: /assets/img/otimizadas/equipes/telas-caderneta-tea-480.webp
+  - w: 960
+    src: /assets/img/otimizadas/equipes/telas-caderneta-tea-960.webp
+  - w: 1400
+    src: /assets/img/otimizadas/equipes/telas-caderneta-tea-1400.webp
 /assets/img/foto-encontro-abertura.jpg:
   width: 1600
   height: 900
