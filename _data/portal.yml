@@ -21,7 +21,7 @@ projects:
   subtitle: Sistema de Gestão da Assistência Estudantil
   description: Gestão, conformidade e rastreabilidade da concessão de 7 auxílios estudantis
     da POLAE
-  residents: 4
+  residents: 3
   stage: Implantado no IFPI · Evolução contínua
   tone: active
   repository: equipe-assistencia-bolsas
@@ -50,7 +50,7 @@ projects:
   subtitle: Repositório de Conteúdo Institucional
   description: Catálogo streaming interativo para descoberta e difusão de projetos
     e cursos do IFPI
-  residents: 3
+  residents: 2
   stage: Implantado no IFPI · Evolução contínua
   tone: active
   repository: equipe-flix-conteudo
@@ -79,7 +79,7 @@ projects:
   subtitle: Controle de Acesso e Comunicação com Famílias
   description: Gestão de acesso e aplicativo de comunicação com responsáveis; integração
     com a portaria em evolução.
-  residents: 4
+  residents: 3
   stage: Implantado no IFPI · Evolução contínua
   tone: active
   repository: equipe-seguranca-campus
@@ -134,6 +134,37 @@ projects:
   image_alt:
     pt: Equipe SPIA Maestro no Encontro INOVATECH
     en: SPIA Maestro team at the INOVATECH event
+- code: D12
+  slug: caderneta-tea
+  name: Caderneta TEA — Saúde Digital
+  public_name: Caderneta TEA
+  subtitle: Tecnologia para o Cuidado de Pessoas Neurodivergentes
+  description: Solução digital para vigilância do desenvolvimento infantil, rastreamento
+    estruturado e acompanhamento multiprofissional longitudinal (Família, Escola e Saúde)
+    para pessoas com TEA.
+  residents: 3
+  stage: Em desenvolvimento · Parceria ETIPI / PGT
+  tone: active
+  repository: equipe-saude-digital
+  stakeholder: ETIPI · PiauíGovTec · SESAPI
+  image: "/assets/img/equipes/foto-conecta-equipe.jpg"
+  thumb: "/assets/img/equipes/foto-conecta-equipe.jpg"
+  handover:
+    pt: Em desenvolvimento ativo pelo squad
+    en: Under active development by the squad
+  stack: React / PWA · API REST · PostgreSQL · HL7 FHIR
+  en:
+    name: Caderneta TEA
+    subtitle: Technology for Neurodivergent Care
+    description: Digital solution for developmental surveillance, structured screening
+      and longitudinal multidisciplinary care connecting families, schools and healthcare
+      teams for individuals with ASD.
+    stage: In development · ETIPI / PGT partnership
+    stakeholder: ETIPI · PiauíGovTec · State Health Department (SESAPI)
+  image_alt:
+    pt: Squad de Saúde Digital do INOVATECH
+    en: INOVATECH Digital Health Squad
+  status_ref: current_sprint
 milestones:
 - code: M0
   name: Demandas e equipes
@@ -448,7 +479,7 @@ leadership:
 facts:
   residents: 15
   weekly_hours: 20
-  tracks: 4
+  tracks: 5
   systems: 3
   work_items: 208
   pull_requests: 148
@@ -480,11 +511,11 @@ indicators:
 - fact: residents
   pt:
     label: Residentes bolsistas
-    detail: Dedicação de 20 h/semana em quatro frentes de formação aplicada.
+    detail: Dedicação de 20 h/semana em cinco frentes de formação aplicada.
     source: Portaria 783/2026-GAB/REI/IFPI
   en:
     label: Engineering fellows
-    detail: 20 hours/week across four applied learning tracks.
+    detail: 20 hours/week across five applied learning tracks.
     source: Federal Ordinance 783/2026
 - fact: systems
   pt:
