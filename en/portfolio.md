@@ -12,6 +12,7 @@ url_pt: /portfolio/
 {% assign flix = site.data.portal.projects | where: "slug", "flix" | first %}
 {% assign conecta = site.data.portal.projects | where: "slug", "conecta" | first %}
 {% assign spia = site.data.portal.projects | where: "slug", "spia" | first %}
+{% assign tea = site.data.portal.projects | where: "slug", "caderneta-tea" | first %}
 {% assign coordination = site.data.portal.public_contacts | where: "id", "coordination" | first %}
 {% assign technical = site.data.portal.public_contacts | where: "id", "technical" | first %}
 {% assign state_contact = site.data.portal.public_contacts | where: "id", "state" | first %}
@@ -608,6 +609,43 @@ url_pt: /portfolio/
       <a href="#engagement" class="hub-case-action-btn secondary mono">
         <span>Governance & Security Protocols</span>
       </a>
+    </div>
+  </article>
+
+  <article class="hub-case-card" id="caderneta-tea">
+    <header class="hub-case-card-head">
+      <div class="hub-case-badge-row mono">
+        <span class="badge-code">D12 · DIGITAL HEALTH</span>
+        <span class="badge-status">{{ tea.en.stage | upcase }}</span>
+      </div>
+      <h2>Caderneta TEA — Technology for Neurodivergent Care</h2>
+      <p class="hub-case-demandante mono">
+        <strong>Institutional Stakeholder:</strong> ETIPI · via Piauí Gov Tech
+      </p>
+    </header>
+
+    <div class="hub-case-grid">
+      <div class="hub-case-text">
+        <div class="hub-case-block">
+          <h3>The Challenge</h3>
+          <p>
+            Support the care journey of children with Autism Spectrum Disorder, from structured screening to longitudinal follow-up, connecting families, schools and healthcare teams in a single record. The technology supports care and decision-making; it does not diagnose.
+          </p>
+        </div>
+        <div class="hub-case-block">
+          <h3>The Fellowship Contribution</h3>
+          <p>
+            {{ tea.residents }} INOVATECH fellows are building the product from a prototype designed by medical students. The work is at an early stage (Sprint 0): technical setup, a data model with synthetic data, and field research within the care network.
+          </p>
+        </div>
+      </div>
+      <div class="hub-case-media">
+        {% include imagem.html src="/assets/img/equipes/telas-caderneta-tea.jpg" alt="Three Caderneta TEA prototype screens on phones, showing home, family records and integrated view" class="hub-case-img" sizes="(min-width: 1100px) 560px, 100vw" %}
+        <div class="hub-case-card-stats mono">
+          <div><span>Stage:</span> Sprint 0 · prototype with fictitious data</div>
+          <div><span>Squad:</span> {{ tea.residents }} engineering fellows</div>
+        </div>
+      </div>
     </div>
   </article>
 

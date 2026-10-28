@@ -12,6 +12,7 @@ url_en: /en/portfolio/
 {% assign flix = site.data.portal.projects | where: "slug", "flix" | first %}
 {% assign conecta = site.data.portal.projects | where: "slug", "conecta" | first %}
 {% assign spia = site.data.portal.projects | where: "slug", "spia" | first %}
+{% assign tea = site.data.portal.projects | where: "slug", "caderneta-tea" | first %}
 {% assign coordination = site.data.portal.public_contacts | where: "id", "coordination" | first %}
 {% assign technical = site.data.portal.public_contacts | where: "id", "technical" | first %}
 {% assign state_contact = site.data.portal.public_contacts | where: "id", "state" | first %}
@@ -609,6 +610,43 @@ url_en: /en/portfolio/
       <a href="#proximo-ciclo" class="hub-case-action-btn secondary mono">
         <span>Conversar sobre Cooperação</span>
       </a>
+    </div>
+  </article>
+
+  <article class="hub-case-card" id="caderneta-tea">
+    <header class="hub-case-card-head">
+      <div class="hub-case-badge-row mono">
+        <span class="badge-code">D12 · SAÚDE DIGITAL</span>
+        <span class="badge-status">{{ tea.stage | upcase }}</span>
+      </div>
+      <h2>Caderneta TEA — Tecnologia para o Cuidado de Pessoas Neurodivergentes</h2>
+      <p class="hub-case-demandante mono">
+        <strong>Demandante Institucional:</strong> ETIPI · via Piauí Gov Tech
+      </p>
+    </header>
+
+    <div class="hub-case-grid">
+      <div class="hub-case-text">
+        <div class="hub-case-block">
+          <h3>O Desafio</h3>
+          <p>
+            Apoiar a jornada de cuidado de crianças com Transtorno do Espectro Autista, do rastreio estruturado ao acompanhamento longitudinal, conectando Família, Escola e Equipe de Saúde num único registro. A tecnologia é apoio à decisão e à assistência, não mecanismo de diagnóstico.
+          </p>
+        </div>
+        <div class="hub-case-block">
+          <h3>A Contribuição da Residência</h3>
+          <p>
+            {{ tea.residents }} residentes do INOVATECH desenvolvem o produto a partir do protótipo idealizado por estudantes de medicina, em fase inicial (Sprint 0): preparação do ambiente técnico, modelo de dados com dados sintéticos e levantamento de campo na rede de atendimento.
+          </p>
+        </div>
+      </div>
+      <div class="hub-case-media">
+        {% include imagem.html src="/assets/img/equipes/telas-caderneta-tea.jpg" alt="Três telas do protótipo da Caderneta TEA em celulares, com início, registros da família e visão integrada" class="hub-case-img" sizes="(min-width: 1100px) 560px, 100vw" %}
+        <div class="hub-case-card-stats mono">
+          <div><span>Estágio:</span> Sprint 0 · protótipo com dados fictícios</div>
+          <div><span>Equipe:</span> {{ tea.residents }} residentes bolsistas</div>
+        </div>
+      </div>
     </div>
   </article>
 
