@@ -9,8 +9,8 @@ cycle:
   current_week: 25
   current_period: 26–30/10
   current_phase: Fase 2 — evolução em sprints
-  current_focus: 'Sprint E3 na reta final: validação em produção, resolução de pendências,
-    atualização de documentação e review em 30/10'
+  current_focus: 'Sprint E3 concluída com entrega de relatórios e correlações no SGAE;
+    Sprint 0 iniciada na Caderneta TEA e planejamento da Sprint E4'
   current_sprint_label: Sprint E3 (19–30/10)
   current_sprint_link: "/sprint-e3/"
 projects:
@@ -226,8 +226,8 @@ milestones:
 - code: E3
   name: Sprint de evolução 3
   date: 30/10
-  status: próximo marco
-  tone: current
+  status: prazo encerrado
+  tone: closed
   deliverable: Continuidade da evolução com entrega em produção, documentação e evidências
 weeks:
 - number: 1–5
